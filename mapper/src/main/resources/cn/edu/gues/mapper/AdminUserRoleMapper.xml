@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.AdminUserRoleMapper">
+
+    <insert id="insert" parameterType="AdminUserRole">
+        insert into t_adminuserroles(adminUserId, roleId) VALUES(#{adminUserId},#{roleId})
+    </insert>
+
+    <update id="update" parameterType="AdminUserRole">
+        update t_adminuserroles set
+            adminUserId = #{adminUserId},
+            roleId = #{roleId}
+        where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        delete from t_adminuserroles where id=#{id}
+    </delete>
+
+    <delete id="deleteByFirstId" parameterType="long">
+        delete from t_adminuserroles where adminUserId=#{adminUserId}
+    </delete>
+
+    <delete id="deleteBySecondId" parameterType="long">
+        delete from t_adminuserroles where roleId=#{roleId}
+    </delete>
+
+    <select id="select" parameterType="AdminUserRole" resultType="AdminUserRole">
+        select * from t_adminuserroles
+        <where>
+            <if test="id!=null"> and id=#{id} </if>
+            <if test="adminUserId!=null"> and adminUserId=#{adminUserId} </if>
+            <if test="roleId!=null"> and roleId=#{roleId} </if>
+        </where>
+    </select>
+
+    <select id="selectFirstListBySecondId" parameterType="long" resultType="AdminUser">
+        select f.*
+        from T_AdminUserRoles fs left join T_AdminUsers f on fs.adminUserId=f.id
+        where f.isDeleted=false and fs.roleId=#{roleId}
+    </select>
+
+    <select id="selectSecondListByFirstId" parameterType="long" resultType="Role">
+        select s.*
+        from T_AdminUserRoles fs left join T_Roles s on fs.roleId=s.id
+        where s.isDeleted=false and fs.adminUserId=#{adminUserId}
+    </select>
+
+    <!--<select id="checkPermission" parameterType="map" resultType="integer">
+        select count(*)
+        from T_AdminUserRoles ur left join T_Roles r on ur.roleId=r.id
+                                 left join T_RolePermissions rp on r.id=rp.roleId
+                                 left join T_Permissions p on rp.permissionId=p.id
+        where r.isDeleted=false
+          and p.isDeleted=false
+          and ur.adminUserId=#{adminUserId}
+          and p.path=#{path}
+    </select>-->
+</mapper>

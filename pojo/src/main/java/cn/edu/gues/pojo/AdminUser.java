@@ -12,6 +12,8 @@ public class AdminUser implements Serializable {
     private String phone;
     private Boolean idDeleted;
     private Boolean isChecked;
+    private String password;
+    private String passwordSalt;
 
     @Override
     public boolean equals(Object o) {
@@ -27,6 +29,22 @@ public class AdminUser implements Serializable {
     @Override
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getPasswordSalt() {
+        return passwordSalt;
+    }
+
+    public void setPasswordSalt(String passwordSalt) {
+        this.passwordSalt = passwordSalt;
     }
 
     public static long getSerialVersionUID() {

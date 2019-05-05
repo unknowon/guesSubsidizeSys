@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.CollegeClassMapper">
+
+    <insert id="insert" parameterType="CollegeClass">
+        insert into t_collegeclasses(collegeId, classId) values(collegeId=#{collegeId}, classId=#{classId})
+    </insert>
+
+    <update id="update" parameterType="CollegeClass">
+        update t_collegeclasses set
+            collegeId=#{collegeId},
+            classId=#{classId}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        delete from t_collegeclasses where id=#{id}
+    </delete>
+
+    <delete id="deleteByFirstId" parameterType="long">
+        delete from t_collegeclasses where collegeId=#{collegeId}
+    </delete>
+
+    <delete id="deleteBySecondId" parameterType="long">
+        delete from t_collegeclasses where classId=#{classId}
+    </delete>
+
+    <select id="select" parameterType="CollegeClass" resultType="CollegeClass">
+        select * from t_collegeclasses
+        <where>
+            <if test="id!=null"> and id=#{id}</if>
+            <if test="collegeId!=null"> and collegeId=#{collegeId}</if>
+            <if test="classId!=null"> and classId=#{classId}</if>
+        </where>
+    </select>
+
+    <select id="selectFirstListBySecondId" parameterType="long" resultType="College">
+        select f.*
+        from t_collegeclasses fs left join t_colleges f on fs.collegeId = f.id
+        where f.isDeleted=false and fs.classId=#{clssId}
+    </select>
+
+    <select id="selectSecondListByFirstId" parameterType="long" resultType="Class">
+        select s.*
+        from t_collegeclasses fs left join t_classes s on fs.classId = s.id
+        where s.isDeleted=false and fs.collegeId=#{collegeId}
+    </select>
+
+</mapper>

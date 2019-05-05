@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.UserMapper">
+
+    <insert id="insert" parameterType="User">
+        insert into t_users(studentNum, password, passwordSalt, createDateTime) values(#{studentNum}, #{password}, #{passwordSalt}, now())
+    </insert>
+
+    <update id="update" parameterType="User">
+        update t_users set
+            name=#{name},
+            gender=#{gender},
+            idCardNum=#{idCardNum},
+            birthday=#{birthday},
+            studentNum=#{studentNum},
+            phone=#{phone},
+            password=#{password},
+            isDeleted=#{isDeleted},
+            isChecked=#{isChecked}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        update t_users set isDeleted=true where id=#{id}
+    </delete>
+
+    <select id="select" parameterType="User" resultType="User">
+        select * from t_users
+        where isDeleted=false
+            <if test="id!=null"> and id=#{id}</if>
+            <if test="name!=null"> and name=#{name}</if>
+            <if test="gender!=null"> and gender=#{gender}</if>
+            <if test="idCardNum!=null"> and idCardNum=#{idCardNum}</if>
+            <if test="birthday!=null"> and birthday=#{birthday}</if>
+            <if test="studentNum!=null"> and studentNum=#{studentNum}</if>
+            <if test="phone!=null"> and phone=#{phone}</if>
+            <if test="isDeleted!=null"> and isDeleted=#{isDeleted}</if>
+            <if test="isChecked!=null"> and isChecked=#{isChecked}</if>
+    </select>
+
+</mapper>

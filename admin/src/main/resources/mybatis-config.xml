@@ -9,7 +9,7 @@
 
 	<typeAliases>
         <!-- 为指定包下的pojo类自动起别名 -->
-		<package name="cn.wsichao.pojo"/>
+		<package name="cn.edu.gues.pojo"/>
 	</typeAliases>
 	
 	<plugins>
@@ -19,7 +19,7 @@
     
 	<mappers>
         <!-- 自动加载指定包下的映射配置文件 -->
-        <package name="cn.wsichao.mapper"/>
+        <package name="cn.edu.gues.mapper"/>
 	</mappers>
 
 </configuration>
