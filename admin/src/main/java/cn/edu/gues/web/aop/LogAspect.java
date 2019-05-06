@@ -1,6 +1,6 @@
 package cn.edu.gues.web.aop;
 
-import cn.edu.gues.util.JsonUtils;
+import cn.edu.gues.pojo.AdminUser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
@@ -34,7 +34,7 @@ public class LogAspect {
         }
 
         //获得request
-        /*HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
+        HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
         AdminUser adminUser = (AdminUser) request.getSession().getAttribute("adminUser");
         Long userId = null;
         if(adminUser != null){
@@ -54,7 +54,7 @@ public class LogAspect {
                     args[i] = "BindingResult对象";
                 }
             }
-        }*/
+        }
 
         //logger.info("用户id : {}, 方法签名 : {}, 方法参数列表 : {}", userId, joinpoint.getSignature(), JsonUtils.toJson(args));
     }

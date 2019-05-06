@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.PermissionMapper">
+
+    <insert id="insert" parameterType="Permission">
+        insert into t_permissions(name, description) values(#{name}, #{description})
+    </insert>
+
+    <update id="update" parameterType="Permission">
+        update t_permissions set
+            name=#{name},
+            description=#{description},
+            isDeleted=#{isDeleted}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        update t_permissions set isDeleted=true where id=#{id}
+    </delete>
+
+    <select id="select" parameterType="Permission" resultType="Permission">
+        select * from t_permissions
+        Where isDeleted=false
+        <if test="id!=null"> and id=#{id}</if>
+        <if test="name!=null"> and name=#{name}</if>
+        <if test="description!=null"> and description=#{description}</if>
+    </select>
+
+</mapper>

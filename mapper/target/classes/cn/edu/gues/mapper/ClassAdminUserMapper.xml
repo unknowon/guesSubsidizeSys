@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.ClassAdminUserMapper">
+
+    <insert id="insert" parameterType="ClassAdminUser">
+        insert into t_classadminusers(classId, adminUserId) values(#{classId}, #{adminUserId})
+    </insert>
+
+    <update id="update" parameterType="ClassAdminUser">
+        update t_classadminusers set
+        classId=#{classId},
+        adminUserId=#{adminUserId}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        delete from t_classadminusers where id=#{id}
+    </delete>
+
+    <delete id="deleteByFirstId" parameterType="long">
+        delete from t_classadminusers where classId=#{classId}
+    </delete>
+
+    <delete id="deleteBySecondId" parameterType="long">
+        delete from t_classadminusers where adminUserId=#{adminUserId}
+    </delete>
+
+    <select id="select" parameterType="ClassAdminUser" resultType="ClassAdminUser">
+        select * from t_classadminusers
+        <where>
+            <if test="id!=null"> and id=#{id}</if>
+            <if test="classId!=null"> and classId=#{classId}</if>
+            <if test="adminUserId!=null"> and adminUserId=#{adminUserId}</if>
+        </where>
+    </select>
+
+    <select id="selectFirstListBySecondId" resultType="Class" parameterType="long">
+        select f.*
+        from t_classadminusers fs left join t_classes f on fs.classId=f.id
+        where f.isDeleted=false and fs.adminUserId=#{adminUserId}
+    </select>
+
+    <select id="selectSecondListByFirstId" parameterType="long" resultType="AdminUser">
+        select s.*
+        from t_classadminusers fs left join t_adminusers s on fs.adminUserId=s.id
+        where s.isDeleted=false and fs.classId=#{classId}
+    </select>
+
+</mapper>

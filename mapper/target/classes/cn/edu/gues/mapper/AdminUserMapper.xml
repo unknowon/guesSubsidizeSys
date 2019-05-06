@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.AdminUserMapper">
+
+    <insert id="insert" parameterType="AdminUser">
+        insert into T_Adminusers(name, workId, phone, password, passwordSalt) values(#{name}, #{workId}, #{phone}, #{passowrd}, #{passwordSalt})
+    </insert>
+
+    <update id="update" parameterType="AdminUser">
+        update t_adminusers set
+            name = #{name},
+            workId = #{workId},
+            phone = #{phone},
+            password = #{password},
+            passwordSalt = #{passwordSalt},
+            isDisabled = #{isDisabled}
+        where id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        update t_adminusers set isDeleted = true where id=#{id}
+    </delete>
+
+    <select id="select" parameterType="AdminUser" resultType="AdminUser">
+        select * from t_adminusers
+        where isDeleted=false
+        <if test="id!=null"> and id=#{id} </if>
+        <if test="wordId!=null"> and workId=#{workId} </if>
+        <if test="name!=null"> and name=#{name} </if>
+        <if test="phone!=null"> and phone=#{phone} </if>
+        <if test="isChecked!=null"> and isChecked=#{isChecked} </if>
+    </select>
+
+</mapper>
