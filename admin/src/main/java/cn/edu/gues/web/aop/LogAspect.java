@@ -1,6 +1,7 @@
 package cn.edu.gues.web.aop;
 
 import cn.edu.gues.pojo.AdminUser;
+import cn.edu.gues.util.JsonUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
@@ -56,6 +57,6 @@ public class LogAspect {
             }
         }
 
-        //logger.info("用户id : {}, 方法签名 : {}, 方法参数列表 : {}", userId, joinpoint.getSignature(), JsonUtils.toJson(args));
+        logger.info("用户id : {}, 方法签名 : {}, 方法参数列表 : {}", userId, joinpoint.getSignature(), JsonUtils.toJson(args));
     }
 }

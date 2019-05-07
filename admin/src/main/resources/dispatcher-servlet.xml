@@ -90,5 +90,11 @@
 	<mvc:resources location="/images/" mapping="/images/**" />
 	<mvc:resources location="/skin/" mapping="/skin/**" />
 	<mvc:resources location="/lib/" mapping="/lib/**" />
+	<mvc:resources location="/bower_components/" mapping="/bower_components/**" />
+	<mvc:resources location="/build/" mapping="/build/**" />
+	<mvc:resources location="/dist/" mapping="/dist/**" />
+	<mvc:resources location="/documentation/" mapping="/documentation/**" />
+	<mvc:resources location="/plugins/" mapping="/plugins/**" />
+
  
 </beans>
