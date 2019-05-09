@@ -12,25 +12,43 @@
 
     <title>stuInformation</title>
 
-
     <%@include file="../header.jsp"%>
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="../../plugins/iCheck/all.css">
+    <link rel="stylesheet" href="<%=ctxPath%>/plugins/iCheck/all.css">
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="<%=ctxPath%>/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
     <!-- Bootstrap time Picker -->
-    <link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="<%=ctxPath%>/plugins/timepicker/bootstrap-timepicker.min.css">
     <!-- Select2 -->
-    <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="<%=ctxPath%>/bower_components/select2/dist/css/select2.min.css">
 
+    <%--
+    TODO：把header里面有的全部删掉
+    没有的路径改成这种ctxPath的
 
+    改的时候注意这些文件的顺序，有的js引入的时候顺序出错会报错
+    如果是在中间的那种，你就把它加到header里面去
 
+    --%>
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
     <%@include file="../contextHeader.jsp"%>
+
+    <%--
+    TODO：顶栏我独立出来了，把顶栏的部分全部改成上面这句话
+
+    --%>
+
+
+    <%--
+
+    TODO：下面侧边栏这一块
+    可以直接整个aside拷贝粘贴过去，但是要注意页面要把对应的地方改成active
+
+    --%>
 
     <!-- 侧边栏 -->
     <aside class="main-sidebar">
@@ -39,50 +57,56 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">贵州工程应用技术学院资助管理系统</li>
+
+
+                <%--
+                TODO：比如这里，这是基本情况的页面，就把这个li的class设置成active
+                --%>
+
                 <li class="active">
                     <a href="<%=ctxPath%>/User/stuInformation.do">
                         <i class="fa fa-dashboard"></i> <span>基本情况</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuCommunication">
+                    <a href="<%=ctxPath%>/stuCommunication.do">
                         <i class="fa fa-tty"></i> <span>家庭通讯</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="../tables/stuMember.html">
+                    <a href="<%=ctxPath%>/stuMember.do">
                         <i class="fa fa-group"></i> <span>家庭成员</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="stuEconomic.html">
+                    <a href="<%=ctxPath%>/stuEconomic.do">
                         <i class="fa fa-money"></i> <span>家庭经济情况</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="stuDepartment.html">
+                    <a href="<%=ctxPath%>/stuDepartment.do">
                         <i class="fa fa-institution"></i> <span>民政部门信息</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="../tables/stuAttachment.html">
+                    <a href="<%=ctxPath%>/stuAttachment.do">
                         <i class="fa fa-image"></i> <span>附件信息</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="stuStatement.html">
+                    <a href="<%=ctxPath%>/stuStatement.do">
                         <i class="fa fa-commenting"></i> <span>申请陈述</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="stuFamily.html">
+                    <a href="<%=ctxPath%>/stuFamily.do">
                         <i class="fa fa-home"></i> <span>家庭简介</span>
                     </a>
                 </li>
             </ul>
         </section>
-        <!-- /.sidebar -->
     </aside>
+    <%-- End 侧边栏--%>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -107,12 +131,42 @@
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
-                        <form class="form-horizontal">
+
+                        <%--
+                        TODO：form这里改成这样，action里面就是这个页面的路径
+
+                        --%>
+                        <form onsubmit="ajaxSubmitForm(this,true)" action="<%=ctxPath%>/User/stuInformation.do" class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="inputName" class="col-sm-2 control-label">姓名</label>
+                                    <label for="name" class="col-sm-2 control-label">姓名</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputName" placeholder="示例：王三">
+
+                                        <%--
+                                        TODO：每个这种input要把加上name属性，属性名就是数据库的字段值
+                                        要加上value
+                                        value的值是${XXX}这种格式，user是学生，如果是T_user那张表里的属性，你user.XXX，如果不是的话，就写单词，但是写个文档给我
+                                        这样：
+                                            民族 nationality
+                                            政治面貌 politicalStatus
+                                                0 群众
+                                                1 共产党员
+                                                2 共青团员
+                                                3 其他民主党派
+
+                                            入学前户口 beforeResidency
+                                            毕业院校 graduatedSchool
+                                            家庭总人数 totalNumOfFamily
+                                            家庭住房情况 houseStatus
+                                                0 楼房
+                                                1 瓦房
+                                            个人特长 specialty
+
+                                        写在word文档里
+
+
+                                        --%>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="示例：王三" value="${user.name }">
                                     </div>
                                 </div>
                                 <!-- radio -->
@@ -120,17 +174,22 @@
                                     <label class="col-sm-2 control-label">性别</label>
                                     <div class="col-sm-6">
                                         <div>
-                                            <input type="radio" name="r3" class="flat-red" checked>
+
+                                            <%--
+                                            TODO：像是单选、复选框、下拉列表这种
+                                            在里面加<c:if>标签，也要加name 和 value
+                                            --%>
+                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == true}"> checked</c:if> >
                                             男
-                                            <input type="radio" name="r3" class="flat-red">
+                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == false}"> checked</c:if> >
                                             女
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputNation" class="col-sm-2 control-label">民族</label>
+                                    <label for="nationality" class="col-sm-2 control-label">民族</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputNation" placeholder="示例：汉族">
+                                        <input type="text" class="form-control" id="nationality" name="nationality" placeholder="示例：汉族" value="${nationality}">
                                     </div>
                                 </div>
                                 <!-- select -->
@@ -138,23 +197,23 @@
                                     <label class="col-sm-2 control-label">政治面貌</label>
                                     <div class="col-sm-3">
                                         <select class="form-control">
-                                            <option>共产党员</option>
-                                            <option>共青团员</option>
-                                            <option>其它民主党派</option>
-                                            <option>群众</option>
+                                            <option <c:if test="${politicalStatus == '1'}">selected</c:if> name="politicalStatus">共产党员</option>
+                                            <option <c:if test="${politicalStatus == '2'}">selected</c:if> name="politicalStatus">共青团员</option>
+                                            <option <c:if test="${politicalStatus == '3'}">selected</c:if> name="politicalStatus">其它民主党派</option>
+                                            <option <c:if test="${politicalStatus == '0'}">selected</c:if> name="politicalStatus">群众</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputHometown" class="col-sm-2 control-label">入学前户口</label>
+                                    <label for="beforeResidency" class="col-sm-2 control-label">入学前户口</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputHometown" placeholder="示例：贵州省毕节市">
+                                        <input type="text" class="form-control" id="beforeResidency" name="beforeResidency" placeholder="示例：贵州省毕节市" value="${beforeResidency}">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="idNum" class="col-sm-2 control-label">身份证号码</label>
+                                    <label for="idCardNum" class="col-sm-2 control-label">身份证号码</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="idNum" placeholder="示例：520118XXXXXXXX5617">
+                                        <input type="text" class="form-control" id="idCardNum" name="idCardNum" placeholder="示例：520118XXXXXXXX5617" value="${user.idCardNum}">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -164,27 +223,30 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" class="form-control pull-right" id="datepicker">
+                                            <%--
+                                            TODO：遇到日期框，要用<fmt:formatDate>标签格式化，格式是yyyy-MM-dd
+                                            --%>
+                                            <input type="text" class="form-control pull-right" id="datepicker" name="birthday" value="<fmt:formatDate value="${user.birthday}" pattern="yyyy-MM-dd"/>">
                                         </div>
                                     </div>
                                     <!-- /.input group -->
                                 </div>
                                 <div class="form-group">
-                                    <label for="school" class="col-sm-2 control-label">毕业院校</label>
+                                    <label for="graduatedSchool" class="col-sm-2 control-label">毕业院校</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="school" placeholder="示例：毕节一中">
+                                        <input type="text" class="form-control" id="graduatedSchool" name="graduatedSchool" placeholder="示例：毕节一中" value="${graduatedSchool}">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="family" class="col-sm-2 control-label">家庭人数</label>
+                                    <label for="totalNumOfFamily" class="col-sm-2 control-label">家庭人数</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="family" placeholder="请填写家庭总人数">
+                                        <input type="text" class="form-control" id="totalNumOfFamily" name="totalNumOfFamily" placeholder="请填写家庭总人数" value="${totalNumOfFamily}">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="tel" class="col-sm-2 control-label">个人电话</label>
+                                    <label for="phone" class="col-sm-2 control-label">个人电话</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="tel" placeholder="请填写个人在校联系电话">
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="请填写个人在校联系电话" value="${user.phone}">
                                     </div>
                                 </div>
                                 <!-- select -->
@@ -192,22 +254,22 @@
                                     <label class="col-sm-2 control-label">家庭住房情况</label>
                                     <div class="col-sm-3">
                                         <select class="form-control">
-                                            <option>平房</option>
-                                            <option>瓦房</option>
+                                            <option <c:if test="${houseStatus == '0'}">selected</c:if> name="houseStatus" >平房</option>
+                                            <option <c:if test="${houseStatus == '1'}">selected</c:if> name="houseStatus" >瓦房</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="speciality" class="col-sm-2 control-label">个人特长</label>
+                                    <label for="specialty" class="col-sm-2 control-label">个人特长</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="speciality" placeholder="示例：乒乓球、跳舞等">
+                                        <input type="text" class="form-control" id="specialty" name="specialty" placeholder="示例：乒乓球、跳舞等" value="${specialty}">
                                     </div>
                                 </div>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
                                 <div class="col-sm-12">
-                                    <button type="submit" class="btn btn-default col-xs-offset-4">上一步</button>
+                                    <%--<button type="button" onclick="window.location.href='<%=ctxPath%>/User/stuInformation.do'" class="btn btn-default col-xs-offset-4">上一步</button>--%>
                                     <button type="submit" class="btn btn-info col-sm-offset-2">下一步</button>
                                 </div>
                             </div>
@@ -231,270 +293,61 @@
             reserved.
         </footer>-->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <!-- Home tab content -->
-            <div class="tab-pane" id="control-sidebar-home-tab">
-                <h3 class="control-sidebar-heading">Recent Activity</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
 
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-
-                                <p>Will be 23 on April 24th</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-user bg-yellow"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-
-                                <p>New phone +1(800)555-1234</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-
-                                <p>nora@example.com</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-                            <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-
-                                <p>Execution time 5 seconds</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.control-sidebar-menu -->
-
-                <h3 class="control-sidebar-heading">Tasks Progress</h3>
-                <ul class="control-sidebar-menu">
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Custom Template Design
-                                <span class="label label-danger pull-right">70%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Update Resume
-                                <span class="label label-success pull-right">95%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Laravel Integration
-                                <span class="label label-warning pull-right">50%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <h4 class="control-sidebar-subheading">
-                                Back End Framework
-                                <span class="label label-primary pull-right">68%</span>
-                            </h4>
-
-                            <div class="progress progress-xxs">
-                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.control-sidebar-menu -->
-
-            </div>
-            <!-- /.tab-pane -->
-            <!-- Stats tab content -->
-            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-            <!-- /.tab-pane -->
-            <!-- Settings tab content -->
-            <div class="tab-pane" id="control-sidebar-settings-tab">
-                <form method="post">
-                    <h3 class="control-sidebar-heading">General Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Report panel usage
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Some information about this general settings option
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Allow mail redirect
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Other sets of options are available
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Expose author name in posts
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Allow the user to show his name in blog posts
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Show me as online
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Turn off notifications
-                            <input type="checkbox" class="pull-right">
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Delete chat history
-                            <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
-                </form>
-            </div>
-            <!-- /.tab-pane -->
-        </div>
-    </aside>
-    <!-- /.control-sidebar -->
+    <%--
+    TODO:下面这里原来有很多没用的，也都删掉
+    --%>
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<%--
+TODO：下面这里的js文件和上面的css文件一样
+--%>
+
 <!-- Select2 -->
-<script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+<script src="<%=ctxPath%>/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- InputMask -->
-<script src="../../plugins/input-mask/jquery.inputmask.js"></script>
-<script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="../../plugins/input-mask/jquery.inputmask.extensions.js"></script>
-<!-- date-range-picker -->
-<script src="../../bower_components/moment/min/moment.min.js"></script>
-<script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="<%=ctxPath%>/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="<%=ctxPath%>/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="<%=ctxPath%>/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
 <!-- bootstrap datepicker -->
-<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="<%=ctxPath%>/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap color picker -->
-<script src="../../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<script src="<%=ctxPath%>/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
-<!-- SlimScroll -->
-<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<%=ctxPath%>/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
 <!-- iCheck 1.0.1 -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
-<!-- FastClick -->
-<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<script src="<%=ctxPath%>/plugins/iCheck/icheck.min.js"></script>
+
 <!-- Page script -->
 <script>
+
+    /*
+    * TODO：这里也有很多多余的js，不用的就删掉
+    *  还有英文的汉化
+    * */
+
     $(function () {
         //Initialize Select2 Elements
         $('.select2').select2()
 
-        //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
-        //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
-        //Money Euro
-        $('[data-mask]').inputmask()
-
-        //Date range picker
-        $('#reservation').daterangepicker()
-        //Date range picker with time picker
-        $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
-        //Date range as a button
-        $('#daterange-btn').daterangepicker(
-            {
-                ranges   : {
-                    'Today'       : [moment(), moment()],
-                    'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
-                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month'  : [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                startDate: moment().subtract(29, 'days'),
-                endDate  : moment()
-            },
-            function (start, end) {
-                $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-            }
-        )
 
         //Date picker
         $('#datepicker').datepicker({
-            autoclose: true
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            monthNames: ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'],
+            monthNamesShort: ['一','二','三','四','五','六', '七','八','九','十','十一','十二'],
+            dayNames: ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'],
+            dayNamesShort: ['周日','周一','周二','周三','周四','周五','周六'],
+            dayNamesMin: ['日','一','二','三','四','五','六'],
+            weekHeader: '周',
         })
 
         //iCheck for checkbox and radio inputs

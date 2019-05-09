@@ -1,5 +1,7 @@
 package cn.edu.gues.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -11,11 +13,13 @@ public class User implements Serializable {
     private String name;
     private Boolean gender;
     private String idCardNum;
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
     private String studentNum;
     private String phone;
     private String password;
     private String passwordSalt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createDateTime;
     private Boolean isDeleted;
     private Boolean isChecked;
@@ -72,6 +76,7 @@ public class User implements Serializable {
         this.idCardNum = idCardNum;
     }
 
+    @JsonFormat(pattern = "yyyy-MM-dd")
     public Date getBirthday() {
         return birthday;
     }

@@ -24,7 +24,7 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">贵州工程应用技术学院资助管理系统</li>
-                <li class="active">
+                <li class="">
                     <a href="<%=ctxPath%>/User/stuInformation.do">
                         <i class="fa fa-dashboard"></i> <span>基本情况</span>
                     </a>
