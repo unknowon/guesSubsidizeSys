@@ -7,487 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="改变了前端页面">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/academyAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adyAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adyEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/classAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/clsAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/memberAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/memberEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/nextLeveladd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/nextLevelcontrol.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/nextLeveledit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/css/H-ui.admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/css/H-ui.login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/acrossTab/acrossTab-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/admin-login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/admin-loginform-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/cn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/images/um.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/js/H-ui.admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/js/de_DE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/blue/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/blue/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/blue/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/blue/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/default/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/default/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/default/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/default/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/green/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/green/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/green/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/green/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/orange/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/orange/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/orange/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/orange/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/red/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/red/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/red/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/red/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/yellow/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/yellow/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/yellow/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui.admin/skin/yellow/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/css/H-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/css/H-ui.ie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/css/H-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/css/H-ui.reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/Hui-tags/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/acrossTab/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/acrossTab/acrossTab-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/acrossTab/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/dataTable/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/dataTable/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/dataTable/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/dropDown/icon-jt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/201.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/202.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/203.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/204.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/205.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/206.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/207.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/208.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/209.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/210.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/100.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/101.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/102.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/103.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/104.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/105.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/106.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/72.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/73.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/74.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/75.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/76.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/77.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/78.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/79.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/80.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/81.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/82.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/83.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/84.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/85.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/86.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/87.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/88.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/89.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/90.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/91.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/92.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/93.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/94.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/95.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/96.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/97.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/98.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/face/QQ/99.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/aero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/aero@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/blue@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/green@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/grey@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/minimal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/minimal@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/orange@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/pink@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/purple@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/red@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iCheck/yellow@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/iconpic-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/jselect/iconpic-arrow-down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/loading/loading-b.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/loading/loading-s.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/rollpic/unslider-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/star/iconpic-star-S-default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/star/iconpic-star-S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/steps/step_arrow-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/steps/step_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/steps/step_bg-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/steps/step_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/ucnter/avatar-default-S.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/ucnter/avatar-default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/ucnter/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/ucnter/noavatar_small.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/validform/iconpic-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/validform/iconpic-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/validform/iconpic-warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tabNav-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tabNav-hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tabNav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right-hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tabNav_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/images/verticalTab/tab_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/js/H-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/static/h-ui/js/H-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuCommunication.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuMember.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuMemberAdd.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/academyAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adyAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adyEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/classAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/clsAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/memberAdd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/memberEdit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/nextLeveladd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/nextLevelcontrol.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/nextLeveledit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/css/H-ui.admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/css/H-ui.login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/acrossTab/acrossTab-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/admin-login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/admin-loginform-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/cn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/images/um.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/js/H-ui.admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/js/de_DE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/blue/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/blue/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/blue/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/blue/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/default/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/default/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/default/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/default/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/green/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/green/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/green/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/green/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/orange/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/orange/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/orange/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/orange/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/red/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/red/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/red/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/red/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/yellow/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/yellow/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/yellow/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui.admin/skin/yellow/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/css/H-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/css/H-ui.ie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/css/H-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/css/H-ui.reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/Hui-tags/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/acrossTab/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/acrossTab/acrossTab-close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/acrossTab/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/dataTable/sort_asc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/dataTable/sort_both.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/dataTable/sort_desc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/dropDown/icon-jt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/201.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/202.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/203.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/204.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/205.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/206.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/207.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/208.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/209.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/210.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/100.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/101.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/102.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/103.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/104.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/105.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/106.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/72.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/73.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/74.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/75.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/76.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/77.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/78.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/79.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/80.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/81.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/82.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/83.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/84.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/85.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/86.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/87.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/88.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/89.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/90.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/91.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/92.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/93.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/94.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/95.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/96.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/97.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/98.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/face/QQ/99.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/aero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/aero@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/blue@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/green@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/grey@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/minimal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/minimal@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/orange@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/pink@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/purple@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/red@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iCheck/yellow@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/iconpic-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/jselect/iconpic-arrow-down2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/loading/loading-b.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/loading/loading-s.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/rollpic/unslider-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/star/iconpic-star-S-default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/star/iconpic-star-S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/steps/step_arrow-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/steps/step_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/steps/step_bg-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/steps/step_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/ucnter/avatar-default-S.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/ucnter/avatar-default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/ucnter/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/ucnter/noavatar_small.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/validform/iconpic-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/validform/iconpic-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/validform/iconpic-warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tabNav-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tabNav-hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tabNav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tabNav_right-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tabNav_right-hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tabNav_right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/images/verticalTab/tab_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/js/H-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/admin/static/h-ui/js/H-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/target/classes/cn/edu/gues/mapper/MemberMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mapper/target/classes/cn/edu/gues/mapper/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/cn/edu/gues/pojo/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/cn/edu/gues/pojo/StuInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/target/classes/cn/edu/gues/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMember.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMember.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adminAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adminAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adminEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adminEdit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adminList.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/adminList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/roleAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/roleAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/roleEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/roleEdit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/stuAttachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/stuAttachment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/stuMember.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/stuMember.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheck.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheck.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheckTeacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheckTeacher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adminAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adminAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adminEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adminEdit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adminList.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/adminList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/roleAdd.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/roleAdd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/roleEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/roleEdit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/stuAttachment.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/stuAttachment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/stuMember.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/stuMember.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/teaCheck.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/teaCheck.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/teaCheckTeacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/pages/tables/teaCheckTeacher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/MemberService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -543,83 +66,25 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/OtherController.java">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="108">
+              <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexStu.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="145" column="62" lean-forward="true" selection-start-line="145" selection-start-column="62" selection-end-line="145" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMember.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="103" column="23" lean-forward="true" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-709">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="160" column="43" lean-forward="true" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="332">
+              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuCommunication.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1357">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuStatement.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1417" />
           </provider>
         </entry>
       </file>
@@ -659,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/CollegeClassMapper.xml" />
         <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/CollegeMapper.xml" />
         <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/PermissionMapper.xml" />
         <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/RoleMapper.xml" />
@@ -710,6 +174,7 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -752,7 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -763,107 +228,18 @@
             <path>
               <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
               <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
               <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -871,6 +247,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -880,7 +257,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1043,13 +420,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85880000" />
+    <option name="totallyTimeSpent" value="87970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989796" visible="true" weight="0.23471883" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989796" visible="true" weight="0.16320294" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1062,7 +439,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32959184" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.32959184" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.22959183" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49938875" visible="true" weight="0.22959183" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" weight="0.32857144" />
@@ -1070,7 +447,7 @@
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50061125" side_tool="true" weight="0.22959183" />
       <window_info anchor="bottom" id="Statistic" order="14" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
@@ -1104,6 +481,46 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Init pojo" />
@@ -1114,17 +531,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="改变了前端页面" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/AdminUserRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/TestController.java" />
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/indexStu.html" />
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/examples/login.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1487,13 +893,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="160" column="43" lean-forward="true" selection-start-line="160" selection-start-column="43" selection-end-line="160" selection-end-column="43" />
+        <state relative-caret-position="108">
+          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
         </state>
       </provider>
     </entry>
