@@ -32,6 +32,17 @@ function ajaxSubmitForm(form, isReloadParent) {
     }, 'json');
     event.preventDefault();
 }
+
+function ajaxSubmitFormNext(form, url) {
+
+    $.post(form.action, $(form).serialize(), function(ajaxResult) {
+        alert(ajaxResult.data);
+        if (ajaxResult.status == 'success') {
+            window.location.href=url;
+        }
+    }, 'json');
+    event.preventDefault();
+}
 /**
  * 使用ajax发送一个请求
  */

@@ -3,7 +3,7 @@
 <mapper namespace="cn.edu.gues.mapper.SubsidizeInfoMapper">
 
     <insert id="insert" parameterType="SubsidizeInfo">
-        insert into t_subsidizesinfo(userId, `key`, value, description, createDateTime) values(#{userId}, #{key}, #{value}, #{description}, now())
+        insert into t_subsidizesinfo(userId, `key`, value, createDateTime) values(#{userId}, #{key}, #{value}, now())
     </insert>
 
     <update id="update" parameterType="SubsidizeInfo">
@@ -11,7 +11,6 @@
             userId=#{userId},
             key=#{key},
             value=#{value},
-            description=#{description},
             isDeleted=#{isDeleted},
             checkStatus=#{checkStatus}
         where id=#{id}
@@ -28,7 +27,6 @@
             <if test="userId!=null"> and userId=#{userId}</if>
             <if test="key!=null"> and `key`=#{key}</if>
             <if test="value!=null"> and `value`=#{value}</if>
-            <if test="description!=null"> and description=#{description}</if>
             <if test="checkStatus!=null"> and checkStatus=#{checkStatus}</if>
             <if test="createDateTime!=null"> and createDateTime=#{createDateTime}</if>
     </select>

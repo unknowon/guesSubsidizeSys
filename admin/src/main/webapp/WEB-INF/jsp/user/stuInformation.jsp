@@ -69,37 +69,37 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuCommunication.do">
+                    <a href="<%=ctxPath%>/User/stuCommunication.do">
                         <i class="fa fa-tty"></i> <span>家庭通讯</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuMember.do">
+                    <a href="<%=ctxPath%>/User/stuMember.do">
                         <i class="fa fa-group"></i> <span>家庭成员</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuEconomic.do">
+                    <a href="<%=ctxPath%>/User/stuEconomic.do">
                         <i class="fa fa-money"></i> <span>家庭经济情况</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuDepartment.do">
+                    <a href="<%=ctxPath%>/User/stuDepartment.do">
                         <i class="fa fa-institution"></i> <span>民政部门信息</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuAttachment.do">
+                    <a href="<%=ctxPath%>/User/stuAttachment.do">
                         <i class="fa fa-image"></i> <span>附件信息</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuStatement.do">
+                    <a href="<%=ctxPath%>/User/stuStatement.do">
                         <i class="fa fa-commenting"></i> <span>申请陈述</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuFamily.do">
+                    <a href="<%=ctxPath%>/User/stuFamily.do">
                         <i class="fa fa-home"></i> <span>家庭简介</span>
                     </a>
                 </li>
@@ -136,7 +136,7 @@
                         TODO：form这里改成这样，action里面就是这个页面的路径
 
                         --%>
-                        <form onsubmit="ajaxSubmitForm(this,true)" action="<%=ctxPath%>/User/stuInformation.do" class="form-horizontal">
+                        <form action="<%=ctxPath%>/User/stuInformation.do" class="form-horizontal" method="post">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="name" class="col-sm-2 control-label">姓名</label>
@@ -179,9 +179,9 @@
                                             TODO：像是单选、复选框、下拉列表这种
                                             在里面加<c:if>标签，也要加name 和 value
                                             --%>
-                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == true}"> checked</c:if> >
+                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == true}"> checked</c:if> value="true">
                                             男
-                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == false}"> checked</c:if> >
+                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == false}"> checked</c:if> value="false">
                                             女
                                         </div>
                                     </div>
@@ -196,11 +196,11 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">政治面貌</label>
                                     <div class="col-sm-3">
-                                        <select class="form-control">
-                                            <option <c:if test="${politicalStatus == '1'}">selected</c:if> name="politicalStatus">共产党员</option>
-                                            <option <c:if test="${politicalStatus == '2'}">selected</c:if> name="politicalStatus">共青团员</option>
-                                            <option <c:if test="${politicalStatus == '3'}">selected</c:if> name="politicalStatus">其它民主党派</option>
-                                            <option <c:if test="${politicalStatus == '0'}">selected</c:if> name="politicalStatus">群众</option>
+                                        <select name="politicalStatus" class="form-control">
+                                            <option value="1" <c:if test="${politicalStatus == '1'}">selected</c:if> >共产党员</option>
+                                            <option value="2" <c:if test="${politicalStatus == '2'}">selected</c:if> >共青团员</option>
+                                            <option value="3" <c:if test="${politicalStatus == '3'}">selected</c:if> >其它民主党派</option>
+                                            <option value="0" <c:if test="${politicalStatus == '0'}">selected</c:if> >群众</option>
                                         </select>
                                     </div>
                                 </div>
@@ -216,21 +216,21 @@
                                         <input type="text" class="form-control" id="idCardNum" name="idCardNum" placeholder="示例：520118XXXXXXXX5617" value="${user.idCardNum}">
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <%--<div class="form-group">
                                     <label for="datepicker" class="col-sm-2 control-label">出生日期</label>
                                     <div class="col-sm-3">
                                         <div class="input-group date">
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <%--
+                                            &lt;%&ndash;
                                             TODO：遇到日期框，要用<fmt:formatDate>标签格式化，格式是yyyy-MM-dd
-                                            --%>
+                                            &ndash;%&gt;
                                             <input type="text" class="form-control pull-right" id="datepicker" name="birthday" value="<fmt:formatDate value="${user.birthday}" pattern="yyyy-MM-dd"/>">
                                         </div>
                                     </div>
                                     <!-- /.input group -->
-                                </div>
+                                </div>--%>
                                 <div class="form-group">
                                     <label for="graduatedSchool" class="col-sm-2 control-label">毕业院校</label>
                                     <div class="col-sm-6">
@@ -253,9 +253,9 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label">家庭住房情况</label>
                                     <div class="col-sm-3">
-                                        <select class="form-control">
-                                            <option <c:if test="${houseStatus == '0'}">selected</c:if> name="houseStatus" >平房</option>
-                                            <option <c:if test="${houseStatus == '1'}">selected</c:if> name="houseStatus" >瓦房</option>
+                                        <select name="houseStatus" class="form-control">
+                                            <option value="0" <c:if test="${houseStatus == '0'}" >selected</c:if> >平房</option>
+                                            <option value="1" <c:if test="${houseStatus == '1'}">selected</c:if> >瓦房</option>
                                         </select>
                                     </div>
                                 </div>
@@ -270,7 +270,8 @@
                             <div class="box-footer">
                                 <div class="col-sm-12">
                                     <%--<button type="button" onclick="window.location.href='<%=ctxPath%>/User/stuInformation.do'" class="btn btn-default col-xs-offset-4">上一步</button>--%>
-                                    <button type="submit" class="btn btn-info col-sm-offset-2">下一步</button>
+                                    <input type="submit" class="btn btn-info col-sm-offset-2" value="下一步"/>
+                                    <span style="color: red;">${message}</span>
                                 </div>
                             </div>
                             <!-- /.box-footer -->

@@ -24,43 +24,49 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">贵州工程应用技术学院资助管理系统</li>
+
+
+                <%--
+                TODO：比如这里，这是基本情况的页面，就把这个li的class设置成active
+                --%>
+
                 <li class="">
                     <a href="<%=ctxPath%>/User/stuInformation.do">
                         <i class="fa fa-dashboard"></i> <span>基本情况</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuCommunication.do">
+                    <a href="<%=ctxPath%>/User/stuCommunication.do">
                         <i class="fa fa-tty"></i> <span>家庭通讯</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuMember.do">
+                    <a href="<%=ctxPath%>/User/stuMember.do">
                         <i class="fa fa-group"></i> <span>家庭成员</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuEconomic.do">
+                    <a href="<%=ctxPath%>/User/stuEconomic.do">
                         <i class="fa fa-money"></i> <span>家庭经济情况</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuDepartment.do">
+                    <a href="<%=ctxPath%>/User/stuDepartment.do">
                         <i class="fa fa-institution"></i> <span>民政部门信息</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuAttachment.do">
+                    <a href="<%=ctxPath%>/User/stuAttachment.do">
                         <i class="fa fa-image"></i> <span>附件信息</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuStatement.do">
+                    <a href="<%=ctxPath%>/User/stuStatement.do">
                         <i class="fa fa-commenting"></i> <span>申请陈述</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="<%=ctxPath%>/stuFamily.do">
+                    <a href="<%=ctxPath%>/User/stuFamily.do">
                         <i class="fa fa-home"></i> <span>家庭简介</span>
                     </a>
                 </li>

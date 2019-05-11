@@ -9,7 +9,6 @@ public class SubsidizeInfo implements Serializable {
     private Long userId;
     private String key;
     private String value;
-    private String description;
     private Boolean isDeleted;
     private Date createDateTime;
     private int checkStatus;
@@ -64,14 +63,6 @@ public class SubsidizeInfo implements Serializable {
 
     public void setValue(String value) {
         this.value = value;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public Boolean getDeleted() {
