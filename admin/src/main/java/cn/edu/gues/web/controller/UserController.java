@@ -1,7 +1,9 @@
 package cn.edu.gues.web.controller;
 
+import cn.edu.gues.pojo.Member;
 import cn.edu.gues.pojo.StuInformation;
 import cn.edu.gues.pojo.User;
+import cn.edu.gues.service.MemberService;
 import cn.edu.gues.service.SubsidizeInfoService;
 import cn.edu.gues.service.UserService;
 import cn.edu.gues.util.AjaxResult;
@@ -17,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -34,6 +37,9 @@ public class UserController {
 
     @Autowired
     private SubsidizeInfoService subsidizeInfoService;
+
+    @Autowired
+    private MemberService memberService;
 
     @RequestMapping(value = "/stuInformation.do", method = RequestMethod.GET)
     public ModelAndView stuInformation(HttpServletRequest request){
@@ -162,6 +168,14 @@ public class UserController {
 
     @RequestMapping(value = "/stuMember.do", method = RequestMethod.GET)
     public ModelAndView stuMember(HttpServletRequest request){
-        return new ModelAndView("user/stuMember");
+        User user = (User) request.getSession().getAttribute("user");
+
+        Member member = new Member();
+        member.setUserId(user.getId());
+
+        List<Member> memberList = memberService.selectList(member);
+
+        return new ModelAndView("user/stuMember", "memberList", memberList);
     }
+
 }

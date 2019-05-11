@@ -10,7 +10,7 @@ public class Member {
     private Long id;
     private Long userId;
     private String name;
-    private int age;
+    private Integer age;
     private String product;
     private String yearIncome;
     private String healthStatus;
@@ -57,11 +57,11 @@ public class Member {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
