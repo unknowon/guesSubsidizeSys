@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -119,7 +120,7 @@
         // instance, using default configuration.
         CKEDITOR.replace('editor1')
         //bootstrap WYSIHTML5 - text editor
-        $('.textarea').wysihtml5()
+        // $('.textarea').wysihtml5()
     })
 </script>
 </body>
