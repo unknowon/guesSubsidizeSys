@@ -178,4 +178,187 @@ public class UserController {
         return new ModelAndView("user/stuMember", "memberList", memberList);
     }
 
+    /**
+     * 家庭经济情况
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/stuEconomic.do", method = RequestMethod.GET)
+    public ModelAndView stuEconomic(HttpServletRequest request){
+
+        // 要注释
+        User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);
+
+        ModelAndView modelAndView = new ModelAndView("user/stuEconomic");
+        User user = (User) request.getSession().getAttribute("user");
+        modelAndView.addObject("user", user);
+        if(user != null) {
+            Long userId = user.getId();
+            modelAndView.addObject("inputIncome", subsidizeInfoService.selectValueByKeyAndUserId("inputIncome", userId));
+            modelAndView.addObject("inputHazard", subsidizeInfoService.selectValueByKeyAndUserId("inputHazard", userId));
+            modelAndView.addObject("inputAccident", subsidizeInfoService.selectValueByKeyAndUserId("inputAccident", userId));
+            modelAndView.addObject("inputLabor", subsidizeInfoService.selectValueByKeyAndUserId("inputLabor", userId));
+            modelAndView.addObject("inputUnemployment", subsidizeInfoService.selectValueByKeyAndUserId("inputUnemployment", userId));
+            modelAndView.addObject("inputDebt", subsidizeInfoService.selectValueByKeyAndUserId("inputDebt", userId));
+            modelAndView.addObject("inputElse", subsidizeInfoService.selectValueByKeyAndUserId("inputElse", userId));
+            modelAndView.addObject("subSidize", subsidizeInfoService.selectValueByKeyAndUserId("subSidize", userId));
+        }
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/stuEconomic.do", method = RequestMethod.POST)
+    public ModelAndView stuEconomicSubmit(HttpServletRequest request, String inputIncome, String inputHazard, String inputAccident, String inputLabor, String inputUnemployment, String inputDebt, String inputElse, String subSidize){
+        User user = (User) request.getSession().getAttribute("user");
+        if(CommonUtils.isEmpty(inputIncome)){
+            return new ModelAndView("user/stuEconomic", "message", "人均收入不能为空");
+        } else if(CommonUtils.isEmpty(inputHazard)){
+            inputHazard = "无";
+        } else if(CommonUtils.isEmpty(inputAccident)){
+            inputAccident = "无";
+        } else if(CommonUtils.isEmpty(inputLabor)){
+            inputLabor = "无";
+        } else if(CommonUtils.isEmpty(inputUnemployment)){
+            inputUnemployment = "无";
+        } else if(CommonUtils.isEmpty(inputDebt)){
+            inputDebt = "无";
+        } else if(CommonUtils.isEmpty(inputElse)){
+            inputElse = "无";
+        } else if(CommonUtils.isEmpty(subSidize)){
+            subSidize = "无";
+        }
+
+        Map<String, String> params = new HashMap<>();
+        params.put("inputIncome", inputIncome);
+        params.put("inputHazard", inputHazard);
+        params.put("inputAccident", inputAccident);
+        params.put("inputLabor", inputLabor);
+        params.put("inputUnemployment", inputUnemployment);
+        params.put("inputDebt", inputDebt);
+        params.put("inputElse", inputElse);
+        params.put("subSidize", subSidize );
+
+        subsidizeInfoService.insertN(user.getId(), params);
+        return new ModelAndView("redirect:/User/stuDepartment.do");
+    }
+
+    /**
+     * 民政部门信息
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/stuDepartment.do", method = RequestMethod.GET)
+    public ModelAndView stuDepartment(HttpServletRequest request){
+
+        // 要注释
+        User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);
+
+        ModelAndView modelAndView = new ModelAndView("user/stuDepartment");
+        User user = (User) request.getSession().getAttribute("user");
+        modelAndView.addObject("user", user);
+        if(user != null) {
+            Long userId = user.getId();
+            modelAndView.addObject("inputPost2", subsidizeInfoService.selectValueByKeyAndUserId("inputPost2", userId));
+            modelAndView.addObject("inputTel3", subsidizeInfoService.selectValueByKeyAndUserId("inputTel3", userId));
+            modelAndView.addObject("inputAdd2", subsidizeInfoService.selectValueByKeyAndUserId("inputAdd2", userId));
+        }
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/stuDepartment.do", method = RequestMethod.POST)
+    public ModelAndView stuDepartmentSubmit(HttpServletRequest request, String inputPost2, String inputTel3, String inputAdd2){
+        User user = (User) request.getSession().getAttribute("user");
+        if(CommonUtils.isEmpty(inputPost2)){
+            return new ModelAndView("user/stuDepartment", "message", "邮政编码不能为空");
+        } else if(CommonUtils.isEmpty(inputTel3)){
+            return new ModelAndView("user/stuDepartment", "message", "电话号码不能为空");
+        } else if(CommonUtils.isEmpty(inputAdd2)){
+            return new ModelAndView("user/stuDepartment", "message", "地址不能为空");
+        }
+
+        Map<String, String> params = new HashMap<>();
+        params.put("inputPost2", inputPost2);
+        params.put("inputTel3", inputTel3);
+        params.put("inputAdd2", inputAdd2);
+
+        subsidizeInfoService.insertN(user.getId(), params);
+        return new ModelAndView("redirect:/User/stuAttachment.do");
+    }
+
+    /**
+     * 申请陈述
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/stuStatement.do", method = RequestMethod.GET)
+    public ModelAndView stuStatement(HttpServletRequest request){
+
+        // 要注释
+        User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);
+
+        ModelAndView modelAndView = new ModelAndView("user/stuStatement");
+        User user = (User) request.getSession().getAttribute("user");
+        modelAndView.addObject("user", user);
+        if(user != null) {
+            Long userId = user.getId();
+            modelAndView.addObject("inputStatement", subsidizeInfoService.selectValueByKeyAndUserId("inputStatement", userId));
+        }
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/stuStatement.do", method = RequestMethod.POST)
+    public ModelAndView stuStatementSubmit(HttpServletRequest request, String inputStatement){
+        User user = (User) request.getSession().getAttribute("user");
+        if(CommonUtils.isEmpty(inputStatement)){
+            return new ModelAndView("user/stuStatement", "message", "申请陈述不能为空");
+        }
+
+        Map<String, String> params = new HashMap<>();
+        params.put("inputStatement", inputStatement);
+
+        subsidizeInfoService.insertN(user.getId(), params);
+        return new ModelAndView("redirect:/User/stuFamily.do");
+    }
+
+    /**
+     * 家庭简介
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/stuFamily.do", method = RequestMethod.GET)
+    public ModelAndView stuFamily(HttpServletRequest request){
+
+        // 要注释
+        User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);
+
+        ModelAndView modelAndView = new ModelAndView("user/stuFamily");
+        User user = (User) request.getSession().getAttribute("user");
+        modelAndView.addObject("user", user);
+        if(user != null) {
+            Long userId = user.getId();
+            modelAndView.addObject("inputFamily", subsidizeInfoService.selectValueByKeyAndUserId("inputFamily", userId));
+        }
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/stuFamily.do", method = RequestMethod.POST)
+    public ModelAndView stuFamilySubmit(HttpServletRequest request, String inputFamily){
+        User user = (User) request.getSession().getAttribute("user");
+        if(CommonUtils.isEmpty(inputFamily)){
+            return new ModelAndView("user/stuFamily", "message", "家庭简介不能为空");
+        }
+
+        Map<String, String> params = new HashMap<>();
+        params.put("inputFamily", inputFamily);
+
+        subsidizeInfoService.insertN(user.getId(), params);
+        return new ModelAndView("redirect:/");
+    }
 }

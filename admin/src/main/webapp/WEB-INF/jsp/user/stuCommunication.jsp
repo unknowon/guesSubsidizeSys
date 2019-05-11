@@ -101,19 +101,19 @@
                                 <div class="form-group">
                                     <label for="inputPost" class="col-sm-2 control-label">邮政编码</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputPost" placeholder="示例：551100" name="inputPost" value="${inputPost}">
+                                        <input type="text" class="form-control" id="inputPost" placeholder="示例：551100" name="inputPost" datatype="n4-6" nullmsg="请填写邮政编号!" errormsg="请填写正确邮政编号！" value="${inputPost}">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputTel2" class="col-sm-2 control-label">家长电话</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputTel2" placeholder="请填写家长联系电话" name="inputTel2" value="${inputTel2}">
+                                        <input type="text" class="form-control" id="inputTel2" placeholder="请填写家长联系电话" name="inputTel2" datatype="m" nullmsg="请填写家长电话!" errormsg="请填写正确电话号码！" value="${inputTel2}">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputAdd" class="col-sm-2 control-label">家庭详细通讯地址</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputAdd" placeholder="请具体至楼门号" name="inputAdd" value="${inputAdd}">
+                                        <input type="text" class="form-control" id="inputAdd" placeholder="请具体至楼门号" name="inputAdd" datatype="*" nullmsg="请填写家庭地址!" value="${inputAdd}">
                                     </div>
                                 </div>
 
@@ -121,31 +121,31 @@
                             <!-- /.box-body -->
                             <div class="box-footer">
                                 <div class="col-sm-12">
-                                <a href="<%=ctxPath%>/User/stuInformation.do">
-                                    <input type="button" class="btn btn-default col-xs-offset-4" value="上一步"/>
-                                </a>
-                                <input type="submit" class="btn btn-info col-sm-offset-2" value="下一步"/>
-                            </div>
+                                    <a href="<%=ctxPath%>/User/stuInformation.do">
+                                        <input type="button" class="btn btn-default col-xs-offset-4" value="上一步"/>
+                                    </a>
+                                    <input type="submit" class="btn btn-info col-sm-offset-2" value="下一步"/>
+                                </div>
                             </div>
                             <!-- /.box-footer -->
                         </form>
                     </div>
                 </div>
-                    <!-- /.box -->
-                    <!-- general form elements disabled -->
+                <!-- /.box -->
+                <!-- general form elements disabled -->
             </div>
             <!-- /.row -->
         </section>
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-<!--    <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 2.4.0
-        </div>
-        <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-        reserved.
-    </footer>-->
+    <!--    <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.4.0
+            </div>
+            <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+            reserved.
+        </footer>-->
 
 
 
