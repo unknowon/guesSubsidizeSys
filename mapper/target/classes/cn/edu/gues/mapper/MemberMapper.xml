@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.MemberMapper">
+
+    <insert id="insert" parameterType="Member">
+        insert into t_members(userId, name, age, product, yearIncome, healthStatus, employer, memberStatus)
+        values(#{userId},#{name},#{age},#{product},#{yearIncome},#{healthStatus},#{employer},#{memberStatus})
+    </insert>
+
+    <update id="update" parameterType="Member">
+        update t_members set
+                             userId=#{userId},
+                             name=#{name},
+                             age=#{age},
+                             product=#{product},
+                             yearIncome=#{yearIncome},
+                             healthStatus=#{healthStatus},
+                             employer=#{employer},
+                             memberStatus=#{memberStatus}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        delete from t_members where id=#{id}
+    </delete>
+
+    <select id="select" parameterType="Member" resultType="Member">
+        select * from t_members
+        <where>
+            <if test="id!=null"> and id=#{id}</if>
+            <if test="userId!=null"> and userId=#{userId}</if>
+            <if test="name!=null"> and name=#{name}</if>
+            <if test="age!=null"> and age=#{age}</if>
+            <if test="product!=null"> and product=#{product}</if>
+            <if test="yearIncome!=null"> and yearIncome=#{yearIncome}</if>
+            <if test="healthStatus!=null"> and healthStatus=#{healthStatus}</if>
+            <if test="employer!=null"> and employer=#{employer}</if>
+            <if test="memberStatus!=null"> and memberStatus=#{memberStatus}</if>
+        </where>
+
+    </select>
+</mapper>

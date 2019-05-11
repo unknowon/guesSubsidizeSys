@@ -166,7 +166,7 @@
 
 
                                         --%>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="示例：王三" value="${user.name }">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="示例：王三" datatype="*" nullmsg="请输入姓名" value="${user.name }">
                                     </div>
                                 </div>
                                 <!-- radio -->
@@ -189,7 +189,7 @@
                                 <div class="form-group">
                                     <label for="nationality" class="col-sm-2 control-label">民族</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="nationality" name="nationality" placeholder="示例：汉族" value="${nationality}">
+                                        <input type="text" class="form-control" id="nationality" name="nationality" placeholder="示例：汉族" datatype="*" nullmsg="请填写民族!" value="${nationality}">
                                     </div>
                                 </div>
                                 <!-- select -->
@@ -207,13 +207,13 @@
                                 <div class="form-group">
                                     <label for="beforeResidency" class="col-sm-2 control-label">入学前户口</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="beforeResidency" name="beforeResidency" placeholder="示例：贵州省毕节市" value="${beforeResidency}">
+                                        <input type="text" class="form-control" id="beforeResidency" name="beforeResidency" placeholder="示例：贵州省毕节市" datatype="*" nullmsg="请填写户口!" value="${beforeResidency}">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="idCardNum" class="col-sm-2 control-label">身份证号码</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="idCardNum" name="idCardNum" placeholder="示例：520118XXXXXXXX5617" value="${user.idCardNum}">
+                                        <input type="text" class="form-control" id="idCardNum" name="idCardNum" placeholder="示例：520118XXXXXXXX5617" datatype="n16-18" nullmsg="请填写身份证号!" errormsg="填写正确的身份证号！" value="${user.idCardNum}">
                                     </div>
                                 </div>
                                 <%--<div class="form-group">
@@ -234,19 +234,19 @@
                                 <div class="form-group">
                                     <label for="graduatedSchool" class="col-sm-2 control-label">毕业院校</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="graduatedSchool" name="graduatedSchool" placeholder="示例：毕节一中" value="${graduatedSchool}">
+                                        <input type="text" class="form-control" id="graduatedSchool" name="graduatedSchool" placeholder="示例：毕节一中" datatype="*" nullmsg="请填写毕业学校!" value="${graduatedSchool}">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="totalNumOfFamily" class="col-sm-2 control-label">家庭人数</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="totalNumOfFamily" name="totalNumOfFamily" placeholder="请填写家庭总人数" value="${totalNumOfFamily}">
+                                        <input type="text" class="form-control" id="totalNumOfFamily" name="totalNumOfFamily" placeholder="请填写家庭总人数" datatype="n" nullmsg="请填写家庭人数!" errormsg="请使用阿拉伯数字！" value="${totalNumOfFamily}">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone" class="col-sm-2 control-label">个人电话</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="请填写个人在校联系电话" value="${user.phone}">
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="请填写个人在校联系电话" datatype="m" nullmsg="请填写个人电话!" errormsg="请填写正确电话号码！" value="${user.phone}">
                                     </div>
                                 </div>
                                 <!-- select -->
