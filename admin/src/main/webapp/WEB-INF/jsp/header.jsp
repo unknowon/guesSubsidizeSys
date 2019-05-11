@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/Ionicons/css/ionicons.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="<%=ctxPath%>/dist/css/AdminLTE.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="<%=ctxPath%>/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 <!-- iCheck -->
 <link rel="stylesheet" href="<%=ctxPath%>/plugins/iCheck/square/blue.css">
 <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -26,6 +28,8 @@ folder instead of downloading all of them to reduce the load. -->
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 <!-- Daterange picker -->
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+<!-- bootstrap datepicker -->
+<link rel="stylesheet" href="<%=ctxPath%>/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 <!-- bootstrap wysihtml5 - text editor -->
 <link rel="stylesheet" href="<%=ctxPath%>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,6 +47,8 @@ folder instead of downloading all of them to reduce the load. -->
 
 <!-- jQuery 3 -->
 <script src="<%=ctxPath%>/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- validForm -->
+<script src="<%=ctxPath%>/bower_components/Validform/5.3.2/Validform.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<%=ctxPath%>/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -51,11 +57,29 @@ folder instead of downloading all of them to reduce the load. -->
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="<%=ctxPath%>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="<%=ctxPath%>/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<%=ctxPath%>/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <script src="<%=ctxPath%>/bower_components/raphael/raphael.min.js"></script>
 <script src="<%=ctxPath%>/bower_components/morris.js/morris.min.js"></script>
 <!-- Sparkline -->
 <script src="<%=ctxPath%>/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- Select2 -->
+<script src="<%=ctxPath%>/bower_components/select2/dist/js/select2.full.min.js"></script>
+<!-- InputMask -->
+<script src="<%=ctxPath%>/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="<%=ctxPath%>/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="<%=ctxPath%>/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<!-- date-range-picker -->
+<script src="<%=ctxPath%>/bower_components/moment/min/moment.min.js"></script>
+<script src="<%=ctxPath%>/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap datepicker -->
+<script src="<%=ctxPath%>/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- bootstrap color picker -->
+<script src="<%=ctxPath%>/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<!-- bootstrap time picker -->
+<script src="<%=ctxPath%>/plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- jvectormap -->
 <script src="<%=ctxPath%>/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
 <script src="<%=ctxPath%>/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
@@ -78,3 +102,5 @@ folder instead of downloading all of them to reduce the load. -->
 <script src="<%=ctxPath%>/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<%=ctxPath%>/dist/js/demo.js"></script>
+<!-- CK Editor -->
+<script src="../../bower_components/ckeditor/ckeditor.js"></script>
