@@ -6,19 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="改变了前端页面">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuAttachment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuAttachment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuEconomic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuEconomic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuFamily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuFamily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuStatement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuStatement.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuAttachment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuAttachment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuEconomic.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuEconomic.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuFamily.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuFamily.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuStatement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/user/stuStatement.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="改变了前端页面" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -76,6 +64,7 @@
     <session id="-1363139294">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -156,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="324" column="45" lean-forward="true" selection-start-line="324" selection-start-column="45" selection-end-line="324" selection-end-column="45" />
+            <state relative-caret-position="356">
+              <caret line="340" column="34" lean-forward="true" selection-start-line="340" selection-start-column="34" selection-end-line="340" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -342,9 +331,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="755" />
-    <option name="y" value="6" />
+    <option name="y" value="5" />
     <option name="width" value="1100" />
-    <option name="height" value="1029" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -492,7 +481,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -622,7 +611,7 @@
       <workItem from="1557147812192" duration="9712000" />
       <workItem from="1557313844157" duration="13054000" />
       <workItem from="1557388807926" duration="33706000" />
-      <workItem from="1557576848624" duration="5265000" />
+      <workItem from="1557576848624" duration="6205000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -656,11 +645,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91145000" />
+    <option name="totallyTimeSpent" value="92085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989796" visible="true" weight="0.27479893" />
       <window_info id="Designer" order="1" />
@@ -1085,8 +1073,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="324" column="45" lean-forward="true" selection-start-line="324" selection-start-column="45" selection-end-line="324" selection-end-column="45" />
+        <state relative-caret-position="356">
+          <caret line="340" column="34" lean-forward="true" selection-start-line="340" selection-start-column="34" selection-end-line="340" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
