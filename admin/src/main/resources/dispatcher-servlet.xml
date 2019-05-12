@@ -95,6 +95,8 @@
 	<mvc:resources location="/dist/" mapping="/dist/**" />
 	<mvc:resources location="/documentation/" mapping="/documentation/**" />
 	<mvc:resources location="/plugins/" mapping="/plugins/**" />
+	<mvc:resources location="/static/" mapping="/static/**" />
+
 
  
 </beans>

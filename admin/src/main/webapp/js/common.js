@@ -21,14 +21,17 @@ function showLayer(title, url, width, height) {
 function ajaxSubmitForm(form, isReloadParent) {
 
     $.post(form.action, $(form).serialize(), function(ajaxResult) {
-        alert(ajaxResult.data);
+        /*alert(ajaxResult.data);*/
         if (ajaxResult.status == 'success') {
             if (isReloadParent) {
                 parent.location.reload();
             } else {
                 location.reload();
             }
+        } else{
+            alert(ajaxResult.data);
         }
+
     }, 'json');
     event.preventDefault();
 }

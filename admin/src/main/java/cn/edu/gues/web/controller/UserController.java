@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -176,6 +177,45 @@ public class UserController {
         List<Member> memberList = memberService.selectList(member);
 
         return new ModelAndView("user/stuMember", "memberList", memberList);
+    }
+
+    @RequestMapping(value = "/stuMemberAdd.do", method = RequestMethod.GET)
+    public ModelAndView stuMemberAdd(){
+        return new ModelAndView("user/stuMemberAdd");
+    }
+
+    @RequestMapping(value = "/stuMemberAdd.do", method = RequestMethod.POST)
+    public @ResponseBody AjaxResult stuMemberAddSubmit(Member member, HttpServletRequest request){
+        if(CommonUtils.isEmpty(member.getName())){
+            return AjaxResult.errorInstance("姓名必填");
+        } else if(member.getAge() == null){
+            return AjaxResult.errorInstance("年龄必填");
+        } else if(CommonUtils.isEmpty(member.getProduct())){
+            return AjaxResult.errorInstance("职业必填");
+        } else if(CommonUtils.isEmpty(member.getYearIncome())){
+            return AjaxResult.errorInstance("年收入必填");
+        } else if(CommonUtils.isEmpty(member.getHealthStatus())){
+            return AjaxResult.errorInstance("健康情况必填");
+        } else if(CommonUtils.isEmpty(member.getEmployer())){
+            member.setEmployer("无");
+        } else if(CommonUtils.isEmpty(member.getMemberStatus())){
+            return AjaxResult.errorInstance("成员情况必填");
+        }
+
+        User user = (User) request.getSession().getAttribute("user");
+        member.setUserId(user.getId());
+        memberService.insert(member);
+
+        return AjaxResult.successInstance("添加成功");
+    }
+
+    @RequestMapping(value = "/stuMemberDel.do", method = RequestMethod.POST)
+    public @ResponseBody AjaxResult stuMemberDel(Long id, HttpServletRequest request){
+        if(id == null){
+            return AjaxResult.errorInstance("删除失败");
+        }
+        memberService.delete(id);
+        return AjaxResult.successInstance("删除成功");
     }
 
     /**

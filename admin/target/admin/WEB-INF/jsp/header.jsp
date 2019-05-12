@@ -47,10 +47,26 @@ folder instead of downloading all of them to reduce the load. -->
 
 <!-- jQuery 3 -->
 <script src="<%=ctxPath%>/bower_components/jquery/dist/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="<%=ctxPath%>/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="<%=ctxPath%>/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+
 <!-- validForm -->
-<script src="<%=ctxPath%>/bower_components/Validform/5.3.2/Validform.min.js"></script>
+<script src="<%=ctxPath%>/lib/Validform/5.3.2/Validform.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<%=ctxPath%>/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" src="<%=ctxPath%>/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="<%=ctxPath%>/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="<%=ctxPath%>/static/h-ui.admin/js/H-ui.admin.js"></script>
+
+
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge('uibutton', $.ui.button);
@@ -103,4 +119,6 @@ folder instead of downloading all of them to reduce the load. -->
 <!-- AdminLTE for demo purposes -->
 <script src="<%=ctxPath%>/dist/js/demo.js"></script>
 <!-- CK Editor -->
-<script src="../../bower_components/ckeditor/ckeditor.js"></script>
+<script src="<%=ctxPath%>/bower_components/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="<%=ctxPath%>/js/common.js"></script>
+
