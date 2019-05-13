@@ -38,6 +38,11 @@
                     <img src="<%=ctxPath %>/imageCode.do?t=<%=new Date().getTime() %>" onclick="this.src='<%=ctxPath %>/imageCode.do?t='+new Date().getTime()" />
                 </div>
             </div>
+            <div class="row form-group has-feedback">
+                <div class="col-xs-12">
+                    <span style="color: red;">${message }</span>
+                </div>
+            </div>
             <div class="row">
                 <%--<div class="col-xs-8">
                     <div class="checkbox icheck">
@@ -72,7 +77,7 @@
 <!-- /.login-box -->
 
 <!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
+<script src="<%=ctxPath%>/plugins/iCheck/icheck.min.js"></script>
 <script>
     $(function () {
         $('input').iCheck({

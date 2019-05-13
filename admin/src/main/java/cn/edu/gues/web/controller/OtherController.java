@@ -50,17 +50,17 @@ public class OtherController {
         return new ModelAndView("redirect:/login.do");
     }
 
-    @RequestMapping(value = "login.do", method = RequestMethod.GET)
+    @RequestMapping(value = "/login.do", method = RequestMethod.GET)
     public ModelAndView login(){
         return new ModelAndView("login");
     }
 
-    @RequestMapping(value = "login.do", method = RequestMethod.POST)
+    @RequestMapping(value = "/login.do", method = RequestMethod.POST)
     public ModelAndView loginSubmit(String account, String password, String imageCode, HttpServletRequest request){
         // TODO:数据校验
 
         if(!ImageCodeUtils.checkImageCode(request.getSession(), imageCode)){
-            return new ModelAndView("adminUser/login", "message","验证码不正确");
+            return new ModelAndView("login", "message","验证码不正确");
         }
         AdminUser adminUser = adminUserService.login(account, password);
         if(adminUser != null){
@@ -70,7 +70,7 @@ public class OtherController {
         if(user != null){
             request.getSession().setAttribute("user", user);
         } else if(adminUser == null && user==null){
-            return new ModelAndView("adminUser/login", "message","账号或密码错误");
+            return new ModelAndView("login", "message","账号或密码错误");
         }
         return new ModelAndView("redirect:/");
     }
