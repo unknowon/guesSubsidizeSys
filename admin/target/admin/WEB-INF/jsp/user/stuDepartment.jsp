@@ -95,24 +95,27 @@
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
-                        <form onsubmit="ajaxSubmitForm(this,true)" action="<%=ctxPath%>/User/stuDepartment.do" class="form-horizontal">
+                        <form id="formSubmit" action="<%=ctxPath%>/User/stuDepartment.do" class="form-horizontal" method="post">
                             <div class="box-body">
                                 <div class="form-group">
                                     <label for="inputPost2" class="col-sm-2 control-label">邮政编码</label>
                                     <div class="col-sm-6">
                                         <input type="text" name="inputPost2" class="form-control" id="inputPost2" placeholder="请填写部门所在地邮政编码" datatype="n4-6" nullmsg="请填写邮政编号!" errormsg="请填写正确邮政编号！" value="${inputPost2}">
+                                        <div class="Validform_checktip"></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputTel3" class="col-sm-2 control-label">联系电话</label>
                                     <div class="col-sm-6">
                                         <input type="text" name="inputTel3" class="form-control" id="inputTel3" placeholder="请填写部门联系电话" datatype="m" nullmsg="请填写联系电话!" errormsg="请填写正确电话号码！" value="${inputTel3}">
+                                        <div class="Validform_checktip"></div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputAdd2" class="col-sm-2 control-label">民政部分地址</label>
                                     <div class="col-sm-6">
                                         <input type="text" name="inputAdd2" class="form-control" id="inputAdd2" placeholder="请填写部门地址" datatype="*" nullmsg="请填写家庭地址!" value="${inputAdd2}">
+                                        <div class="Validform_checktip"></div>
                                     </div>
                                 </div>
 
@@ -120,7 +123,9 @@
                             <!-- /.box-body -->
                             <div class="box-footer">
                                 <div class="col-sm-12">
-                                    <button type="submit" class="btn btn-default col-xs-offset-4">上一步</button>
+                                    <a href="<%=ctxPath%>/User/stuEconomic.do">
+                                        <input type="button" class="btn btn-default col-xs-offset-4" value="上一步"/>
+                                    </a>
                                     <button type="submit" class="btn btn-info col-sm-offset-2">下一步</button>
                                 </div>
                             </div>
@@ -157,6 +162,25 @@
             showInputs: false
         })
     })
+
+    //$("#formSubmit").Validform();
+
+    $("#formSubmit").Validform({
+        tiptype:function(msg,o,cssctl){
+            //msg：提示信息;
+            //o:{obj:*,type:*,curform:*}, obj指向的是当前验证的表单元素（或表单对象），type指示提示的状态，值为1、2、3、4， 1：正在检测/提交数据，2：通过验证，3：验证失败，4：提示ignore状态, curform为当前form对象;
+            //cssctl:内置的提示信息样式控制函数，该函数需传入两个参数：显示提示信息的对象 和 当前提示的状态（既形参o中的type）;
+            if(!o.obj.is("form")){//验证表单元素时o.obj为该表单元素，全部验证通过提交表单时o.obj为该表单对象;
+                var objtip=o.obj.siblings(".Validform_checktip");
+                cssctl(objtip,o.type);
+                objtip.text(msg);
+            }else{
+                var objtip=o.obj.find("#msgdemo");
+                cssctl(objtip,o.type);
+                objtip.text(msg);
+            }
+        },
+    });
 </script>
 </body>
 </html>

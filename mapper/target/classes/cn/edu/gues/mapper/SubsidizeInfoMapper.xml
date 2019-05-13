@@ -17,7 +17,7 @@
     </update>
 
     <delete id="delete" parameterType="long">
-        update t_subsidizesinfo set isDeleted=true where id=#{id}
+        delete from t_subsidizesinfo where id=#{id}
     </delete>
 
     <select id="select" parameterType="SubsidizeInfo" resultType="SubsidizeInfo">

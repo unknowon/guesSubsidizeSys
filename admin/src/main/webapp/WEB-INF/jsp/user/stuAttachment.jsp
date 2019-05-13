@@ -95,28 +95,41 @@
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                  <th>序号</th>
+                  <%--<th>序号</th>--%>
                   <th>文件名</th>
                   <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>
-                    <div>
-                      <input type="file" id="exampleInputFile">
-                    </div>
-                  </td>
-                  <td>删除</td>
-                </tr>
+
+                <c:forEach items="${attachmentList}" var="attachment">
+                  <tr>
+                    <td>
+                      <%--<div>
+                        <input type="file" id="exampleInputFile">
+                      </div>--%>
+                      <a href="<%=ctxPath%>/${attachment.path}">
+                        ${attachment.name}
+                      </a>
+                    </td>
+                    <td>
+                      <a title="删除" href="javascript:;" onclick="attachment_del(this,'${attachment.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    </td>
+                  </tr>
+                </c:forEach>
+
+
                 </tbody>
               </table>
             </div>
             <div class="box-footer">
               <div class="col-sm-12">
-                <button type="submit" class="btn btn-default col-xs-offset-4">上一步</button>
-                <button type="submit" class="btn btn-info col-sm-offset-2">下一步</button>
+                <a href="<%=ctxPath%>/User/stuDepartment.do">
+                  <input type="button" class="btn btn-default col-xs-offset-4" value="上一步">
+                </a>
+                <a href="<%=ctxPath%>/User/stuStatement.do">
+                  <input type="button" class="btn btn-info col-sm-offset-2" value="下一步">
+                </a>
               </div>
             </div>
             <!-- /.box-body -->
@@ -131,13 +144,13 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <%--<footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
     </div>
     <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
     reserved.
-  </footer>
+  </footer>--%>
 
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
@@ -158,6 +171,25 @@
       'autoWidth'   : false
     })
   })
+
+  function attachment_del(obj,id){
+    layer.confirm('确认要删除吗？',function(index){
+      $.ajax({
+        url:"<%=ctxPath%>/User/stuMemberDel.do",type:"post",
+        data:{id:id},
+        success:function(obj) {
+          if(obj.status=="success") {
+            layer.msg('已删除!',{icon:1,time:1000});
+            location.reload();
+          }
+          else {
+            alert("删除失败");
+          }
+        },
+        error:function(){alert("删除处理失败");}
+      })
+    });
+  }
 </script>
 </body>
 </html>

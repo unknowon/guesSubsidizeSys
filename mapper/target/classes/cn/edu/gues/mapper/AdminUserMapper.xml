@@ -25,7 +25,7 @@
         select * from t_adminusers
         where isDeleted=false
         <if test="id!=null"> and id=#{id} </if>
-        <if test="wordId!=null"> and workId=#{workId} </if>
+        <if test="workId!=null"> and workId=#{workId} </if>
         <if test="name!=null"> and name=#{name} </if>
         <if test="phone!=null"> and phone=#{phone} </if>
         <if test="isChecked!=null"> and isChecked=#{isChecked} </if>

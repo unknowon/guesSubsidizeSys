@@ -106,8 +106,8 @@ folder instead of downloading all of them to reduce the load. -->
 <script src="<%=ctxPath%>/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
 <script src="<%=ctxPath%>/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="<%=ctxPath%>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<%--<!-- Bootstrap WYSIHTML5 -->
+<script src="<%=ctxPath%>/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>--%>
 <!-- Slimscroll -->
 <script src="<%=ctxPath%>/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->

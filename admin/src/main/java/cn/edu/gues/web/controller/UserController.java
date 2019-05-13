@@ -1,8 +1,10 @@
 package cn.edu.gues.web.controller;
 
+import cn.edu.gues.pojo.Attachment;
 import cn.edu.gues.pojo.Member;
 import cn.edu.gues.pojo.StuInformation;
 import cn.edu.gues.pojo.User;
+import cn.edu.gues.service.AttachmentService;
 import cn.edu.gues.service.MemberService;
 import cn.edu.gues.service.SubsidizeInfoService;
 import cn.edu.gues.service.UserService;
@@ -18,10 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * UserController
@@ -42,6 +41,14 @@ public class UserController {
     @Autowired
     private MemberService memberService;
 
+    @Autowired
+    private AttachmentService attachmentService;
+
+    /**
+     * 基本信息
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/stuInformation.do", method = RequestMethod.GET)
     public ModelAndView stuInformation(HttpServletRequest request){
 
@@ -128,11 +135,16 @@ public class UserController {
         return new ModelAndView("redirect:/User/stuCommunication.do");
     }
 
+    /**
+     * 家庭通讯
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/stuCommunication.do", method = RequestMethod.GET)
     public ModelAndView stuCommunication(HttpServletRequest request){
 
-        User userSession = userService.selectOne(2L);
-        request.getSession().setAttribute("user", userSession);
+        /*User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);*/
 
         ModelAndView modelAndView = new ModelAndView("user/stuCommunication");
         User user = (User) request.getSession().getAttribute("user");
@@ -167,6 +179,11 @@ public class UserController {
         return new ModelAndView("redirect:/User/stuMember.do");
     }
 
+    /**
+     * 家庭成员信息
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/stuMember.do", method = RequestMethod.GET)
     public ModelAndView stuMember(HttpServletRequest request){
         User user = (User) request.getSession().getAttribute("user");
@@ -218,6 +235,9 @@ public class UserController {
         return AjaxResult.successInstance("删除成功");
     }
 
+
+
+
     /**
      * 家庭经济情况
      * @param request
@@ -227,8 +247,8 @@ public class UserController {
     public ModelAndView stuEconomic(HttpServletRequest request){
 
         // 要注释
-        User userSession = userService.selectOne(2L);
-        request.getSession().setAttribute("user", userSession);
+       /* User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);*/
 
         ModelAndView modelAndView = new ModelAndView("user/stuEconomic");
         User user = (User) request.getSession().getAttribute("user");
@@ -292,8 +312,8 @@ public class UserController {
     public ModelAndView stuDepartment(HttpServletRequest request){
 
         // 要注释
-        User userSession = userService.selectOne(2L);
-        request.getSession().setAttribute("user", userSession);
+        /*User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);*/
 
         ModelAndView modelAndView = new ModelAndView("user/stuDepartment");
         User user = (User) request.getSession().getAttribute("user");
@@ -337,8 +357,8 @@ public class UserController {
     public ModelAndView stuStatement(HttpServletRequest request){
 
         // 要注释
-        User userSession = userService.selectOne(2L);
-        request.getSession().setAttribute("user", userSession);
+        /*User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);*/
 
         ModelAndView modelAndView = new ModelAndView("user/stuStatement");
         User user = (User) request.getSession().getAttribute("user");
@@ -374,8 +394,8 @@ public class UserController {
     public ModelAndView stuFamily(HttpServletRequest request){
 
         // 要注释
-        User userSession = userService.selectOne(2L);
-        request.getSession().setAttribute("user", userSession);
+        /*User userSession = userService.selectOne(2L);
+        request.getSession().setAttribute("user", userSession);*/
 
         ModelAndView modelAndView = new ModelAndView("user/stuFamily");
         User user = (User) request.getSession().getAttribute("user");
@@ -400,5 +420,26 @@ public class UserController {
 
         subsidizeInfoService.insertN(user.getId(), params);
         return new ModelAndView("redirect:/");
+    }
+
+    /**
+     * 附件信息
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/stuAttachment.do", method = RequestMethod.GET)
+    public ModelAndView stuAttachment(HttpServletRequest request){
+
+        User user = (User) request.getSession().getAttribute("user");
+
+        Attachment attachment = new Attachment();
+        attachment.setUserId(user.getId());
+
+        List<Attachment> attachmentList = attachmentService.selectList(attachment);
+
+        ModelAndView modelAndView = new ModelAndView("user/stuAttachment");
+        modelAndView.addObject("attachmentList", attachmentList);
+
+        return modelAndView;
     }
 }

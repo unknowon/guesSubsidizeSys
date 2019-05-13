@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.gues.mapper.AttachmentMapper">
+
+    <insert id="insert" parameterType="Attachment">
+        insert into t_attachments(userId, name, path) values(#{userId}, #{name}, #{path})
+    </insert>
+
+    <update id="update" parameterType="Attachment">
+        update t_attachments set
+            userId = #{userId},
+            name=#{name},
+            path=#{path}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        delete from t_attachments where id=#{id}
+    </delete>
+
+    <select id="select" parameterType="Attachment" resultType="Attachment">
+        select * from t_attachments
+        <where>
+            <if test="id!=null"> and id=#{id}</if>
+            <if test="userId!=null"> and userId=#{userId}</if>
+            <if test="name!=null"> and name=#{name}</if>
+            <if test="path!=null"> and path=#{path}</if>
+        </where>
+    </select>
+
+</mapper>
