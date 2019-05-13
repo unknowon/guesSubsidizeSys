@@ -93,7 +93,6 @@
                 <textarea class="textarea"  name="inputStatement" id="inputStatement" placeholder="请于此处表述（150字内）..." datatype="*10-150" nullmsg="请填写陈述!" errormsg="字数在10-150以内！"
                           style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">${inputStatement}</textarea>
                 <div class="Validform_checktip"></div>
-
             </div>
             <div class="box-footer">
               <div class="col-sm-12">

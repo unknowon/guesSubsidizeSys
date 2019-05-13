@@ -4,7 +4,7 @@
 
 <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="<%=ctxPath%>/" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b></b>资助</span>
         <!-- logo for regular state and mobile devices -->
@@ -75,7 +75,7 @@
                 <!-- 个人信息 -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="hidden-xs">王小二</span>
+                        <span class="hidden-xs">${requestScope.get("user").name}</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->

@@ -273,19 +273,26 @@ public class UserController {
         User user = (User) request.getSession().getAttribute("user");
         if(CommonUtils.isEmpty(inputIncome)){
             return new ModelAndView("user/stuEconomic", "message", "人均收入不能为空");
-        } else if(CommonUtils.isEmpty(inputHazard)){
+        }
+        if(CommonUtils.isEmpty(inputHazard)){
             inputHazard = "无";
-        } else if(CommonUtils.isEmpty(inputAccident)){
+        }
+        if(CommonUtils.isEmpty(inputAccident)){
             inputAccident = "无";
-        } else if(CommonUtils.isEmpty(inputLabor)){
+        }
+        if(CommonUtils.isEmpty(inputLabor)){
             inputLabor = "无";
-        } else if(CommonUtils.isEmpty(inputUnemployment)){
+        }
+        if(CommonUtils.isEmpty(inputUnemployment)){
             inputUnemployment = "无";
-        } else if(CommonUtils.isEmpty(inputDebt)){
+        }
+        if(CommonUtils.isEmpty(inputDebt)){
             inputDebt = "无";
-        } else if(CommonUtils.isEmpty(inputElse)){
+        }
+        if(CommonUtils.isEmpty(inputElse)){
             inputElse = "无";
-        } else if(CommonUtils.isEmpty(subSidize)){
+        }
+        if(CommonUtils.isEmpty(subSidize)){
             subSidize = "无";
         }
 
@@ -442,4 +449,13 @@ public class UserController {
 
         return modelAndView;
     }
+
+    @RequestMapping(value = "/stuAttachmentAdd.do", method = RequestMethod.GET)
+    public ModelAndView stuAttachmentAdd(HttpServletRequest request){
+
+        return new ModelAndView("user/stuAttachmentAdd");
+    }
+
+
+
 }
