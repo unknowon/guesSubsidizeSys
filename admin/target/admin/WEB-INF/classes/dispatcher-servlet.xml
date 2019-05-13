@@ -47,25 +47,19 @@
 	</bean>
 
 	<!--配置拦截器-->
-	<!--<mvc:interceptors>
+	<mvc:interceptors>
 
-		&lt;!&ndash; 保持在线 &ndash;&gt;
+		<!-- 保持在线 -->
 		<mvc:interceptor>
 			<mvc:mapping path="/"/>
-			<mvc:mapping path="/subject/*"/>
-			<mvc:mapping path="/card/*"/>
-			<mvc:mapping path="/user/*"/>
-			<mvc:mapping path="/classes/*"/>
-			<mvc:mapping path="/permission/*"/>
-			<mvc:mapping path="/role/*"/>
-			<mvc:mapping path="/adminUser/*"/>
-			<mvc:mapping path="/rolePermission/*"/>
-			<mvc:exclude-mapping path="/adminUser/login.do"/>
+			<mvc:mapping path="/*"/>
+			<mvc:mapping path="/User/*"/>
+			<mvc:exclude-mapping path="/login.do"/>
 			<bean class="cn.edu.gues.web.interceptor.KeepOnlineInterceptor"></bean>
 		</mvc:interceptor>
 
-		&lt;!&ndash; 权限检查 &ndash;&gt;
-		<mvc:interceptor>
+		<!-- 权限检查 -->
+		<!--<mvc:interceptor>
 			<mvc:mapping path="/subject/*"/>
 			<mvc:mapping path="/card/*"/>
 			<mvc:mapping path="/user/*"/>
@@ -80,9 +74,9 @@
 
 
 			<bean class="cn.wsichao.web.interceptor.PermissionInterceptor"></bean>
-		</mvc:interceptor>
+		</mvc:interceptor>-->
 
-	</mvc:interceptors>-->
+	</mvc:interceptors>
 
 	<!-- 资源映射 -->
 	<mvc:resources location="/css/" mapping="/css/**" />
@@ -95,6 +89,8 @@
 	<mvc:resources location="/dist/" mapping="/dist/**" />
 	<mvc:resources location="/documentation/" mapping="/documentation/**" />
 	<mvc:resources location="/plugins/" mapping="/plugins/**" />
+	<mvc:resources location="/static/" mapping="/static/**" />
+
 
  
 </beans>

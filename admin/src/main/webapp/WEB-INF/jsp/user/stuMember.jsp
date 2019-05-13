@@ -84,7 +84,8 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="col-sm-12">
-                  <button type="submit" class="btn btn-info pull-left">+增加成员</button>
+              <button type="button" class="btn btn-info pull-left" href="javascript:;" onclick="member_add('增加成员','<%=ctxPath%>/User/stuMemberAdd.do','500','700')">+增加成员</button>
+
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -111,7 +112,9 @@
                     <td>${member.healthStatus}</td>
                     <td>${member.employer}</td>
                     <td>${member.memberStatus}</td>
-                    <td>删除</td>
+                    <td>
+                      <a title="删除" href="javascript:;" onclick="member_del(this,'${member.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    </td>
                   </tr>
                 </c:forEach>
 
@@ -131,8 +134,8 @@
             </div>
             <div class="box-footer">
               <div class="col-sm-12">
-                <button type="submit" class="btn btn-default col-xs-offset-4">上一步</button>
-                <button type="submit" class="btn btn-info col-sm-offset-2">下一步</button>
+                <a href="<%=ctxPath%>/User/stuCommunication.do"><input type="button" class="btn btn-default col-xs-offset-4" value="上一步"/></a>
+                <a href="<%=ctxPath%>/User/stuEconomic.do"><input type="button" class="btn btn-info col-sm-offset-2" value="下一步"/></a>
               </div>
             </div>
             <!-- /.box-body -->
@@ -173,15 +176,15 @@
     })
   })
   /*删除*/
-  function admin_del(obj,id){
+  function member_del(obj,id){
     layer.confirm('确认要删除吗？',function(index){
       $.ajax({
-        url:"<%=ctxPath%>/Studio",type:"post",
-        data:{action:"delete",mainid:id},
+        url:"<%=ctxPath%>/User/stuMemberDel.do",type:"post",
+        data:{id:id},
         success:function(obj) {
-          if(obj.status=="ok") {
-            $(link).parents("tr").remove();
+          if(obj.status=="success") {
             layer.msg('已删除!',{icon:1,time:1000});
+            location.reload();
           }
           else {
             alert("删除失败");
@@ -192,8 +195,10 @@
     });
   }
 
+
+
   /*新增*/
-  function admin_add(title,url,w,h){
+  function member_add(title,url,w,h){
     layer_show(title,url,w,h);
   }
 </script>
