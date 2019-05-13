@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/font-awesome/css/font-awesome.min.css">
 <!-- Ionicons -->
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/Ionicons/css/ionicons.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="<%=ctxPath%>/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="<%=ctxPath%>/dist/css/AdminLTE.min.css">
 <!-- iCheck -->
@@ -51,6 +53,9 @@ folder instead of downloading all of them to reduce the load. -->
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="<%=ctxPath%>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="<%=ctxPath%>/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<%=ctxPath%>/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <script src="<%=ctxPath%>/bower_components/raphael/raphael.min.js"></script>
 <script src="<%=ctxPath%>/bower_components/morris.js/morris.min.js"></script>
