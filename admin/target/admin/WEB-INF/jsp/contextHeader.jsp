@@ -79,22 +79,21 @@
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
-                        <li class="user-header">
+                        <li class="user-header" style="height: 75px;">
                             <p>
-                                王小二
-                                <small>系统管理员</small>
+                                ${requestScope.get("user").name}
                             </p>
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
-                            <div class="pull-left">
+                            <%--<div class="pull-left">
                                 <a href="#" class="btn btn-default btn-flat">个人信息</a>
+                            </div>--%>
+                            <div class="pull-left">
+                                <a href="javascript:;" onclick="updatePassword('修改密码','<%=ctxPath%>/updatePassword.do')" class="btn btn-default btn-flat">修改密码</a>
                             </div>
                             <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">修改密码</a>
-                            </div>
-                            <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">退出登录</a>
+                                <a href="<%=ctxPath%>/logout.do" class="btn btn-default btn-flat">退出登录</a>
                             </div>
                         </li>
                     </ul>
@@ -103,3 +102,8 @@
         </div>
     </nav>
 </header>
+<script>
+    function updatePassword(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+</script>

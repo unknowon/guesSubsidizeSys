@@ -179,9 +179,9 @@
                                             TODO：像是单选、复选框、下拉列表这种
                                             在里面加<c:if>标签，也要加name 和 value
                                             --%>
-                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == true}"> checked</c:if> value="true">
+                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender}"> checked</c:if> value="true">
                                             男
-                                            <input type="radio" name="gender" class="flat-red" <c:if test="${user.gender == false}"> checked</c:if> value="false">
+                                            <input type="radio" name="gender" class="flat-red" <c:if test="${!user.gender}"> checked</c:if> value="false">
                                             女
                                         </div>
                                     </div>

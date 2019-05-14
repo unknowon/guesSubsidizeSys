@@ -60,12 +60,14 @@ folder instead of downloading all of them to reduce the load. -->
 <script src="<%=ctxPath%>/bower_components/jquery-ui/jquery-ui.min.js"></script>
 
 
-
-
-
-
 <script type="text/javascript" src="<%=ctxPath%>/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="<%=ctxPath%>/static/h-ui/js/H-ui.min.js"></script>
+
+
+<%-- 这个js引入以后，页面就有问题， 找了好久，猜想应该是因为函数冲突 --%>
+<%--<script type="text/javascript" src="<%=ctxPath%>/static/h-ui/js/H-ui.min.js"></script>--%>
+
+
+
 <script type="text/javascript" src="<%=ctxPath%>/static/h-ui.admin/js/H-ui.admin.js"></script>
 
 

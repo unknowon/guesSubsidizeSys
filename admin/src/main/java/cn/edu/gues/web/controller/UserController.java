@@ -1,13 +1,7 @@
 package cn.edu.gues.web.controller;
 
-import cn.edu.gues.pojo.Attachment;
-import cn.edu.gues.pojo.Member;
-import cn.edu.gues.pojo.StuInformation;
-import cn.edu.gues.pojo.User;
-import cn.edu.gues.service.AttachmentService;
-import cn.edu.gues.service.MemberService;
-import cn.edu.gues.service.SubsidizeInfoService;
-import cn.edu.gues.service.UserService;
+import cn.edu.gues.pojo.*;
+import cn.edu.gues.service.*;
 import cn.edu.gues.util.AjaxResult;
 import cn.edu.gues.util.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,6 +49,9 @@ public class UserController {
         //测试
         /*User userSession = userService.selectOne(2L);
         request.getSession().setAttribute("user", userSession);*/
+
+        User userTrue = userService.selectOne(2L);
+        User userFalse = userService.selectOne(3L);
 
         ModelAndView modelAndView = new ModelAndView("user/stuInformation");
         User user = (User) request.getSession().getAttribute("user");
@@ -132,6 +129,8 @@ public class UserController {
             e.printStackTrace();
         }
 
+        user = userService.selectOne(user.getId());
+        request.getSession().setAttribute("user", user);
         return new ModelAndView("redirect:/User/stuCommunication.do");
     }
 
@@ -193,7 +192,11 @@ public class UserController {
 
         List<Member> memberList = memberService.selectList(member);
 
-        return new ModelAndView("user/stuMember", "memberList", memberList);
+        ModelAndView modelAndView = new ModelAndView("user/stuMember");
+        modelAndView.addObject("memberList", memberList);
+        modelAndView.addObject("user", user);
+
+        return modelAndView;
     }
 
     @RequestMapping(value = "/stuMemberAdd.do", method = RequestMethod.GET)
@@ -446,12 +449,19 @@ public class UserController {
 
         ModelAndView modelAndView = new ModelAndView("user/stuAttachment");
         modelAndView.addObject("attachmentList", attachmentList);
+        modelAndView.addObject("user", user);
 
         return modelAndView;
     }
 
     @RequestMapping(value = "/stuAttachmentAdd.do", method = RequestMethod.GET)
     public ModelAndView stuAttachmentAdd(HttpServletRequest request){
+
+        return new ModelAndView("user/stuAttachmentAdd");
+    }
+
+    @RequestMapping(value = "/stuAttachmentAdd.do", method = RequestMethod.POST)
+    public ModelAndView stuAttachmentAddSubmit(HttpServletRequest request){
 
         return new ModelAndView("user/stuAttachmentAdd");
     }

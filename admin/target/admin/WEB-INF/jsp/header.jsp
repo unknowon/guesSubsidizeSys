@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/font-awesome/css/font-awesome.min.css">
 <!-- Ionicons -->
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/Ionicons/css/ionicons.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="<%=ctxPath%>/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="<%=ctxPath%>/dist/css/AdminLTE.min.css">
 <!-- DataTables -->
@@ -58,12 +60,14 @@ folder instead of downloading all of them to reduce the load. -->
 <script src="<%=ctxPath%>/bower_components/jquery-ui/jquery-ui.min.js"></script>
 
 
-
-
-
-
 <script type="text/javascript" src="<%=ctxPath%>/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="<%=ctxPath%>/static/h-ui/js/H-ui.min.js"></script>
+
+
+<%-- 这个js引入以后，页面就有问题， 找了好久，猜想应该是因为函数冲突 --%>
+<%--<script type="text/javascript" src="<%=ctxPath%>/static/h-ui/js/H-ui.min.js"></script>--%>
+
+
+
 <script type="text/javascript" src="<%=ctxPath%>/static/h-ui.admin/js/H-ui.admin.js"></script>
 
 
