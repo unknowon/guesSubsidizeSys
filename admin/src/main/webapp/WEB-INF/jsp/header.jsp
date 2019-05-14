@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/font-awesome/css/font-awesome.min.css">
 <!-- Ionicons -->
 <link rel="stylesheet" href="<%=ctxPath%>/bower_components/Ionicons/css/ionicons.min.css">
+<!-- DataTables -->
+<link rel="stylesheet" href="<%=ctxPath%>/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="<%=ctxPath%>/dist/css/AdminLTE.min.css">
 <!-- DataTables -->
