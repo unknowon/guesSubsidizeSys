@@ -87,9 +87,11 @@
           <div class="box">
             <div class="form-group">
             </div>
+
             <div class="col-sm-12">
-                  <button type="submit" class="btn btn-info pull-left" for="exampleInputFile">+增加附件</button>
+              <button type="button" class="btn btn-info pull-left" for="exampleInputFile" href="javascript:;" onclick="attachment_add('增加附件','<%=ctxPath%>/User/stuAttachmentAdd.do','500','300')">+增加附件</button>
             </div>
+
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
@@ -175,7 +177,7 @@
   function attachment_del(obj,id){
     layer.confirm('确认要删除吗？',function(index){
       $.ajax({
-        url:"<%=ctxPath%>/User/stuMemberDel.do",type:"post",
+        url:"<%=ctxPath%>/User/stuAttachmentDel.do",type:"post",
         data:{id:id},
         success:function(obj) {
           if(obj.status=="success") {
@@ -189,6 +191,10 @@
         error:function(){alert("删除处理失败");}
       })
     });
+  }
+
+  function attachment_add(title,url,w,h){
+    layer_show(title,url,w,h);
   }
 </script>
 </body>

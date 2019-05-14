@@ -4,15 +4,28 @@ import cn.edu.gues.pojo.*;
 import cn.edu.gues.service.*;
 import cn.edu.gues.util.AjaxResult;
 import cn.edu.gues.util.CommonUtils;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+
+import javax.imageio.ImageIO;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.Part;
+import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
@@ -460,10 +473,56 @@ public class UserController {
         return new ModelAndView("user/stuAttachmentAdd");
     }
 
-    @RequestMapping(value = "/stuAttachmentAdd.do", method = RequestMethod.POST)
-    public ModelAndView stuAttachmentAddSubmit(HttpServletRequest request){
+    @RequestMapping(value = "stuAttachmentAddSubmit.do", method = RequestMethod.POST)
+    public ModelAndView stuAttachmentAddSubmit(HttpServletRequest request, MultipartFile pictureFile) throws IOException {
 
-        return new ModelAndView("user/stuAttachmentAdd");
+        //使用UUID给图片重命名，并去掉四个“-”
+        String name = UUID.randomUUID().toString().replaceAll("-", "");
+        //获取文件的扩展名
+        String ext = FilenameUtils.getExtension(pictureFile.getOriginalFilename());
+        //设置图片上传路径
+
+        /*String url = request.getSession().getServletContext().getRealPath("/upload");
+        System.out.println(url);*/
+
+        //获得网站根路径
+        String rootDir = request.getServletContext().getRealPath("/");
+        //转换成unix类型路径
+        rootDir = FilenameUtils.separatorsToUnix(rootDir);
+        //System.out.println(rootDir);
+
+
+        //以绝对路径保存重名命后的图片
+        //pictureFile.transferTo(new File(url+"/"+name + "." + ext));
+        pictureFile.transferTo(new File(rootDir+"/upload/"+name + "." + ext));
+
+        //把图片存储路径保存到数据库
+        User user = (User) request.getSession().getAttribute("user");
+        Attachment attachment = new Attachment();
+        attachment.setUserId(user.getId());
+        attachment.setName(FilenameUtils.getName(pictureFile.getOriginalFilename()));
+        attachment.setPath("upload/"+name + "." + ext);
+        attachmentService.insert(attachment);
+        /*user.setImageURL("upload/"+name + "." + ext);*/
+
+
+        /*userService.addUser(user);*/
+        //重定向到查询所有用户的Controller，测试图片回显
+        return new ModelAndView("user/uploadSuccess");
+    }
+
+    @RequestMapping("stuAttachmentDel.do")
+    public @ResponseBody AjaxResult stuAttachmentDel(Long id, HttpServletRequest request){
+        Attachment attachment = new Attachment();
+        User user = (User) request.getSession().getAttribute("user");
+        attachment = attachmentService.selectOne(id);
+        boolean isDelete = FileUtils.deleteQuietly(new File(request.getServletContext().getRealPath("/") + attachment.getPath()));
+        if(isDelete == true){
+            attachmentService.delete(id);
+            return AjaxResult.successInstance("删除成功");
+        } else{
+            return AjaxResult.errorInstance("删除失败");
+        }
     }
 
 

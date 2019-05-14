@@ -1,6 +1,10 @@
 package cn.edu.gues.util;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.math.BigInteger;
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
@@ -76,5 +80,4 @@ public class CommonUtils {
         long day = 1000L * 60 * 60 * 24;
         return Math.abs(date1.getTime() / day - date2.getTime() / day);
     }
-
 }
