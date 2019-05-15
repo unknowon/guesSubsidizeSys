@@ -44,30 +44,44 @@
                         <i class="fa fa-flag-o">申请状态查询</i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have 9 tasks</li>
+                        <li class="header">申请状态:</li>
                         <li>
                             <!-- inner menu: contains the actual data -->
                             <ul class="menu">
                                 <li><!-- Task item -->
                                     <a href="#">
-                                        <h3>
-                                            Design some buttons
-                                            <small class="pull-right">20%</small>
-                                        </h3>
+
                                         <div class="progress xs">
-                                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                                                 aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                <span class="sr-only">20% Complete</span>
+                                            <div class="progress-bar progress-bar-aqua" style="width:<c:choose><c:when test="${checkStatus == 1}">25</c:when><c:when test="${checkStatus == 2}">50</c:when><c:when test="${checkStatus == 3}">75</c:when><c:when test="${checkStatus >= 4}">100</c:when></c:choose>%" role="progressbar"
+                                                 aria-valuenow="
+                                                <c:choose>
+                                                    <c:when test="${checkStatus <= 4}"> ${checkStatus} </c:when>
+                                                    <c:when test="${checkStatus > 4}"> 4 </c:when>
+                                                </c:choose>
+                                                " aria-valuemin="0" aria-valuemax="4">
+                                                <span class="sr-only"><c:choose><c:when test="${checkStatus == 1}">25</c:when><c:when test="${checkStatus == 2}">50</c:when><c:when test="${checkStatus == 3}">75</c:when><c:when test="${checkStatus >= 4}">100</c:when></c:choose>% Complete</span>
                                             </div>
                                         </div>
+                                        &nbsp;
+                                        <h3>
+                                            <c:choose>
+                                                <c:when test="${checkStatus == 1}">班主任审核中</c:when>
+                                                <c:when test="${checkStatus == 2}">辅导员审核中</c:when>
+                                                <c:when test="${checkStatus == 3}">学院书记审核中</c:when>
+                                                <c:when test="${checkStatus == 4}">学校审核中</c:when>
+                                                <c:when test="${checkStatus == 5}">审核不通过</c:when>
+                                                <c:when test="${checkStatus == 6}">不困难</c:when>
+                                                <c:when test="${checkStatus == 7}">一般困难</c:when>
+                                                <c:when test="${checkStatus == 8}">困难</c:when>
+                                                <c:when test="${checkStatus == 9}">特殊困难</c:when>
+                                            </c:choose>
+                                        </h3>
                                     </a>
                                 </li>
                                 <!-- end task item -->
                             </ul>
                         </li>
-                        <li class="footer">
-                            <a href="#">View all tasks</a>
-                        </li>
+
                     </ul>
                 </li>
 

@@ -6,10 +6,8 @@ import cn.edu.gues.util.AjaxResult;
 import cn.edu.gues.util.CommonUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,15 +15,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 
-import javax.imageio.ImageIO;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.Part;
-import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
@@ -78,6 +70,7 @@ public class UserController {
             modelAndView.addObject("totalNumOfFamily", subsidizeInfoService.selectValueByKeyAndUserId("totalNumOfFamily", userId));
             modelAndView.addObject("houseStatus", subsidizeInfoService.selectValueByKeyAndUserId("houseStatus", userId));
             modelAndView.addObject("specialty", subsidizeInfoService.selectValueByKeyAndUserId("specialty", userId));
+            modelAndView.addObject("checkStatus", queryCheckStatus(userId));
         }
 
         return modelAndView;
@@ -143,6 +136,7 @@ public class UserController {
         }
 
         user = userService.selectOne(user.getId());
+
         request.getSession().setAttribute("user", user);
         return new ModelAndView("redirect:/User/stuCommunication.do");
     }
@@ -166,6 +160,7 @@ public class UserController {
             modelAndView.addObject("inputPost", subsidizeInfoService.selectValueByKeyAndUserId("inputPost", userId));
             modelAndView.addObject("inputTel2", subsidizeInfoService.selectValueByKeyAndUserId("inputTel2", userId));
             modelAndView.addObject("inputAdd", subsidizeInfoService.selectValueByKeyAndUserId("inputAdd", userId));
+            modelAndView.addObject("checkStatus", queryCheckStatus(userId));
         }
 
         return modelAndView;
@@ -208,6 +203,7 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("user/stuMember");
         modelAndView.addObject("memberList", memberList);
         modelAndView.addObject("user", user);
+        modelAndView.addObject("checkStatus", queryCheckStatus(user.getId()));
 
         return modelAndView;
     }
@@ -279,6 +275,7 @@ public class UserController {
             modelAndView.addObject("inputDebt", subsidizeInfoService.selectValueByKeyAndUserId("inputDebt", userId));
             modelAndView.addObject("inputElse", subsidizeInfoService.selectValueByKeyAndUserId("inputElse", userId));
             modelAndView.addObject("subSidize", subsidizeInfoService.selectValueByKeyAndUserId("subSidize", userId));
+            modelAndView.addObject("checkStatus", queryCheckStatus(userId));
         }
 
         return modelAndView;
@@ -346,6 +343,7 @@ public class UserController {
             modelAndView.addObject("inputPost2", subsidizeInfoService.selectValueByKeyAndUserId("inputPost2", userId));
             modelAndView.addObject("inputTel3", subsidizeInfoService.selectValueByKeyAndUserId("inputTel3", userId));
             modelAndView.addObject("inputAdd2", subsidizeInfoService.selectValueByKeyAndUserId("inputAdd2", userId));
+            modelAndView.addObject("checkStatus", queryCheckStatus(userId));
         }
 
         return modelAndView;
@@ -389,6 +387,7 @@ public class UserController {
         if(user != null) {
             Long userId = user.getId();
             modelAndView.addObject("inputStatement", subsidizeInfoService.selectValueByKeyAndUserId("inputStatement", userId));
+            modelAndView.addObject("checkStatus", queryCheckStatus(userId));
         }
 
         return modelAndView;
@@ -426,6 +425,7 @@ public class UserController {
         if(user != null) {
             Long userId = user.getId();
             modelAndView.addObject("inputFamily", subsidizeInfoService.selectValueByKeyAndUserId("inputFamily", userId));
+            modelAndView.addObject("checkStatus", queryCheckStatus(userId));
         }
 
         return modelAndView;
@@ -463,6 +463,7 @@ public class UserController {
         ModelAndView modelAndView = new ModelAndView("user/stuAttachment");
         modelAndView.addObject("attachmentList", attachmentList);
         modelAndView.addObject("user", user);
+        modelAndView.addObject("checkStatus", queryCheckStatus(user.getId()));
 
         return modelAndView;
     }
@@ -523,6 +524,18 @@ public class UserController {
         } else{
             return AjaxResult.errorInstance("删除失败");
         }
+    }
+
+    /**
+     * 申请状态查询
+     */
+    private int queryCheckStatus(Long id){
+        SubsidizeInfo subsidizeInfo = new SubsidizeInfo();
+        subsidizeInfo.setKey("beforeResidency");
+        subsidizeInfo.setUserId(id);
+        subsidizeInfo = subsidizeInfoService.selectOne(subsidizeInfo);
+
+        return subsidizeInfo.getCheckStatus()+1;
     }
 
 
