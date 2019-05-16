@@ -76,6 +76,11 @@ public class TableController {
             List<Member> memberList = memberService.selectList(member);
             modelAndView.addObject("memberList", memberList);
 
+            SubsidizeInfo subsidizeInfo = new SubsidizeInfo();
+            subsidizeInfo.setUserId(userId);
+            subsidizeInfo.setKey("nationality");
+            subsidizeInfo = subsidizeInfoService.selectOne(subsidizeInfo);
+            modelAndView.addObject("otherInfo", subsidizeInfo);
         }
         return modelAndView;
     }

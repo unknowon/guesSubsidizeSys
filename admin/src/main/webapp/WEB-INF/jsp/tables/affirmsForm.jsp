@@ -147,7 +147,7 @@
                 <td height="21px" align="center">家庭类型</td>
                 <td colspan="7" align="left">
                     <span disabled="disabled" style="display:inline-block;width:55px;">
-                        <input id="type1" type="checkbox" name="type1" checked="checked" disabled="disabled" />孤儿</span>
+                        <input id="type1" type="checkbox" name="type1" disabled="disabled" />孤儿</span>
                     <span disabled="disabled" style="display:inline-block;border-style:None;width:55px;">
                         <input id="type2" type="checkbox" name="type2" disabled="disabled" />单亲</span>
                     <span disabled="disabled" style="display:inline-block;border-style:None;width:55px;">
@@ -192,7 +192,7 @@
                 </td>
                 <td width="75" height="21px" align="center">姓名</td>
                 <td width="58" align="center">年龄</td>
-                <td width="75" align="center">与学生关系</td>
+                <%--<td width="75" align="center">与学生关系</td>--%>
                 <td align="center" colspan="2">工作（学习）单位</td>
                 <td width="66" align="center">职业</td>
                 <td width="66" align="center">年收入（元）</td>
@@ -206,24 +206,24 @@
                 <td width="65" align="center">
                     <span id="nl1">${member.age}</span>
                 </td>
-                <td align="center">
+               <%-- <td align="center">
                     <span id="guanxi1">父子</span>
-                </td>
+                </td>--%>
                 <td align="center" colspan="2">
-                    <span id="danwei1">贵州省贵阳市清纺厂</span>
+                    <span id="danwei1">${member.employer}</span>
                 </td>
                 <td align="center" width="148">
-                    <span id="zhiye1">工人</span>
+                    <span id="zhiye1">${member.product}</span>
                 </td>
                 <td align="center" width="148">
-                    <span id="shouru1">30000</span>
+                    <span id="shouru1">${member.yearIncome}</span>
                 </td>
                 <td align="center" width="148">
-                    <span id="jkzk1">健康</span>
+                    <span id="jkzk1">${member.healthStatus}</span>
                 </td>
             </tr>
             </c:forEach>
-            <tr>
+            <%--<tr>
                 <td colspan="1" align="center">
                     <span id="pname2">王远洋</span>
                 </td>
@@ -245,7 +245,7 @@
                 <td align="center" width="148">
                     <span id="jkzk2">健康</span>
                 </td>
-            </tr>
+            </tr>--%>
 
             <tr>
                 <td height="150px" align="center" style="font-weight: 600" rowspan="5">
@@ -257,32 +257,32 @@
                     <p>息</p>
                 </td>
                 <td colspan="2" align="center"  height="30px" style="height:30px">家庭人均月收入</td>
-                <td colspan="2" align="center"><span id="shouru">253</span>元</td>
+                <td colspan="2" align="center"><span id="shouru">${subInfo["inputIncome"]}</span>元</td>
                 <td colspan="2" align="center">学生本学年已获资助情况</td>
-                <td colspan="2" align="center">&nbsp;<span id="zizhu">暂无</span></td>
+                <td colspan="2" align="center">&nbsp;<span id="zizhu">${subInfo["subSidize"]}</span></td>
             </tr>
 
             <tr>
                 <td  colspan="2" align="center"  height="30px" style="height:30px">家庭遭受突发意外事件</td>
-                <td colspan="6" align="left">&nbsp; <span id="tfyw"></span> </td>
+                <td colspan="6" align="left">&nbsp; <span id="tfyw">${subInfo["inputAccident"]}</span> </td>
             </tr>
             <tr>
                 <td  colspan="2" align="center"  height="30px" style="height:30px">家庭成员失业情况</td>
-                <td colspan="6" align="left">&nbsp; <span id="sy">父母失业，暂无工作，靠下岗工资生活</span></td>
+                <td colspan="6" align="left">&nbsp; <span id="sy">${subInfo["inputUnemployment"]}</span></td>
             </tr>
             <tr>
                 <td  colspan="2" align="center"  height="30px" style="height:30px">家庭欠债情况</td>
-                <td colspan="6" align="left">&nbsp; <span id="qz"></span></td>
+                <td colspan="6" align="left">&nbsp; <span id="qz">${subInfo["inputDebt"]}</span></td>
             </tr>
             <tr>
                 <td  colspan="2" align="center"  height="30px" style="height:30px">其他情况</td>
-                <td colspan="6" align="left">&nbsp; <span id="qt"></span></td>
+                <td colspan="6" align="left">&nbsp; <span id="qt">${subInfo["inputElse"]}</span></td>
             </tr>
 
             <tr>
                 <td height="50px" align="center" colspan="9">
                     <p style="font-weight: 600" >本人承诺以上所填内容真实无误，并予以认可，如不真实，本人愿意承担相应后果。</p>
-                    <p style="text-align:right">&nbsp;学生本人签名：<span id="name1">王似超</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生家长或监护人签名：<span id="name2">王远洋</span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span id="time1">2018年4月10日</span>
+                    <p style="text-align:right">&nbsp;学生本人签名：<span id="name1">${user.name}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生家长或监护人签名：<span id="name2">${memberList[0].name}</span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span id="time1">2018年4月10日</span>
                         &nbsp;&nbsp;&nbsp; &nbsp; </p>
                 </td>
             </tr>
@@ -308,10 +308,10 @@
                     <tbody>
                     <tr>
                         <td height="354"><p style="height:300px;padding-top:5px;padding-left:5px;font-siz:8pt">
-                            <span id="chenshu" style="font-size:11pt;">因父母所在单位破产，现在下岗无业，无稳定收入，只能靠380元的下岗工资生活，经济困难；在校学习勤奋，团结同学，尊敬老师，成绩优异，担任班干部；为了减轻父母负担，特申请助学金，望批准</span>
+                            <span id="chenshu" style="font-size:11pt;">${subInfo["inputStatement"]}</span>
                         </p>
 
-                            <p style="text-align:right">&nbsp;学生签字 ：<span id="name0">王似超</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span id="addtime">2018年4月10日</span>
+                            <p style="text-align:right">&nbsp;学生签字 ：<span id="name0">${user.name}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span id="addtime">2018年4月10日</span>
                                 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p></td>
                     </tr>
                     <tr>
@@ -331,7 +331,7 @@
                     <p>次</p></td>
                 <td height="36px" align="center">&nbsp;
                 </td>
-                <td colspan="2" align="left">A.家庭经济一般困难<span disabled="disabled" style="display:inline-block;width:50px;"><input id="td1" type="checkbox" name="td1" checked="checked" disabled="disabled" /></span>
+                <td colspan="2" align="left">A.家庭经济一般困难<span disabled="disabled" style="display:inline-block;width:50px;"><input id="td1" type="checkbox" name="td1" <c:if test="${otherInfo.checkStatus == '6'}"> checked="checked"</c:if> disabled="disabled" /></span>
                 </td>
                 <td rowspan="4" align="center"><p>陈</p>
                     <p>述</p>
@@ -358,19 +358,19 @@
             <tr>
                 <td height="39px" align="center">&nbsp;
                 </td>
-                <td colspan="2" align="left">B.家庭经济困难<span disabled="disabled" style="display:inline-block;border-style:None;width:50px;"><input id="td2" type="checkbox" name="td2" disabled="disabled" /></span>
+                <td colspan="2" align="left">B.家庭经济困难<span disabled="disabled" style="display:inline-block;border-style:None;width:50px;"><input id="td2" type="checkbox" name="td2" <c:if test="${otherInfo.checkStatus == '7'}"> checked="checked"</c:if> disabled="disabled" /></span>
                 </td>
             </tr>
             <tr>
                 <td height="38px" align="center">&nbsp;
                 </td>
-                <td colspan="2" align="left">C.家庭经济特殊困难<span disabled="disabled" style="display:inline-block;border-style:None;width:50px;"><input id="td3" type="checkbox" name="td3" disabled="disabled" /></span>
+                <td colspan="2" align="left">C.家庭经济特殊困难<span disabled="disabled" style="display:inline-block;border-style:None;width:50px;"><input id="td3" type="checkbox" name="td3" <c:if test="${otherInfo.checkStatus == '8'}"> checked="checked"</c:if> disabled="disabled" /></span>
                 </td>
             </tr>
             <tr>
                 <td height="40px" align="center">&nbsp;
                 </td>
-                <td colspan="2" align="left">D.家庭经济不困难<span disabled="disabled" style="display:inline-block;border-style:None;width:50px;"><input id="td4" type="checkbox" name="td4" disabled="disabled" /></span>
+                <td colspan="2" align="left">D.家庭经济不困难<span disabled="disabled" style="display:inline-block;border-style:None;width:50px;"><input id="td4" type="checkbox" name="td4" <c:if test="${otherInfo.checkStatus == '5'}"> checked="checked"</c:if> disabled="disabled" /></span>
                 </td>
             </tr>
             <tr>
