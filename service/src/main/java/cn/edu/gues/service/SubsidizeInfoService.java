@@ -1,10 +1,14 @@
 package cn.edu.gues.service;
 
+import cn.edu.gues.mapper.SubsidizeInfoMapper;
 import cn.edu.gues.pojo.SubsidizeInfo;
 import cn.edu.gues.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -39,5 +43,17 @@ public class SubsidizeInfoService extends BaseService<SubsidizeInfo> {
 
             insert(subsidizeInfo);
         }
+    }
+
+    public Map<String, String> selectMapByUserId(Long userId){
+        Map<String, String> map = new HashMap<>();
+        SubsidizeInfo subsidizeInfo = new SubsidizeInfo();
+        subsidizeInfo.setUserId(userId);
+        List<SubsidizeInfo> subsidizeInfoList = selectList(subsidizeInfo);
+        for(int i = 0; i < subsidizeInfoList.size(); i++){
+            SubsidizeInfo subsidizeInfoTmp = subsidizeInfoList.get(i);
+            map.put(subsidizeInfoTmp.getKey(), subsidizeInfoTmp.getValue());
+        }
+        return map;
     }
 }

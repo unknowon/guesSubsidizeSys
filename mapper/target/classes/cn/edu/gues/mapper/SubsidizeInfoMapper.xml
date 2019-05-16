@@ -30,5 +30,4 @@
             <if test="checkStatus!=null"> and checkStatus=#{checkStatus}</if>
             <if test="createDateTime!=null"> and createDateTime=#{createDateTime}</if>
     </select>
-
 </mapper>
