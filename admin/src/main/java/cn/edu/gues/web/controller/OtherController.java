@@ -38,7 +38,7 @@ public class OtherController {
         AdminUser adminUser = (AdminUser) request.getSession().getAttribute("adminUser");
         if(adminUser != null){
             //TODO:indexAdminOrTeacher
-            return new ModelAndView("redirect:/login.do");
+            return new ModelAndView("redirect:/Admin/indexTeacher.do", "adminUser", adminUser);
         }
 
         User user = (User) request.getSession().getAttribute("user");
