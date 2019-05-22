@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AdminLTE 2 | Data Tables</title>
+    <title>贵州工程技术学院资助管理系统</title>
 
     <%@include file="/WEB-INF/jsp/header.jsp"%>
 
