@@ -21,7 +21,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">贵州工程技术学院资助管理系统</li>
         <li class="active">
-          <a href="#">
+          <a href="<%=ctxPath%>/Admin/indexTeacher.do">
             <i class="fa fa-dashboard"></i> <span>数据统计</span>
           </a>
         </li>
@@ -31,7 +31,7 @@
           </a>
         </li>
         <li class="">
-          <a href="pages/tables/nextLevelcontrol.html">
+          <a href="<%=ctxPath%>/Admin/nextLevelcontrol.do">
             <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
           </a>
         </li>

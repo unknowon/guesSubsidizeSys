@@ -7,14 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLeveladd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLevelcontrol.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLeveledit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baidu_ueditor_ueditor_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baidu_ueditor_ueditor_1_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jstl_jstl_api_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jstl_impl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jstl_impl_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/indexTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/indexTeacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/OtherController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -72,71 +100,216 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="421">
+                    <caret line="125" column="63" lean-forward="true" selection-start-line="125" selection-start-column="63" selection-end-line="125" selection-end-column="63" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="127">
+                    <caret line="216" column="75" lean-forward="true" selection-start-line="216" selection-start-column="75" selection-end-line="216" selection-end-column="75" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="method#stuCommunicationSubmit#0;class#UserController#0" />
+                      <element signature="method#stuEconomic#0;class#UserController#0" />
+                      <element signature="method#stuEconomicSubmit#0;class#UserController#0" />
+                      <element signature="method#stuDepartment#0;class#UserController#0" />
+                      <element signature="method#stuDepartmentSubmit#0;class#UserController#0" />
+                      <element signature="method#stuStatement#0;class#UserController#0" />
+                      <element signature="method#stuStatementSubmit#0;class#UserController#0" />
+                      <element signature="method#stuFamily#0;class#UserController#0" />
+                      <element signature="method#stuAttachmentAddSubmit#0;class#UserController#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/MemberService.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="228">
+                    <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMember.jsp">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="533">
+                    <caret line="186" column="30" lean-forward="true" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="30" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1363139294">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="html" value="5" />
+          <entry key="java" value="16" />
+          <entry key="jsp" value="15" />
+          <entry key="rnc" value="3" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="HTML" value="5" />
+          <entry key="JAVA" value="16" />
+          <entry key="JSP" value="15" />
+          <entry key="RNG Compact" value="3" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="17" />
+          <entry key="java" value="98" />
+          <entry key="jsp" value="164" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="17" />
+          <entry key="JAVA" value="98" />
+          <entry key="JSP" value="164" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeaderTeacher.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/OtherController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheck.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="32" selection-end-line="451" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.56921756">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLevelcontrol.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2152">
+                  <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLeveladd.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexStu.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="475">
+                  <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="627">
+                  <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="92">
+                  <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#481#482#0" expanded="true" />
+                    <element signature="e#536#537#0" expanded="true" />
+                    <element signature="e#645#646#0" expanded="true" />
+                    <element signature="e#704#705#0" expanded="true" />
+                    <element signature="e#868#869#0" expanded="true" />
+                    <element signature="e#935#936#0" expanded="true" />
+                    <element signature="e#1076#1077#0" expanded="true" />
+                    <element signature="e#1143#1144#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="209">
+                  <caret line="365" column="32" lean-forward="true" selection-start-line="365" selection-start-column="32" selection-end-line="365" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-176">
+                  <caret line="17" column="90" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="90" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-233">
+                  <caret line="140" column="24" lean-forward="true" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -169,6 +342,9 @@
       <find>$('.textarea').wysihtml5</find>
       <find>exampleInputFile</find>
       <find>resp</find>
+      <find>chart</find>
+      <find>User</find>
+      <find>iCheck</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;%=ctxPath%&gt;/User</replace>
@@ -183,10 +359,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/MemberService.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Member.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/js/common.js" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuDepartment.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuEconomic.jsp" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Attachment.java" />
@@ -197,7 +369,6 @@
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/tmpMain.java" />
         <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/AdminUserMapper.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/cn/edu/gues/util/JedisUtils.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/interceptor/KeepOnlineInterceptor.java" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuFamily.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuStatement.jsp" />
@@ -210,7 +381,6 @@
         <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/BooleanTestMapper.xml" />
         <option value="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/BooleanTestService.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/BooleanTest.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/build/less/dropdown.less" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/dist/css/AdminLTE.min.css" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/updatePassword.jsp" />
@@ -230,15 +400,27 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/tables/affirmsForm.jsp" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeaderTeacher.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/OtherController.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLevelcontrol.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLeveladd.html" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLeveladd.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/OtherController.java" />
       </list>
     </option>
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -250,7 +432,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="mavenHome" value="Bundled (Maven 2)" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -261,15 +443,43 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="admin Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="admin Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="288" />
-    <option name="y" value="23" />
-    <option name="width" value="1098" />
-    <option name="height" value="1027" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/Flot/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/bootstrap-datepicker/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/bootstrap-daterangepicker/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/chart.js/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/ckeditor/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/eve-raphael/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/ion.rangeSlider/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/jquery-knob/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/jquery-slimscroll/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/jquery-ui/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/morris.js/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/bower_components/select2/package.json" />
+      <path value="$PROJECT_DIR$/admin/src/main/webapp/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2121" />
+    <option name="y" value="20" />
+    <option name="width" value="1100" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -280,6 +490,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -348,15 +559,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,7 +579,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
@@ -388,7 +602,76 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="tables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -399,8 +682,10 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="jdk&#9;PSI&#9;JAVA://sun.misc.Version#jdk_micro_version" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558516840855" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -408,10 +693,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -419,11 +704,11 @@
       <recent name="cn.edu.gues.web.aop" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\preproject\guesSubsidizeSys\admin\src\main\webapp\WEB-INF\jsp\teacher" />
       <recent name="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages" />
       <recent name="$PROJECT_DIR$/admin/src/main/webapp/upload" />
       <recent name="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user" />
       <recent name="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp" />
-      <recent name="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,7 +723,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.10">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.38">
     <configuration name="tmpMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.edu.gues.web.controller.tmpMain" />
       <module name="admin" />
@@ -468,8 +753,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.10" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.38" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.38" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8083/admin_war_exploded/" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -482,12 +768,13 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_guesSubsidizeSys" />
+        <option name="HTTP_PORT" value="8083" />
       </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="50909" />
       </RunnerSettings>
@@ -576,13 +863,57 @@
         </option>
       </method>
     </configuration>
+    <configuration name="login.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.38" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/jsp/login.jsp" />
+      <deployment>
+        <artifact name="admin:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="login_jsp_guesSubsidizeSys" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="11643" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="admin:war" />
+        </option>
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Tomcat Server.Tomcat 8.5.38" />
       <item itemvalue="Application.tmpMain" />
       <item itemvalue="JUnit.tmpMain.main" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.10" />
+      <item itemvalue="Tomcat Server.login.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.login.jsp" />
         <item itemvalue="JUnit.tmpMain.main" />
         <item itemvalue="Application.tmpMain" />
       </list>
@@ -622,6 +953,8 @@
       <workItem from="1557740153888" duration="6558000" />
       <workItem from="1557747818807" duration="41480000" />
       <workItem from="1558272335407" duration="4469000" />
+      <workItem from="1558487576803" duration="1914000" />
+      <workItem from="1558489848511" duration="17666000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -767,7 +1100,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165241000" />
+    <option name="totallyTimeSpent" value="184821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -779,10 +1112,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.21488096" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.22050938" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -795,8 +1128,8 @@
       <window_info anchor="bottom" id="Tail" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.2632653" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4981685" weight="0.2877551" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.20992908" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4981685" visible="true" weight="0.28652483" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" weight="0.32857144" />
@@ -804,15 +1137,15 @@
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50183153" side_tool="true" weight="0.2877551" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.23120567" />
       <window_info anchor="bottom" id="Statistic" order="14" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
       <window_info anchor="bottom" id="Version Control" order="17" sideWeight="0.4993895" weight="0.5520408" />
       <window_info anchor="bottom" id="Application Servers" order="18" weight="0.32959184" />
-      <window_info anchor="bottom" id="Messages" order="19" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="19" weight="0.32907802" />
       <window_info anchor="bottom" id="TypeScript" order="20" />
-      <window_info anchor="bottom" id="Problems" order="21" />
+      <window_info anchor="bottom" id="Problems" order="21" sideWeight="0.49932975" weight="0.23120567" />
       <window_info anchor="bottom" id="JRebel Executor" order="22" />
       <window_info anchor="bottom" id="JRebel Console" order="23" sideWeight="0.50183153" side_tool="true" weight="0.2877551" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -828,6 +1161,7 @@
       <window_info anchor="right" id="Key Promoter X" order="10" weight="0.32905984" />
       <window_info anchor="right" id="Redis Servers" order="11" weight="0.32905984" />
       <window_info anchor="right" id="JRebel Setup Guide" order="12" weight="0.32967034" />
+      <window_info anchor="right" id="Maven Projects" order="13" weight="0.15817694" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -868,20 +1202,9 @@
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
@@ -911,92 +1234,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuStatement.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="94" column="54" selection-start-line="94" selection-start-column="54" selection-end-line="94" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuFamily.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/UI/timeline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="redis://IedisURI?type=Explorer&amp;label=127.0.0.1&amp;host=127.0.0.1&amp;port=32773&amp;password=&amp;timestamp=1557717948669&amp;nodeHost=127.0.0.1&amp;nodePort=32773">
-      <provider selected="true" editor-type-id="r" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/BooleanTestMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/cn/edu/gues/mapper/BooleanTestMapper.java" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/BooleanTestService.java" />
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/BooleanTest.java" />
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/resources/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="21" column="104" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding>
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3882" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/dist/css/AdminLTE.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21660" selection-start-line="6" selection-start-column="21660" selection-end-line="6" selection-end-column="21660" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/build/less/dropdown.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="191" column="20" selection-start-line="191" selection-start-column="20" selection-end-line="191" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/updatePassword.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1004,27 +1241,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexStu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="106" column="39" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE-sources.jar!/org/springframework/web/multipart/MultipartFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE-sources.jar!/org/springframework/web/multipart/MultipartFile.java" />
     <entry file="file://$PROJECT_DIR$/common/src/main/java/cn/edu/gues/util/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="813">
@@ -1036,20 +1253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMember.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1085,9 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,9 +1295,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,20 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="180" column="48" selection-start-line="180" selection-start-column="48" selection-end-line="180" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1143,10 +1326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding>
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1168,41 +1347,6 @@
             <element signature="n#style#0;n#span#0;n#td#3;n#tr#17;n#tbody#0;n#table#2;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#5;n#tr#17;n#tbody#0;n#table#2;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#td#1;n#tr#18;n#tbody#0;n#table#2;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/TableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#stuInformationSubmit#0;class#UserController#0" />
-            <element signature="method#stuCommunication#0;class#UserController#0" />
-            <element signature="method#stuCommunicationSubmit#0;class#UserController#0" />
-            <element signature="method#stuMember#0;class#UserController#0" />
-            <element signature="method#stuMemberAddSubmit#0;class#UserController#0" />
-            <element signature="method#stuMemberDel#0;class#UserController#0" />
-            <element signature="method#stuEconomic#0;class#UserController#0" />
-            <element signature="method#stuEconomicSubmit#0;class#UserController#0" />
-            <element signature="method#stuDepartment#0;class#UserController#0" />
-            <element signature="method#stuDepartmentSubmit#0;class#UserController#0" />
-            <element signature="method#stuStatement#0;class#UserController#0" />
-            <element signature="method#stuStatementSubmit#0;class#UserController#0" />
-            <element signature="method#stuFamily#0;class#UserController#0" />
-            <element signature="method#stuAttachment#0;class#UserController#0" />
-            <element signature="method#stuAttachmentAddSubmit#0;class#UserController#0" />
           </folding>
         </state>
       </provider>
@@ -1231,59 +1375,251 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheck.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="32" selection-end-line="451" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="69" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeaderTeacher.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="418">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages/tables/teaCheck.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="779">
+          <caret line="41" column="32" selection-end-line="451" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="605" column="24" lean-forward="true" selection-start-line="605" selection-start-column="24" selection-end-line="605" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2651">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/http/HttpServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="329" column="18" selection-start-line="329" selection-start-column="18" selection-end-line="329" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="556" column="22" selection-start-line="556" selection-start-column="22" selection-end-line="556" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/OtherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+        <state relative-caret-position="242">
+          <caret line="42" selection-start-line="42" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/misc/Version.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/TableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="95" column="69" selection-start-line="95" selection-start-column="47" selection-end-line="95" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#li#3;n#ul#0;n#div#0;n#nav#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/indexTeacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="125" column="63" lean-forward="true" selection-start-line="125" selection-start-column="63" selection-end-line="125" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuInformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="140" column="24" lean-forward="true" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="365" column="32" lean-forward="true" selection-start-line="365" selection-start-column="32" selection-end-line="365" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/SubsidizeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="4" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="47" column="6" lean-forward="true" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/College.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMemberAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="17" column="90" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/user/stuMember.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="186" column="30" lean-forward="true" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLeveladd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/nextLevelcontrol.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2152">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexStu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="216" column="75" lean-forward="true" selection-start-line="216" selection-start-column="75" selection-end-line="216" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#stuCommunicationSubmit#0;class#UserController#0" />
+            <element signature="method#stuEconomic#0;class#UserController#0" />
+            <element signature="method#stuEconomicSubmit#0;class#UserController#0" />
+            <element signature="method#stuDepartment#0;class#UserController#0" />
+            <element signature="method#stuDepartmentSubmit#0;class#UserController#0" />
+            <element signature="method#stuStatement#0;class#UserController#0" />
+            <element signature="method#stuStatementSubmit#0;class#UserController#0" />
+            <element signature="method#stuFamily#0;class#UserController#0" />
+            <element signature="method#stuAttachmentAddSubmit#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1330,6 +1666,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1346,7 +1683,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

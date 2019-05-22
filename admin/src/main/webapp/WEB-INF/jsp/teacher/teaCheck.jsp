@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AdminLTE 2 | Data Tables</title>
+    <title>teacherCheck</title>
 
     <%@include file="/WEB-INF/jsp/header.jsp"%>
 
@@ -21,34 +21,29 @@
     <!-- Left side column. contains the logo and sidebar -->
 
     <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">贵州工程技术学院资助管理系统</li>
 
                 <li class="">
-                    <a href="../../indexAdmin.html">
+                    <a href="<%=ctxPath%>/Admin/teaCheck.do">
                         <i class="fa fa-dashboard"></i> <span>数据统计</span>
                     </a>
                 </li>
                 <li class="active">
                     <a href="<%=ctxPath%>/Admin/teaCheck.do">
-                        <i class="fa fa-check-square"></i> <span>资格审核</span>
+                        <i class="fa fa-dashboard"></i> <span>资格审核</span>
                     </a>
                 </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>权限管理</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
+                <li class="">
+                    <a href="<%=ctxPath%>/Admin/nextLevelcontrol.do">
+                        <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
                     </a>
-                    <ul class="treeview-menu">
-                        <li><a href="adminList.html"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
-                        <li><a href="roleList.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
-                    </ul>
                 </li>
             </ul>
         </section>
+        <!-- /.sidebar -->
     </aside>
 
 
