@@ -26,7 +26,7 @@
           </a>
         </li>
         <li class="">
-          <a href="pages/tables/teaCheckTeacher.html">
+          <a href="<%=ctxPath%>/Admin/teaCheck.do">
             <i class="fa fa-dashboard"></i> <span>资格审核</span>
           </a>
         </li>

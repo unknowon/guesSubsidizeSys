@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="teaCheck.html">
+                    <a href="<%=ctxPath%>/Admin/teaCheck.do">
                         <i class="fa fa-check-square"></i> <span>资格审核</span>
                     </a>
                 </li>
