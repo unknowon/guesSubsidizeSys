@@ -23,7 +23,7 @@
 
         <form action="<%=ctxPath%>/login.do" method="post">
             <div class="form-group has-feedback">
-                <input type="number" class="form-control" placeholder="账号" name="account">
+                <input type="text" class="form-control" placeholder="账号" name="account">
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">

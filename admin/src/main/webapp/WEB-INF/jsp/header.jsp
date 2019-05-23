@@ -70,6 +70,8 @@ folder instead of downloading all of them to reduce the load. -->
 
 <script type="text/javascript" src="<%=ctxPath%>/static/h-ui.admin/js/H-ui.admin.js"></script>
 
+<script src="<%=ctxPath%>/bower_components/myLayJS.js"></script>
+
 
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
@@ -77,6 +79,8 @@ folder instead of downloading all of them to reduce the load. -->
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="<%=ctxPath%>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- ChartJS -->
+<script src="<%=ctxPath%>/bower_components/chart.js/Chart.js"></script>
 <!-- DataTables -->
 <script src="<%=ctxPath%>/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="<%=ctxPath%>/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
@@ -122,6 +126,8 @@ folder instead of downloading all of them to reduce the load. -->
 <script src="<%=ctxPath%>/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<%=ctxPath%>/dist/js/demo.js"></script>
+<!-- iCheck -->
+<script src="<%=ctxPath%>/plugins/iCheck/icheck.min.js"></script>
 <!-- CK Editor -->
 <script src="<%=ctxPath%>/bower_components/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="<%=ctxPath%>/js/common.js"></script>

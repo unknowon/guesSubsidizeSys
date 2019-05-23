@@ -26,7 +26,7 @@
                 <li class="header">贵州工程技术学院资助管理系统</li>
 
                 <li class="">
-                    <a href="../../indexAdmin.html">
+                    <a href="<%=ctxPath%>/Admin/teaCheck.do">
                         <i class="fa fa-dashboard"></i> <span>数据统计</span>
                     </a>
                 </li>
@@ -49,6 +49,17 @@
                 </li>
             </ul>
         </section>
+                        <i class="fa fa-dashboard"></i> <span>资格审核</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="<%=ctxPath%>/Admin/nextLevelcontrol.do">
+                        <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
     </aside>
 
 
