@@ -7,3 +7,8 @@
 #*.iml
 out
 gen
+admin/target/generated-sources/
+common/target/generated-sources/
+mapper/target/generated-sources/
+pojo/target/generated-sources/
+service/target/generated-sources/

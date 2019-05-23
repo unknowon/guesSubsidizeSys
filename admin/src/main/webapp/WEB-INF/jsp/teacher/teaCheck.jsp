@@ -21,12 +21,13 @@
     <!-- Left side column. contains the logo and sidebar -->
 
     <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">贵州工程技术学院资助管理系统</li>
 
                 <li class="">
-                    <a href="../../indexAdmin.html">
+                    <a href="<%=ctxPath%>/Admin/teaCheck.do">
                         <i class="fa fa-dashboard"></i> <span>数据统计</span>
                     </a>
                 </li>
@@ -49,6 +50,7 @@
                 </li>
             </ul>
         </section>
+        <!-- /.sidebar -->
     </aside>
 
 

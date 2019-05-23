@@ -42,8 +42,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        用户权限管理
-        <small>给用户分配角色</small>
+        下级账号管理
+        <small>对当前用户权限内下级账号的管理</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
