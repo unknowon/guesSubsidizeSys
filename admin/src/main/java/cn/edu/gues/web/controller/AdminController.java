@@ -44,8 +44,52 @@ public class AdminController {
     // 没写好，不知道七七八八的services是什么 作者:WSW
     @RequestMapping(value = "/nextLeveladd.do", method = RequestMethod.POST)
     public ModelAndView nextLeveladd(){
-        return new ModelAndView("nextLeveladd");
+        return new ModelAndView("teacher/nextLeveladd");
     }
 
+    /**
+     * 学院班级管理-学院管理
+     * @return
+     */
+    @RequestMapping(value = "/academyAdd.do", method = RequestMethod.GET)
+    public ModelAndView academyAdd(){
+        return new ModelAndView("teacher/academyAdd");
+    }
+
+    /**
+     * 学院班级管理-班级管理
+     * @return
+     */
+    @RequestMapping(value = "/classAdd.do", method = RequestMethod.GET)
+    public ModelAndView classAdd(){
+        return new ModelAndView("teacher/classAdd");
+    }
+
+    /**
+     * 权限管理-用户权限管理
+     * @return
+     */
+    @RequestMapping(value = "/adminList.do", method = RequestMethod.GET)
+    public ModelAndView adminList(){
+        return new ModelAndView("teacher/adminList");
+    }
+
+    /**
+     * 权限管理-角色管理
+     * @return
+     */
+    @RequestMapping(value = "/roleList.do", method = RequestMethod.GET)
+    public ModelAndView roleList(){
+        return new ModelAndView("teacher/roleList");
+    }
+
+    /**
+     * 学生信息
+     * @return
+     */
+    @RequestMapping(value = "/studentInformation.do", method = RequestMethod.GET)
+    public ModelAndView studentInformation(){
+        return new ModelAndView("teacher/studentInformation");
+    }
 
 }

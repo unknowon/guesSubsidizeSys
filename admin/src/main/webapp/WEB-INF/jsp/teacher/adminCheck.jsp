@@ -43,8 +43,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="adminList.html"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
-                        <li><a href="roleList.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+                        <li><a href="adminList.jsp"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+                        <li><a href="roleList.jsp"><i class="fa fa-circle-o"></i> 角色管理</a></li>
                     </ul>
                 </li>
             </ul>

@@ -35,6 +35,35 @@
             <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
           </a>
         </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>学院班级管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<%=ctxPath%>/Admin/academyAdd.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
+            <li><a href="<%=ctxPath%>/Admin/classAdd.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>权限管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="<%=ctxPath%>/Admin/adminList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+            <li><a href="<%=ctxPath%>/Admin/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+          </ul>
+        </li>
+          <li class="">
+              <a href="<%=ctxPath%>/Admin/studentInformation.do">
+                  <i class="fa fa-dashboard"></i> <span>学生信息</span>
+              </a>
+          </li>
       </ul>
     </section>
     <!-- /.sidebar -->
