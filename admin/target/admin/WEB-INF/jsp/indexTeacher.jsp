@@ -43,7 +43,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<%=ctxPath%>/Admin/academyAdd.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
+            <li><a href="<%=ctxPath%>/College/collegeList.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
             <li><a href="<%=ctxPath%>/Admin/classAdd.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
           </ul>
         </li>

@@ -1,20 +1,13 @@
 package cn.edu.gues.web.controller;
 
-import cn.edu.gues.mapper.SubsidizeInfoMapper;
 import cn.edu.gues.pojo.AdminUser;
 import cn.edu.gues.pojo.Class;
-import cn.edu.gues.pojo.User;
 import cn.edu.gues.service.SubsidizeInfoService;
 import cn.edu.gues.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import cn.edu.gues.pojo.Member;
-import cn.edu.gues.pojo.User;
-import cn.edu.gues.util.AjaxResult;
-import cn.edu.gues.util.CommonUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -68,14 +61,7 @@ public class AdminController {
         return new ModelAndView("teacher/nextLeveladd");
     }
 
-    /**
-     * 学院班级管理-学院管理
-     * @return
-     */
-    @RequestMapping(value = "/academyAdd.do", method = RequestMethod.GET)
-    public ModelAndView academyAdd(){
-        return new ModelAndView("teacher/academyAdd");
-    }
+
 
     /**
      * 学院班级管理-班级管理

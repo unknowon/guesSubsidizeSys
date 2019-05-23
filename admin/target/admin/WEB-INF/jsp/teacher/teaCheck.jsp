@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>teacherCheck</title>
+    <title>贵州工程技术学院资助管理系统</title>
 
     <%@include file="/WEB-INF/jsp/header.jsp"%>
 
@@ -27,19 +27,26 @@
                 <li class="header">贵州工程技术学院资助管理系统</li>
 
                 <li class="">
-                    <a href="<%=ctxPath%>/Admin/indexTeacher.do">
+                    <a href="<%=ctxPath%>/Admin/teaCheck.do">
                         <i class="fa fa-dashboard"></i> <span>数据统计</span>
                     </a>
                 </li>
                 <li class="active">
                     <a href="<%=ctxPath%>/Admin/teaCheck.do">
-                        <i class="fa fa-dashboard"></i> <span>资格审核</span>
+                        <i class="fa fa-check-square"></i> <span>资格审核</span>
                     </a>
                 </li>
-                <li class="">
-                    <a href="<%=ctxPath%>/Admin/nextLevelcontrol.do">
-                        <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i> <span>权限管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
                     </a>
+                    <ul class="treeview-menu">
+                        <li><a href="adminList.html"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+                        <li><a href="roleList.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+                    </ul>
                 </li>
             </ul>
         </section>
@@ -59,39 +66,45 @@
 
         <!-- Main content -->
         <section class="content">
+            <form action="<%=ctxPath%>/Admin/teaCheck.do">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-info pull-left">全部信息</button>
-                            <button type="submit" class="btn btn-info pull-left">班主任审核中</button>
-                            <button type="submit" class="btn btn-info pull-left">辅导员审核中</button>
-                            <button type="submit" class="btn btn-info pull-left">学院审核中</button>
-                            <button type="submit" class="btn btn-info pull-left">学校审核中</button>
+                            <input type="button" class="btn btn-info pull-left" value="全部信息"/>
+                            <input type="button" class="btn btn-info pull-left" value="班主任审核中"/>
+                            <input type="button" class="btn btn-info pull-left" value="辅导员审核中"/>
+                            <input type="button" class="btn btn-info pull-left" value="学院审核中"/>
+                            <input type="button" class="btn btn-info pull-left" value="学校审核中"/>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-2 control-label">
                                 <label for="select1">按状态查询</label>
-                                <select id="select1" class="form-control select2" style="width: 100%;">
-                                    <option selected="selected">全部</option>
-                                    <option>家庭经济不困难</option>
-                                    <option>家庭经济困难</option>
-                                    <option>家庭经济特殊困难</option>
-                                    <option>家庭经济一般困难</option>
+                                <select id="select1" name="checkStatus" class="form-control select2" style="width: 100%;">
+                                    <option value="9">全部</option>
+                                    <option value="5">家庭经济不困难</option>
+                                    <option value="6">家庭经济一般困难</option>
+                                    <option value="7">家庭经济困难</option>
+                                    <option value="8">家庭经济特殊困难</option>
                                 </select>
                             </div>
                             <div class="col-sm-2 control-label">
                                 <label>按姓名查询</label>
-                                <input type="text" class="form-control" id="inputNation">
+                                <input type="text" class="form-control" id="inputNation" name="name" value="">
                             </div>
                             <div class="col-sm-2 control-label">
                                 <label>按年度查询</label>
-                                <select class="form-control select2" style="width: 100%;">
-                                    <option selected="selected">2019</option>
+                                <select class="form-control select2" style="width: 100%;" name="year">
+                                    <option>2019</option>
                                     <option>2018</option>
                                     <option>2017</option>
                                     <option>2016</option>
                                 </select>
+                            </div>
+
+                            <div class="col-sm-2 control-label">
+                                <label>&nbsp;</label>
+                                <input type="submit" class="btn btn-info pull-left form-control" value="查询"/>
                             </div>
                         </div>
                         <!-- /.box-header -->
@@ -130,6 +143,7 @@
                 </div>
                 <!-- /.col -->
             </div>
+            </form>
             <!-- /.row -->
         </section>
         <!-- /.content -->
@@ -339,6 +353,21 @@
 </div>
 <!-- ./wrapper -->
 
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
 <!-- page script -->
 <script>
     $(function () {
