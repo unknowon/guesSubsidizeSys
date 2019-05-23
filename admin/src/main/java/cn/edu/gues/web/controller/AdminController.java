@@ -2,6 +2,7 @@ package cn.edu.gues.web.controller;
 
 import cn.edu.gues.mapper.SubsidizeInfoMapper;
 import cn.edu.gues.pojo.AdminUser;
+import cn.edu.gues.pojo.Class;
 import cn.edu.gues.pojo.User;
 import cn.edu.gues.service.SubsidizeInfoService;
 import cn.edu.gues.service.UserService;
@@ -18,6 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -41,10 +43,11 @@ public class AdminController {
         return new ModelAndView("indexTeacher");
     }
 
-    @RequestMapping(value = "/teaCheck.do", method = RequestMethod.GET)
-    public ModelAndView teaCheck(int checkStatus, String name, Date year, HttpServletRequest request){
+    @RequestMapping("/teaCheck.do")
+    public ModelAndView teaCheck(Integer checkStatus, String name, Date year, HttpServletRequest request){
 
-
+        AdminUser adminUser = (AdminUser) request.getSession().getAttribute("adminUser");
+        List<Class> classList = (List<Class>) request.getSession().getAttribute("classList");
 
 
         return new ModelAndView("teacher/teaCheck");

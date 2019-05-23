@@ -1,8 +1,10 @@
 package cn.edu.gues.web.controller;
 
 import cn.edu.gues.pojo.AdminUser;
+import cn.edu.gues.pojo.Class;
 import cn.edu.gues.pojo.User;
 import cn.edu.gues.service.AdminUserService;
+import cn.edu.gues.service.ClassAdminUserService;
 import cn.edu.gues.service.UserService;
 import cn.edu.gues.util.AjaxResult;
 import cn.edu.gues.util.CommonUtils;
@@ -16,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * OtherController
@@ -32,6 +35,10 @@ public class OtherController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private ClassAdminUserService classAdminUserService;
+
 
     @RequestMapping("/")
     public ModelAndView indexStu(HttpServletRequest request){
@@ -64,6 +71,8 @@ public class OtherController {
         AdminUser adminUser = adminUserService.login(account, password);
         if(adminUser != null){
             request.getSession().setAttribute("adminUser", adminUser);
+            List<Class> classList = classAdminUserService.selectFirstListBySecondId(adminUser.getId());
+            request.getSession().setAttribute("classList", classList);
         }
         User user = userService.login(account, password);
         if(user != null){
