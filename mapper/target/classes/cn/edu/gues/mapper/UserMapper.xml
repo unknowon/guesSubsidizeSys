@@ -38,4 +38,21 @@
             <if test="isChecked!=null"> and isChecked=#{isChecked}</if>
     </select>
 
+    <select id="search" parameterType="map" resultType="teaCheckUserPojo">
+        select u.`name` name, u.studentNum studentNum,co.`name` collegeName, c.`name` className,sub.checkStatus from t_users u
+         left join t_classusers cu on cu.userId=u.id
+         left join t_classes c on c.id=cu.classId
+         left join t_collegeclasses cc on c.id=cc.classId
+         left join t_colleges co on co.id=cc.collegeId
+         left join t_subsidizesinfo sub on sub.userId=u.id and sub.`key`='nationality'
+        left join t_classadminusers cladm on cladm.classId=c.id
+        left join t_adminusers admu on admu.id=cladm.adminUserId
+        <where>
+            <if test="name!=null"> and u.name=#{name}</if>
+            <if test="checkStatus!=null"> and sub.checkStatus=#{checkStatus}</if>
+            <if test="year!=null"> and YEAR(sub.createDateTime)=#{year}</if>
+            and admu.id=#{adminUserId}
+        </where>
+    </select>
+
 </mapper>
