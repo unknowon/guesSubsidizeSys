@@ -97,33 +97,6 @@ public class AdminController {
 
 
     /**
-     * 学院班级管理-班级管理
-     * @return
-     */
-    @RequestMapping(value = "/classAdd.do", method = RequestMethod.GET)
-    public ModelAndView classAdd(){
-        return new ModelAndView("teacher/classAdd");
-    }
-
-    /**
-     * 权限管理-用户权限管理
-     * @return
-     */
-    @RequestMapping(value = "/adminList.do", method = RequestMethod.GET)
-    public ModelAndView adminList(){
-        return new ModelAndView("teacher/adminList");
-    }
-
-    /**
-     * 权限管理-角色管理
-     * @return
-     */
-    @RequestMapping(value = "/roleList.do", method = RequestMethod.GET)
-    public ModelAndView roleList(){
-        return new ModelAndView("teacher/roleList");
-    }
-
-    /**
      * 学生信息
      * @return
      */
