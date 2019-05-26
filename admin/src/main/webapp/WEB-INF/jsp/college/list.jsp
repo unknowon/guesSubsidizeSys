@@ -34,7 +34,7 @@
           </a>
         </li>
         <li class="">
-          <a href="<%=ctxPath%>/Admin/nextLevelcontrol.do">
+          <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
             <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
           </a>
         </li>
@@ -47,7 +47,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="<%=ctxPath%>/College/collegeList.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
-            <li><a href="<%=ctxPath%>/Admin/classAdd.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
+            <li><a href="<%=ctxPath%>/Class/classList.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -58,8 +58,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<%=ctxPath%>/Admin/adminList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
-            <li><a href="<%=ctxPath%>/Admin/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+            <li><a href="<%=ctxPath%>/AdminUserRole/adminUserRoleList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+            <li><a href="<%=ctxPath%>/Role/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
           </ul>
         </li>
         <li class="">
