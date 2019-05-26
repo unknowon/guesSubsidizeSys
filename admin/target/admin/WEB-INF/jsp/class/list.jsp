@@ -46,7 +46,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<%=ctxPath%>/Admin/academyAdd.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
+            <li class="active"><a href="<%=ctxPath%>/College/collegeList.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
             <li><a href="<%=ctxPath%>/Admin/classAdd.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
           </ul>
         </li>
@@ -58,7 +58,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<%=ctxPath%>/Admin/adminList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+            <li><a href="<%=ctxPath%>/Admin/adminList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
             <li><a href="<%=ctxPath%>/Admin/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
           </ul>
         </li>
@@ -76,13 +76,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        用户权限管理
-        <small>给用户分配角色</small>
+        学院管理
+        <small>学院的增删改操作</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-        <li><a href="#">权限管理</a></li>
-        <li class="active">用户权限管理</li>
+        <li><a href="#">学院班级管理</a></li>
+        <li class="active">学院管理</li>
       </ol>
     </section>
 
@@ -92,9 +92,9 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <!--<h3 class="box-title">用户权限管理</h3>-->
+              <!--<h3 class="box-title">添加学院</h3>-->
               <div class="col-xs-2">
-                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加用户','./adminAdd.html','800','500')">添加用户</button>
+                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加学院','<%=ctxPath%>/College/collegeAdd.do','500','500')">添加学院</button>
               </div>
             </div>
             <!-- /.box-header -->
@@ -102,22 +102,23 @@
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>用户名</th>
-                  <th>角色</th>
+                  <th>序号</th>
+                  <th>学院名称</th>
                   <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
+
+                <c:forEach items="${collegeList}" var="college">
                 <tr>
-                  <td>00001</td>
-                  <td>张三</td>
-                  <td>辅导员</td>
+                  <td>${college.id}</td>
+                  <td>${college.name}</td>
                   <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','./adminEdit.html','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
-                    <a title="删除" href="javascript:;" onclick="admin_del(this,'')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/College/collegeEdit.do?id=${college.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/College/collegeDelete.do','id=${college.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
+                </c:forEach>
 
                 </tbody>
 

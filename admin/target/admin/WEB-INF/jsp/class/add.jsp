@@ -11,17 +11,17 @@
 <head>
     <%@include file="../header.jsp"%>
 
-    <title>增加学院</title>
+    <title>修改成员</title>
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/College/collegeAdd.do" class="form form-horizontal" id="form-add">
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/Class/classAdd.do" class="form form-horizontal" id="form-add">
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="name"><span class="c-red">*</span>学院名：</label>
-                    <input type="text" class="form-control" value="" id="name" name="name" placeholder="输入学院名称">
+                    <label for="CNAME"><span class="c-red">*</span>学院名：</label>
+                    <input type="text" class="form-control" value="" id="CNAME" name="CNAME" placeholder="输入学院名称">
                 </div>
             </div>
 
