@@ -1,7 +1,12 @@
 package cn.edu.gues.web.controller;
 
 import cn.edu.gues.pojo.Class;
+import cn.edu.gues.pojo.ClassAndCollege;
+import cn.edu.gues.pojo.College;
+import cn.edu.gues.pojo.CollegeClass;
 import cn.edu.gues.service.ClassService;
+import cn.edu.gues.service.CollegeClassService;
+import cn.edu.gues.service.CollegeService;
 import cn.edu.gues.util.AjaxResult;
 import cn.edu.gues.util.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +32,12 @@ public class ClassController {
     @Autowired
     private ClassService classService;
 
+    @Autowired
+    private CollegeService collegeService;
+
+    @Autowired
+    private CollegeClassService collegeClassService;
+
     /**
      * 学院班级管理-班级管理
      * @return
@@ -36,33 +47,38 @@ public class ClassController {
 
         //因为要查学院，是和学院有关的，所以用CollegeService
         //把所有的学院查出来
-        List<Class> classList = classService.selectList();
+        List<ClassAndCollege> classList = classService.selectAllClassAndCollege();
+
         ModelAndView modelAndView = new ModelAndView("class/list");
         //把查出来的
         modelAndView.addObject("classList", classList);
-        for(int i=0; i<classList.size(); i++){
-            System.out.println(classList.get(i).getId());
-
-        }
 
         return modelAndView;
     }
 
     @RequestMapping(value = "/classAdd.do", method = RequestMethod.GET)
     public ModelAndView collegeAdd(){
-        return new ModelAndView("class/add");
+        List<College> collegeList = collegeService.selectList();
+        return new ModelAndView("class/add", "collegeList", collegeList);
     }
 
     @RequestMapping(value = "/classAdd.do", method = RequestMethod.POST)
-    public @ResponseBody AjaxResult classAddSubmit(String name, HttpServletRequest request){
+    public @ResponseBody AjaxResult classAddSubmit(String name, Long collegeId , HttpServletRequest request){
 
         if(CommonUtils.isEmpty(name)){
             return AjaxResult.errorInstance("班级名不能为空");
+        } else if(collegeId == null){
+            return AjaxResult.errorInstance("必须选择所属学院");
         }
 
         Class cls = new Class();
         cls.setName(name);
         classService.insert(cls);
+        cls = classService.selectOne(cls);
+        CollegeClass collegeClass = new CollegeClass();
+        collegeClass.setClassId(cls.getId());
+        collegeClass.setCollegeId(collegeId);
+        collegeClassService.insert(collegeClass);
 
         return AjaxResult.successInstance("添加成功");
     }

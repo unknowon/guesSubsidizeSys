@@ -26,12 +26,12 @@
                 <div class="row cl">
                     <label class="form-label col-3"><span class="c-red">*</span>所属学院：</label>
                     <div class="formControls col-5">
-                        <select id="roleId" name="roleId" datatype="*" >
-                            <option value="选择角色">选择学院</option>
+                        <select id="collegeId" name="collegeId" datatype="*" >
 
-                            <option value="${role.id }">信息学院</option>
-                            <option value="${role.id }">管理学院</option>
-                            <option value="${role.id }">机械书记</option>
+                            <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.id }">${college.name}</option>
+                            </c:forEach>
+
 
                         </select>
                     </div>

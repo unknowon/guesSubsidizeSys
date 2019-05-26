@@ -26,4 +26,11 @@
         <if test="name!=null"> and name=#{name}</if>
     </select>
 
+    <select id="selectAllClassAndCollege" parameterType="Class" resultType="ClassAndCollege">
+        select clz.id classId, clz.`name` className, clg.id collegeId, clg.`name` collegeName from t_classes clz
+           left join t_collegeclasses cc ON clz.id=cc.classId
+           left join t_colleges clg on clg.id=cc.collegeId
+        where clz.isDeleted=false
+    </select>
+
 </mapper>

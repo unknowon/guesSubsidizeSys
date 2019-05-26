@@ -3,7 +3,7 @@
 <mapper namespace="cn.edu.gues.mapper.CollegeClassMapper">
 
     <insert id="insert" parameterType="CollegeClass">
-        insert into t_collegeclasses(collegeId, classId) values(collegeId=#{collegeId}, classId=#{classId})
+        insert into t_collegeclasses(collegeId, classId) values(#{collegeId}, #{classId})
     </insert>
 
     <update id="update" parameterType="CollegeClass">
