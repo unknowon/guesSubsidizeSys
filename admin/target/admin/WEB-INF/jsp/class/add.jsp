@@ -27,12 +27,9 @@
                     <label class="form-label col-3"><span class="c-red">*</span>所属学院：</label>
                     <div class="formControls col-5">
                         <select id="collegeId" name="collegeId" datatype="*" >
-
                             <c:forEach items="${collegeList}" var="college">
                             <option value="${college.id }">${college.name}</option>
                             </c:forEach>
-
-
                         </select>
                     </div>
                     <div class="col-4"> </div>

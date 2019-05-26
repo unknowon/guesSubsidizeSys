@@ -118,6 +118,7 @@
                     <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/Role/roleDelete.do','id=${role.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
+                </c:forEach>
 
                 </tbody>
 

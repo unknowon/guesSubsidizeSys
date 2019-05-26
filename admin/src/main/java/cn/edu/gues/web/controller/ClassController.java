@@ -86,12 +86,20 @@ public class ClassController {
     @RequestMapping(value = "/classEdit.do", method = RequestMethod.GET)
     public ModelAndView classEdit(Long id){
         Class cls = classService.selectOne(id);
+        College nowClassCollege = collegeClassService.selectFirstListBySecondId(cls.getId()).get(0);
 
-        return new ModelAndView("class/edit", "class", cls);
+        List<College> collegeList = collegeService.selectList();
+
+        ModelAndView modelAndView = new ModelAndView("class/edit");
+        modelAndView.addObject("clz", cls);
+        modelAndView.addObject("nowClassCollege", nowClassCollege);
+        modelAndView.addObject("collegeList", collegeList);
+
+        return modelAndView;
     }
 
     @RequestMapping(value = "/classEdit.do", method = RequestMethod.POST)
-    public @ResponseBody AjaxResult classEditSubmit(Long id, String name, HttpServletRequest request){
+    public @ResponseBody AjaxResult classEditSubmit(Long collegeId, Long id, String name, HttpServletRequest request){
 
         if(CommonUtils.isEmpty(name)){
             return AjaxResult.errorInstance("班级名不能为空");
@@ -106,6 +114,11 @@ public class ClassController {
         cls = classService.selectOne(id);
         cls.setName(name);
         classService.update(cls);
+        cls = classService.selectOne(id);
+
+        Long[] collegeIds = new Long[1];
+        collegeIds[0] = collegeId;
+        collegeClassService.updateSecond(id, collegeIds);
 
         return AjaxResult.successInstance("添加成功");
     }
