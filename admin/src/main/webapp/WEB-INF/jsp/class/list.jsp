@@ -101,6 +101,26 @@
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
+                <%--<tr>--%>
+                  <%--<th>ID</th>--%>
+                  <%--<th>班级名称</th>--%>
+                  <%--<th>所属学院</th>--%>
+                  <%--<th>操作</th>--%>
+                <%--</tr>--%>
+                <%--</thead>--%>
+                <%--<tbody>--%>
+
+                <%--<c:forEach items="${classList}" var="clz">--%>
+                  <%--<tr>--%>
+                    <%--<td>${clz.id}</td>--%>
+                    <%--<td>${clz.name}<td>--%>
+                    <%--<td>信息工程学院</td>--%>
+                    <%--<td>--%>
+                      <%--<a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/Class/classEdit.do?id=${clz.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>--%>
+                      <%--<a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/Class/classDelete.do','id=${clz.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>--%>
+                    <%--</td>--%>
+                  <%--</tr>--%>
+                <%--</c:forEach>--%>
                 <tr>
                   <th>ID</th>
                   <th>班级名称</th>
