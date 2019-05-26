@@ -94,17 +94,36 @@
             <div class="box-header">
               <!--<h3 class="box-title">用户权限管理</h3>-->
               <div class="col-xs-2">
-                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加班级','./clsAdd.html','800','500')">添加班级</button>
+                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加班级','/Class/classAdd.do','800','500')">添加班级</button>
               </div>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
+                <%--<tr>--%>
+                  <%--<th>ID</th>--%>
+                  <%--<th>班级名称</th>--%>
+                  <%--<th>所属学院</th>--%>
+                  <%--<th>操作</th>--%>
+                <%--</tr>--%>
+                <%--</thead>--%>
+                <%--<tbody>--%>
+
+                <%--<c:forEach items="${classList}" var="clz">--%>
+                  <%--<tr>--%>
+                    <%--<td>${clz.id}</td>--%>
+                    <%--<td>${clz.name}<td>--%>
+                    <%--<td>信息工程学院</td>--%>
+                    <%--<td>--%>
+                      <%--<a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/Class/classEdit.do?id=${clz.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>--%>
+                      <%--<a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/Class/classDelete.do','id=${clz.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>--%>
+                    <%--</td>--%>
+                  <%--</tr>--%>
+                <%--</c:forEach>--%>
                 <tr>
                   <th>ID</th>
                   <th>班级名称</th>
-
                   <th>所属学院</th>
                   <th>操作</th>
                 </tr>
@@ -112,15 +131,15 @@
                 <tbody>
 
                 <c:forEach items="${classList}" var="clz">
-                <tr>
-                  <td>${clz.id}</td>
-                  <td>${clz.name}<td>
-                  <td>信息工程学院</td>
-                  <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/Class/classEdit.do?id=${clz.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
-                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/Class/classDelete.do','id=${clz.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
-                  </td>
-                </tr>
+                  <tr>
+                    <td>${clz.id}</td>
+                    <td>${clz.name}</td>
+                    <td>信息工程学院</td>
+                    <td>
+                      <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/Class/classEdit.do?id=${clz.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+                      <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/Class/classDelete.do','id=${clz.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    </td>
+                  </tr>
                 </c:forEach>
 
                 </tbody>

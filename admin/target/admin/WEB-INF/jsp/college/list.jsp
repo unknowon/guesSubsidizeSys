@@ -38,7 +38,7 @@
             <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="treeview active">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>学院班级管理</span>
             <span class="pull-right-container">
