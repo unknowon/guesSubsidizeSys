@@ -34,7 +34,7 @@
           </a>
         </li>
         <li class="">
-          <a href="<%=ctxPath%>/Admin/nextLevelcontrol.do">
+          <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
             <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
           </a>
         </li>
@@ -46,8 +46,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<%=ctxPath%>/Admin/academyAdd.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
-            <li class="active"><a href="<%=ctxPath%>/Admin/classAdd.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
+            <li><a href="<%=ctxPath%>/College/collegeList.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
+            <li class="active"><a href="<%=ctxPath%>/Class/classList.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -58,8 +58,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<%=ctxPath%>/Admin/adminList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
-            <li><a href="<%=ctxPath%>/Admin/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+            <li><a href="<%=ctxPath%>/AdminUserRole/adminUserRoleList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+            <li><a href="<%=ctxPath%>/Role/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
           </ul>
         </li>
         <li class="">
@@ -104,6 +104,7 @@
                 <tr>
                   <th>ID</th>
                   <th>班级名称</th>
+                  <th></th>
                   <th>所属学院</th>
                   <th>操作</th>
                 </tr>
@@ -114,7 +115,7 @@
                 <tr>
                   <td>${clz.id}</td>
                   <td>${clz.name}<td>
-                  
+                  <td>信息工程学院</td>
                   <td>
                     <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/Class/classEdit.do?id=${clz.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
                     <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/Class/classDelete.do','id=${clz.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>

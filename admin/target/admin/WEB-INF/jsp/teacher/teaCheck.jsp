@@ -23,18 +23,40 @@
     <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
+            <!-- Sidebar user panel -->
+
+            <!-- search form -->
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">贵州工程技术学院资助管理系统</li>
 
                 <li class="">
-                    <a href="<%=ctxPath%>/Admin/teaCheck.do">
+                    <a href="<%=ctxPath%>/Admin/indexTeacher.do">
                         <i class="fa fa-dashboard"></i> <span>数据统计</span>
                     </a>
                 </li>
                 <li class="active">
                     <a href="<%=ctxPath%>/Admin/teaCheck.do">
-                        <i class="fa fa-check-square"></i> <span>资格审核</span>
+                        <i class="fa fa-dashboard"></i> <span>资格审核</span>
                     </a>
+                </li>
+                <li class="">
+                    <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
+                        <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i> <span>学院班级管理</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="<%=ctxPath%>/College/collegeList.do"><i class="fa fa-circle-o"></i> 学院管理</a></li>
+                        <li><a href="<%=ctxPath%>/Class/classList.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
+                    </ul>
                 </li>
                 <li class="treeview">
                     <a href="#">
@@ -44,9 +66,14 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="adminList.html"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
-                        <li><a href="roleList.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+                        <li><a href="<%=ctxPath%>/AdminUserRole/adminUserRoleList.do"><i class="fa fa-circle-o"></i> 用户权限管理</a></li>
+                        <li><a href="<%=ctxPath%>/Role/roleList.do"><i class="fa fa-circle-o"></i> 角色管理</a></li>
                     </ul>
+                </li>
+                <li class="">
+                    <a href="<%=ctxPath%>/Admin/studentInformation.do">
+                        <i class="fa fa-dashboard"></i> <span>学生信息</span>
+                    </a>
                 </li>
             </ul>
         </section>
