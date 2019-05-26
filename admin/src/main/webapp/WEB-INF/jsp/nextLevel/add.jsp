@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <head>
+
         <title>nextLeveladd</title>
 
         <%@include file="/WEB-INF/jsp/header.jsp"%>
 
-    </head>
+
 </head>
 <body>
 <article class="page-container">
