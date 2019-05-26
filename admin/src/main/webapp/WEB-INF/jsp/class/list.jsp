@@ -104,7 +104,7 @@
                 <tr>
                   <th>ID</th>
                   <th>班级名称</th>
-                  <th></th>
+
                   <th>所属学院</th>
                   <th>操作</th>
                 </tr>
