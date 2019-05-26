@@ -50,7 +50,7 @@
           <li><a href="<%=ctxPath%>/Class/classList.do"><i class="fa fa-circle-o"></i> 班级管理</a></li>
         </ul>
       </li>
-      <li class="treeview">
+      <li class="treeview active">
         <a href="#">
           <i class="fa fa-dashboard"></i> <span>权限管理</span>
           <span class="pull-right-container">
