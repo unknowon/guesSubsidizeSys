@@ -11,7 +11,7 @@
 <head>
     <%@include file="../header.jsp"%>
 
-    <title>修改成员</title>
+    <title>增加学院</title>
 </head>
 <body>
 <article class="page-container">

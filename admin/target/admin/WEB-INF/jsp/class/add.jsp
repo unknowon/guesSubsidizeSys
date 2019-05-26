@@ -11,7 +11,7 @@
 <head>
     <%@include file="../header.jsp"%>
 
-    <title>修改成员</title>
+    <title>添加班级</title>
 </head>
 <body>
 <article class="page-container">
@@ -20,8 +20,22 @@
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="CNAME"><span class="c-red">*</span>学院名：</label>
-                    <input type="text" class="form-control" value="" id="CNAME" name="CNAME" placeholder="输入学院名称">
+                    <label for="name"><span class="c-red">*</span>班级名称：</label>
+                    <input type="text" class="form-control" value="" id="name" name="name" placeholder="输入班级名称">
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-3"><span class="c-red">*</span>所属学院：</label>
+                    <div class="formControls col-5">
+                        <select id="roleId" name="roleId" datatype="*" >
+                            <option value="选择角色">选择学院</option>
+
+                            <option value="${role.id }">信息学院</option>
+                            <option value="${role.id }">管理学院</option>
+                            <option value="${role.id }">机械书记</option>
+
+                        </select>
+                    </div>
+                    <div class="col-4"> </div>
                 </div>
             </div>
 

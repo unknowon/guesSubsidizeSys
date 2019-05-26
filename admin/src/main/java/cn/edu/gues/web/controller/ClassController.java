@@ -40,6 +40,10 @@ public class ClassController {
         ModelAndView modelAndView = new ModelAndView("class/list");
         //把查出来的
         modelAndView.addObject("classList", classList);
+        for(int i=0; i<classList.size(); i++){
+            System.out.println(classList.get(i).getId());
+
+        }
 
         return modelAndView;
     }
