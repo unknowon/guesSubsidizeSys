@@ -3,7 +3,7 @@
 <mapper namespace="cn.edu.gues.mapper.AdminUserMapper">
 
     <insert id="insert" parameterType="AdminUser">
-        insert into T_Adminusers(name, workId, phone, password, passwordSalt) values(#{name}, #{workId}, #{phone}, #{passowrd}, #{passwordSalt})
+        insert into T_Adminusers(name, workId, phone, password, passwordSalt) values(#{name}, #{workId}, #{phone}, #{password}, #{passwordSalt})
     </insert>
 
     <update id="update" parameterType="AdminUser">
@@ -32,14 +32,16 @@
     </select>
 
     <select id="selectAllAndRole" parameterType="AdminUser" resultType="AdminUserAndRole">
-        select u.id id, u.`name` name, r.id roleId, r.`name` roleName from t_adminusers u
+        select u.id adminUserId, u.`name` adminUserName, r.id roleId, r.`name` roleName, u.workId workId, u.phone phone from t_adminusers u
         left join t_adminuserroles ur on u.id=ur.adminUserId
         left join t_roles r on r.id=ur.roleId
         where u.isDeleted=false
-        <if test="id!=null"> and u.id=#{id} </if>
-        <if test="name!=null"> and u.name=#{name} </if>
+        <if test="adminUserId!=null"> and u.id=#{adminUserId} </if>
+        <if test="adminUserName!=null"> and u.name=#{adminUserName} </if>
         <if test="roleId!=null"> and r.id=#{roleId} </if>
         <if test="roleName!=null"> and r.name=#{roleName} </if>
+        <if test="workId!=null"> and u.workId=#{workId}</if>
+        <if test="phone!=null"> and u.phone=#{phone}</if>
     </select>
 
 

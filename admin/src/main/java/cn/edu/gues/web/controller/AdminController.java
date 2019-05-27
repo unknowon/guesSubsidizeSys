@@ -88,7 +88,6 @@ public class AdminController {
         return new ModelAndView("teacher/nextLevelcontrol");
     }
 
-    // 没写好，不知道七七八八的services是什么 作者:WSW
     @RequestMapping(value = "/nextLeveladd.do", method = RequestMethod.POST)
     public ModelAndView nextLeveladd(){
         return new ModelAndView("teacher/nextLeveladd");

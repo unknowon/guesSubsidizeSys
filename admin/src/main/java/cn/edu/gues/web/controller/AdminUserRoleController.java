@@ -18,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * AdminUserRoleController
@@ -58,7 +59,7 @@ public class AdminUserRoleController {
     }
 
     @RequestMapping(value = "/adminUserRoleAdd.do", method = RequestMethod.POST)
-    public @ResponseBody AjaxResult adminUserRoleAddSubmit(Long roleId, String name){
+    public @ResponseBody AjaxResult adminUserRoleAddSubmit(Long roleId, String name, String workId, String phone){
 
         if(roleId == null || roleId ==0L){
             return AjaxResult.errorInstance("需要选择角色");
@@ -67,7 +68,20 @@ public class AdminUserRoleController {
             return AjaxResult.errorInstance("用户名必填");
         }
 
+        AdminUser adminUser = new AdminUser();
+        adminUser.setName(name);
+        adminUser.setWorkId(workId);
+        adminUser.setPhone(phone);
+        String passwordSalt = UUID.randomUUID().toString();
+        adminUser.setPassword(CommonUtils.calculateMD5("gues520" + passwordSalt));
+        adminUser.setPasswordSalt(passwordSalt);
 
+        adminUserService.insert(adminUser);
+        adminUser = adminUserService.selectOne(adminUser);
+        AdminUserRole adminUserRole = new AdminUserRole();
+        adminUserRole.setAdminUserId(adminUser.getId());
+        adminUserRole.setRoleId(roleId);
+        adminUserRoleService.insert(adminUserRole);
 
         return AjaxResult.successInstance("添加成功");
     }
@@ -75,7 +89,7 @@ public class AdminUserRoleController {
     @RequestMapping(value = "/adminUserRoleEdit.do", method = RequestMethod.GET)
     public ModelAndView adminUserRoleEdit(Long id){
         AdminUserAndRole adminUserAndRole = new AdminUserAndRole();
-        adminUserAndRole.setId(id);
+        adminUserAndRole.setAdminUserId(id);
         AdminUserAndRole adminUser = adminUserService.selectAllAndRole(adminUserAndRole).get(0);
 
         List<Role> roleList = roleService.selectList();
@@ -88,17 +102,22 @@ public class AdminUserRoleController {
     }
 
     @RequestMapping(value = "/adminUserRoleEdit.do", method = RequestMethod.POST)
-    public @ResponseBody AjaxResult adminUserRoleEditSubmit(Long id, String name, Long roleId){
+    public @ResponseBody AjaxResult adminUserRoleEditSubmit(Long id, String name, Long roleId, String phone, String workId){
 
         if(id == null || id == 0L){
             return AjaxResult.errorInstance("用户名不能为空");
-        }
-        else if(roleId == null || roleId == 0L){
+        } else if(roleId == null || roleId == 0L){
             return AjaxResult.errorInstance("需要选择角色");
+        } else if(CommonUtils.isEmpty(phone)){
+            return AjaxResult.errorInstance("需要填写手机号");
+        } else if(CommonUtils.isEmpty(workId)){
+            return AjaxResult.errorInstance("需要填写工号");
         }
 
         AdminUser adminUser = new AdminUser();
         adminUser.setName(name);
+        adminUser.setPhone(phone);
+        adminUser.setWorkId(workId);
         adminUser = adminUserService.selectOne(adminUser);
         if(adminUser != null && !adminUser.getId().equals(id)){
             return AjaxResult.errorInstance("该用户已经存在");
