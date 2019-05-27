@@ -9,14 +9,22 @@
 <body>
 <article class="page-container">
     <form class="form form-horizontal" id="form-add">
-        <input type="hidden" name="id" value="${adminUser.id }" />
+        <input type="hidden" name="id" value="${adminUser.adminUserId }" />
 
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
                     <label for="name"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="${adminUser.name}"  id="name" name="name" placeholder="输入用户名">
+                    <input type="text" class="form-control" value="${adminUser.adminUserName}"  id="name" name="name" placeholder="输入用户名">
+                </div>
+                <div class="form-group">
+                    <label for="workId"><span class="c-red">*</span>工号：</label>
+                    <input type="text" class="form-control" value="${adminUser.workId}" id="workId" name="workId" placeholder="输入工号">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><span class="c-red">*</span>电话：</label>
+                    <input type="text" class="form-control" value="${adminUser.phone}" id="phone" name="phone" placeholder="输入电话">
                 </div>
                 <div class="row cl">
                     <label class="form-label col-3"><span class="c-red">*</span>角色：</label>
@@ -30,14 +38,7 @@
 
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="workId"><span class="c-red">*</span>工号：</label>
-                        <input type="text" class="form-control" value="${adminUser.workId}" id="workId" name="workId" placeholder="输入工号">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone"><span class="c-red">*</span>工号：</label>
-                        <input type="text" class="form-control" value="${adminUser.phone}" id="phone" name="phone" placeholder="输入电话">
-                    </div>
+
                 </div>
             </div>
 
