@@ -1,6 +1,7 @@
 package cn.edu.gues.service;
 
 import cn.edu.gues.mapper.UserMapper;
+import cn.edu.gues.pojo.StudentBaseInfo;
 import cn.edu.gues.pojo.TeaCheckUserPojo;
 import cn.edu.gues.pojo.User;
 import cn.edu.gues.util.CommonUtils;
@@ -53,5 +54,12 @@ public class UserService extends BaseService<User> {
         PageHelper.startPage(pageNum, pageSize);
         List<TeaCheckUserPojo> list = mapper.search(params);
         return new PageInfo<TeaCheckUserPojo>(list);
+    }
+
+
+    public PageInfo<StudentBaseInfo> selectAllBaseInfo(Integer pageNum, int pageSize, Map<String, Object> params) {
+        PageHelper.startPage(pageNum, pageSize);
+        List<StudentBaseInfo> list = mapper.selectAllBaseInfo(params);
+        return new PageInfo<StudentBaseInfo>(list);
     }
 }

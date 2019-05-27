@@ -98,25 +98,22 @@
                     <div class="box">
 
                         <div class="form-group">
+                            <form action="<%=ctxPath%>/Admin/studentInformation.do">
                             <div class="col-sm-5 control-label" style="margin: 20px 0px">
-                                <label for="select1">信息查询</label>
+                                <label for="param">信息查询</label>
+
                             <div class="input-group">
-                                <select id="select1" class="form-control select2" style="width: 35%">
-                                    <option selected="selected">姓名</option>
-                                    <option>学号</option>
-                                    <option>身份证</option>
-                                    <option>学院</option>
-                                    <option>班级</option>
-                                </select>
+
                                 <!-- /btn-group -->
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="search" name="search">
+                                    <input type="text" id="param" name="param" value="${param.param}" class="form-control" id="search" name="search">
                                 <span class="input-group-btn">
-                                     <button type="button" class="btn btn-info btn-flat">查询</button>
+                                     <button type="submit" class="btn btn-info btn-flat">查询</button>
                                 </span>
                                 </div>
                             </div>
                             </div>
+                            </form>
                         </div>
 
                         <!-- /.box-header -->
@@ -124,29 +121,23 @@
                             <table id="example2" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
-                                    <th>选择框</th>
-                                    <th>序号</th>
                                     <th>姓名</th>
                                     <th>身份证号</th>
                                     <th>学院</th>
-                                    <th>专业</th>
                                     <th>班级</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <c:forEach items="${pageInfo.list }" var="user">
                                 <tr>
-                                    <td >
-                                        <input type="checkbox">
-                                    </td>
-                                    <td>1</td>
-                                    <td>王小二</td>
-                                    <td>520198100103196718</td>
-                                    <td>信息学院</td>
-                                    <td>计算机工程</td>
-                                    <td>14计算机01</td>
+                                    <td>${user.studentName}</td>
+                                    <td>${user.idCard}</td>
+                                    <td>${user.collegeName}</td>
+                                    <td>${user.className}</td>
                                     <td><button>密码初始化</button></td>
                                 </tr>
+                                </c:forEach>
                             </table>
                         </div>
                         <!-- /.box-body -->
@@ -174,9 +165,34 @@
             'paging'      : true,
             'lengthChange': false,
             'searching'   : false,
-            'ordering'    : false,
+            'ordering'    : true,
             'info'        : false,
-            'autoWidth'   : true,
+            'autoWidth'   : false,
+            language: {
+                "sProcessing": "处理中...",
+                "sLengthMenu": "显示 _MENU_ 项结果",
+                "sZeroRecords": "没有匹配结果",
+                /*"sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",*/
+                "sInfo": " 共 _TOTAL_ 项",
+                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+                "sInfoPostFix": "",
+                "sSearch": "搜索: ",
+                "sUrl": "",
+                "sEmptyTable": "表中数据为空",
+                "sLoadingRecords": "载入中...",
+                "sInfoThousands": ",",
+                "oPaginate": {
+                    "sFirst": "首页",
+                    "sPrevious": "上一页",
+                    "sNext": "下一页",
+                    "sLast": "末页"
+                },
+                "oAria": {
+                    "sSortAscending": ": 以升序排列此列",
+                    "sSortDescending": ": 以降序排列此列"
+                }
+            }
         })
     })
 </script>
