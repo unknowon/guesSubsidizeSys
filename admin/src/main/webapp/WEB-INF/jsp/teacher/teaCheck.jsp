@@ -173,7 +173,16 @@
                                         <c:when test="${user.checkStatus == 9}">特殊困难</c:when>
                                     </c:choose>
                                     </td>
-                                    <td>申请陈述 | 调查表 | 附件表 |审核处理</td>
+                                    <td>
+                                        <Button
+                                        onclick="showLayer('审核处理-申请陈述','<%=ctxPath%>/DisposeCheck/state.do?id=${user.id}','800','600')"
+                                        type="button"
+                                        class="btn btn-block btn-success"
+                                        style="width: 35%; padding: 0px"
+                                        >
+                                            审核处理
+                                        </Button>
+                                    </td>
                                 </tr>
                                 </c:forEach>
                             </table>
