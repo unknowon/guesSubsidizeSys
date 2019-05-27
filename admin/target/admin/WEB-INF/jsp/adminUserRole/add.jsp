@@ -17,18 +17,17 @@
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="adminUserId"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="" id="adminUserId" name="adminUserId" placeholder="输入用户名">
+                    <label for="name"><span class="c-red">*</span>用户名：</label>
+                    <input type="text" class="form-control" value="" id="name" name="name" placeholder="输入用户名">
                 </div>
                 <div class="row cl">
                     <label class="form-label col-3"><span class="c-red">*</span>角色：</label>
                     <div class="formControls col-5">
                         <select id="roleId" name="roleId" datatype="*" >
-                            <option value="选择角色">选择角色</option>
 
-                            <option value="${role.id }">管理员</option>
-                            <option value="${role.id }">辅导员</option>
-                            <option value="${role.id }">学院书记</option>
+                            <c:forEach items="${roleList}" var="role">
+                                <option value="${role.id }">${role.name}</option>
+                            </c:forEach>
 
                         </select>
                     </div>
@@ -61,16 +60,16 @@
 
             var data = $("#form-add").serializeArray();
             $.ajax({
-                url:"",type:"post",
+                url:"<%=ctxPath%>/AdminUserRole/adminUserRoleAdd.do",type:"post",
                 data:data,
                 success:function(result){
-                    if(result.status=="ok")
+                    if(result.status=="success")
                     {
                         parent.location.reload();//刷新父窗口
                     }
                     else
                     {
-                        alert("保存失败"+result.msg);
+                        alert("保存失败"+result.data);
                     }
                 },
                 error:function(){alert("保存网络请求失败");}

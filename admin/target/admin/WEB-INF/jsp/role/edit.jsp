@@ -1,4 +1,12 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: lulu
+  Date: 2019-05-27
+  Time: 00:55
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -18,24 +26,24 @@
                     <label for="name"><span class="c-red">*</span>角色名：</label>
                     <input type="text" class="form-control" value="${role.name}" id="name" name="name" placeholder="输入角色名">
                 </div>
+                <div class="form-group">
+                    <label for="description"><span class="c-red">*</span>描述：</label>
+                    <input type="text" class="form-control" value="${role.description}" id="description" name="description" placeholder="描述角色信息">
+                </div>
 
 
                 <div class="row cl">
-                    <label class="form-label col-2">权限：</label>
-                    <div class="formControls col-10">
-                        <dl class="permission-list">
-                            <dt>
-                                <label>权限列表</label>
-                            </dt>
-                            <dd>
-                                <dl class="cl permission-list">
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="1" checked/><label for="1">增加辅导员</label></div>
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="2" checked/><label for="2">修改辅导员</label></div>
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="3" checked/><label for="3">查询辅导员</label></div>
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="4" /><label for="4">删除辅导员</label></div>
-                                </dl>
-                            </dd>
-                        </dl>
+                    <label class="form-label col-2">分配权限</label>
+                    <div class="formControls col-6">
+                        <c:forEach items="${permissionList }" var="permission">
+                            <div class="col-2">
+                                <input type="checkbox" name="permissionIds" value="${permission.id }" id="permissionId${permission.id}"
+                                        <c:forEach items="${rolePermissionList }" var="rolePermission">
+                                            <c:if test="${rolePermission.permissionId == permission.id }">checked="checked"</c:if>
+                                        </c:forEach>
+                                /><label for="permissionId${permission.id}">${permission.name }</label>
+                            </div>
+                        </c:forEach>
                     </div>
                 </div>
 
@@ -69,7 +77,7 @@
                 url:"",type:"post",
                 data:data,
                 success:function(result){
-                    if(result.status=="ok")
+                    if(result.status=="success")
                     {
                         parent.location.reload();//刷新父窗口
                     }
@@ -85,3 +93,4 @@
 </script>
 </body>
 </html>
+

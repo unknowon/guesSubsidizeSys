@@ -1,4 +1,12 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: lulu
+  Date: 2019-05-27
+  Time: 00:09
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -23,22 +31,36 @@
                 </div>
 
                 <div class="row cl">
-                    <label class="form-label col-2">权限：</label>
+
+                    <label class="form-label col-2">分配权限</label>
+                    <div class="formControls col-6">
+                        <c:forEach items="${permissionList }" var="permission">
+                            <div class="col-2">
+                                <input type="checkbox" name="permissionIds" value="${permission.id }" id="permissionId${permission.id}" /><label for="permissionId${permission.id}">${permission.name }</label>
+                            </div>
+                        </c:forEach>
+                    </div>
+
+
+                    <%--<label class="form-label col-2">权限：</label>
                     <div class="formControls col-10">
                         <dl class="permission-list">
                             <dt>
                                 <label>权限列表</label>
                             </dt>
-                            <dd>
-                                <dl class="cl permission-list">
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="1" /><label for="1">增加辅导员</label></div>
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="2" /><label for="2">修改辅导员</label></div>
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="3" /><label for="3">查询辅导员</label></div>
-                                    <div class="col-3"><input type="checkbox" name="permId" value="${perm.id }" id="4" /><label for="4">删除辅导员</label></div>
-                                </dl>
-                            </dd>
+
+                                <dd>
+                                    <dl class="cl permission-list">
+                                        <c:forEach items="${permissionList}" var="perm">
+                                        <div class="col-3"><input type="checkbox" name="permissionIds" value="${perm.id }" id="1" /><label for="1">${perm.name}</label></div>
+                                        </c:forEach>
+                                    </dl>
+                                </dd>
+
                         </dl>
-                    </div>
+                    </div>--%>
+
+
                 </div>
 
             </div>
@@ -71,7 +93,7 @@
                 url:"",type:"post",
                 data:data,
                 success:function(result){
-                    if(result.status=="ok")
+                    if(result.status=="success")
                     {
                         parent.location.reload();//刷新父窗口
                     }

@@ -126,6 +126,7 @@ public class ClassController {
 
     @RequestMapping("/classDelete.do")
     public @ResponseBody AjaxResult classDelete(Long id){
+        collegeClassService.deleteBySecondId(id);
         classService.delete(id);
         return AjaxResult.successInstance("删除成功");
     }

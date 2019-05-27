@@ -13,7 +13,7 @@
             phone = #{phone},
             password = #{password},
             passwordSalt = #{passwordSalt},
-            isDisabled = #{isDisabled}
+            isDeleted = #{isDeleted}
         where id = #{id}
     </update>
 
@@ -30,5 +30,17 @@
         <if test="phone!=null"> and phone=#{phone} </if>
         <if test="isChecked!=null"> and isChecked=#{isChecked} </if>
     </select>
+
+    <select id="selectAllAndRole" parameterType="AdminUser" resultType="AdminUserAndRole">
+        select u.id id, u.`name` name, r.id roleId, r.`name` roleName from t_adminusers u
+        left join t_adminuserroles ur on u.id=ur.adminUserId
+        left join t_roles r on r.id=ur.roleId
+        where u.isDeleted=false
+        <if test="id!=null"> and u.id=#{id} </if>
+        <if test="name!=null"> and u.name=#{name} </if>
+        <if test="roleId!=null"> and r.id=#{roleId} </if>
+        <if test="roleName!=null"> and r.name=#{roleName} </if>
+    </select>
+
 
 </mapper>
