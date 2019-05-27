@@ -2,6 +2,7 @@ package cn.edu.gues.web.controller;
 
 import cn.edu.gues.pojo.AdminUser;
 import cn.edu.gues.pojo.Class;
+import cn.edu.gues.pojo.StudentBaseInfo;
 import cn.edu.gues.pojo.TeaCheckUserPojo;
 import cn.edu.gues.service.SubsidizeInfoService;
 import cn.edu.gues.service.UserService;
@@ -66,7 +67,7 @@ public class AdminController {
         }
 
         AdminUser adminUser = (AdminUser) request.getSession().getAttribute("adminUser");
-        List<Class> classList = (List<Class>) request.getSession().getAttribute("classList");
+        //List<Class> classList = (List<Class>) request.getSession().getAttribute("classList");
 
         Map<String , Object> params = new HashMap<String, Object>();
         params.put("checkStatus", checkStatus);
@@ -100,8 +101,24 @@ public class AdminController {
      * @return
      */
     @RequestMapping(value = "/studentInformation.do", method = RequestMethod.GET)
-    public ModelAndView studentInformation(){
-        return new ModelAndView("teacher/studentInformation");
+    public ModelAndView studentInformation(Integer curr, String param){
+
+        if(curr == null){
+            curr = 1;
+        }
+
+        if(!CommonUtils.isEmpty(param)){
+            param = "%"+param+"%";
+        } else{
+            param = null;
+        }
+
+        Map<String , Object> params = new HashMap<String, Object>();
+        params.put("param", param);
+
+        PageInfo<StudentBaseInfo> pageInfo = userService.selectAllBaseInfo(curr, 10, params);
+
+        return new ModelAndView("teacher/studentInformation", "pageInfo", pageInfo);
     }
 
 }
