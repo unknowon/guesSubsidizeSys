@@ -25,8 +25,8 @@
             <div class="box-body pad">
                 <div class="box-header">
                     <h3 class="box-title">学生认定理由</h3>
-                    <a href="<%=ctxPath%>/Table/surveyForm.do"><input type="button" class="btn btn-info col-sm-offset-2" value="调查表"/></a>
-                    <a href="<%=ctxPath%>/Table/affirmsForm.do"><input type="button" class="btn btn-info col-sm-offset-2" value="认定表"/></a>
+                    <a href="<%=ctxPath%>/Table/surveyForm.do"><input type="button" class="btn btn-primary col-sm-offset-2" value="调查表"/></a>
+                    <a href="<%=ctxPath%>/Table/affirmsForm.do"><input type="button" class="btn btn-primary col-sm-offset-2" value="认定表"/></a>
                     <!-- tools box -->
                     <!-- /. tools -->
                 </div>
@@ -41,10 +41,8 @@
                 <div class="box-footer">
 
                 <div class="col-sm-12">
-                    <a href="<%=ctxPath%>/Table/surveyForm.do"><input type="button" class="btn btn-info col-sm-offset-2" value="调查表"/></a>
-                    <a href="<%=ctxPath%>/Table/affirmsForm.do"><input type="button" class="btn btn-info col-sm-offset-2" value="认定表"/></a>
                     <%--<a href="<%=ctxPath%>/User/stuCommunication.do"><input type="button" class="btn btn-default col-xs-offset-4" value="上一步"/></a>--%>
-                    <a href="<%=ctxPath%>/DisposeCheck/check.do"><input type="button" class="btn btn-info col-sm-offset-2" value="下一步"/></a>
+                    <a href="<%=ctxPath%>/DisposeCheck/check.do"><input type="button" class="btn btn-danger col-sm-offset-11" disabled value="审核处理"/></a>
                 </div>
             </div>
         </div>

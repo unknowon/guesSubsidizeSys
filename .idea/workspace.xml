@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -93,7 +90,7 @@
           <entry key="html" value="27" />
           <entry key="java" value="63" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="110" />
+          <entry key="jsp" value="111" />
           <entry key="rnc" value="5" />
           <entry key="xml" value="3" />
         </counts>
@@ -105,7 +102,7 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="27" />
           <entry key="JAVA" value="63" />
-          <entry key="JSP" value="110" />
+          <entry key="JSP" value="111" />
           <entry key="JavaScript" value="2" />
           <entry key="RNG Compact" value="5" />
           <entry key="XML" value="3" />
@@ -117,7 +114,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="269" />
           <entry key="java" value="729" />
-          <entry key="jsp" value="1513" />
+          <entry key="jsp" value="1538" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -125,7 +122,7 @@
           <entry key="Git file" value="1" />
           <entry key="HTML" value="269" />
           <entry key="JAVA" value="729" />
-          <entry key="JSP" value="1513" />
+          <entry key="JSP" value="1538" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -133,11 +130,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/list.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="109" column="29" lean-forward="true" selection-start-line="108" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+            <state relative-caret-position="144">
+              <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -145,17 +142,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="40" column="23" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="40" selection-end-column="23" />
+            <state relative-caret-position="-95">
+              <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="361">
+              <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -329,10 +326,10 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/DisposeCheckController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/list.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/add.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" />
       </list>
     </option>
   </component>
@@ -958,7 +955,7 @@
       <workItem from="1558866909751" duration="21689000" />
       <workItem from="1558917959014" duration="1662000" />
       <workItem from="1558919683506" duration="960000" />
-      <workItem from="1558920702273" duration="1064000" />
+      <workItem from="1558920702273" duration="2682000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -1104,7 +1101,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253080000" />
+    <option name="totallyTimeSpent" value="254698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1133,13 +1130,13 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.20992908" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4981685" weight="0.24680851" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4981685" visible="true" weight="0.24680851" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" weight="0.32857144" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31161472" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5106383" />
       <window_info anchor="bottom" id="Docker" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067025" side_tool="true" weight="0.23120567" />
       <window_info anchor="bottom" id="Statistic" order="14" />
@@ -1472,13 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1571,24 +1561,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
+        <state relative-caret-position="331">
           <caret line="109" column="29" lean-forward="true" selection-start-line="108" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="40" column="23" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="40" selection-end-column="23" />
+        <state relative-caret-position="-95">
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="144">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
         </state>
       </provider>
     </entry>
