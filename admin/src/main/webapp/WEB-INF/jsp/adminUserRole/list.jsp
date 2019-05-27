@@ -105,6 +105,8 @@
                   <th>ID</th>
                   <th>用户名</th>
                   <th>角色</th>
+                  <th>工号</th>
+                  <th>电话</th>
                   <th>操作</th>
                 </tr>
                 </thead>
@@ -115,6 +117,8 @@
                   <td>${adminUser.id}</td>
                   <td>${adminUser.name}</td>
                   <td>${adminUser.roleName}</td>
+                  <td>${adminUser.workId}</td>
+                  <td>${adminUser.phone}</td>
                   <td>
                     <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/AdminUserRole/adminUserRoleEdit.do?id=${adminUserRole.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
                     <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/AdminUserRole/adminUserRoleDelete.do','id=${adminUserRole.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>

@@ -31,7 +31,14 @@
 
                         </select>
                     </div>
-                    <div class="col-4"> </div>
+                <div class="form-group">
+                    <label for="workId"><span class="c-red">*</span>工号：</label>
+                    <input type="text" class="form-control" value="" id="workId" name="workId" placeholder="输入工号">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><span class="c-red">*</span>电话：</label>
+                    <input type="text" class="form-control" value="" id="phone" name="phone" placeholder="输入电话">
+                 </div>
                 </div>
             </div>
 
