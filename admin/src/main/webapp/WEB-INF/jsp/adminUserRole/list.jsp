@@ -110,11 +110,11 @@
                 </thead>
                 <tbody>
 
-                <c:forEach items="${adminUserRoleList}" var="adminUserRole">
+                <c:forEach items="${adminUserList}" var="adminUser">
                 <tr>
-                  <td>${adminUserRole.id}</td>
-                  <td>${adminUserRole.adminUserId}</td>
-                  <td>${adminUserRole.roleId}</td>
+                  <td>${adminUser.id}</td>
+                  <td>${adminUser.name}</td>
+                  <td>${adminUser.roleName}</td>
                   <td>
                     <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/AdminUserRole/adminUserRoleEdit.do?id=${adminUserRole.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
                     <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/AdminUserRole/adminUserRoleDelete.do','id=${adminUserRole.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
@@ -138,13 +138,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.0
-    </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
-    reserved.
-  </footer>
+
 
 </div>
 <!-- ./wrapper -->

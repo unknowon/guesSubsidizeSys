@@ -18,7 +18,7 @@
         update t_roles set isDeleted=true where id=#{id}
     </delete>
 
-    <select id="select" parameterType="Permission" resultType="Permission">
+    <select id="select" parameterType="Role" resultType="Role">
         select * from t_roles
         Where isDeleted=false
         <if test="id!=null"> and id=#{id}</if>

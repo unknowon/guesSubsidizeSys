@@ -10,7 +10,7 @@ public class AdminUser implements Serializable {
     private String name;
     private String workId;
     private String phone;
-    private Boolean idDeleted;
+    private Boolean isDeleted;
     private Boolean isChecked;
     private String password;
     private String passwordSalt;
@@ -83,12 +83,12 @@ public class AdminUser implements Serializable {
         this.phone = phone;
     }
 
-    public Boolean getIdDeleted() {
-        return idDeleted;
+    public Boolean getDeleted() {
+        return isDeleted;
     }
 
-    public void setIdDeleted(Boolean idDeleted) {
-        this.idDeleted = idDeleted;
+    public void setDeleted(Boolean deleted) {
+        isDeleted = deleted;
     }
 
     public Boolean getChecked() {
