@@ -21,7 +21,7 @@
             <ul class="nav navbar-nav">
                 <!-- 生成调查表-->
                 <li class="dropdown messages-menu">
-                    <a href="<%=ctxPath%>/Table/surveyForm.do">
+                    <a href="<%=ctxPath%>/Table/surveyForm.do" target="_blank">
                         <i class="fa fa-envelope-o">生成调查表</i>
                     </a>
                 </li>
@@ -29,7 +29,7 @@
 
                 <!-- 生成认定表 -->
                 <li class="dropdown notifications-menu">
-                    <a href="<%=ctxPath%>/Table/affirmsForm.do">
+                    <a href="<%=ctxPath%>/Table/affirmsForm.do" target="_blank">
                         <i class="fa fa-bell-o">生成认定表</i>
                     </a>
                 </li>
