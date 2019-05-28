@@ -8,30 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/BanZhuRenNextLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/BanZhuRenNextLevelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/banZhuRenNextLevel/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/banZhuRenNextLevel/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/banZhuRenNextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/banZhuRenNextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeaderTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeaderTeacher.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/BanZhuRenNextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/BanZhuRenNextLevelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/banZhuRenNextLevel/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/banZhuRenNextLevel/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/banZhuRenNextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/banZhuRenNextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/contextHeaderTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/contextHeaderTeacher.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/schoolNextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/schoolNextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/shuJiNextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/shuJiNextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/superNextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/superNextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/BanZhuRenNextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/BanZhuRenNextLevelController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/cn/edu/gues/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/cn/edu/gues/service/UserService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -94,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
+            <state relative-caret-position="466">
+              <caret line="122" column="52" lean-forward="true" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,17 +87,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-143" />
+            <state relative-caret-position="243">
+              <caret line="23" column="89" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="89" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="36" column="175" selection-start-line="36" selection-start-column="151" selection-end-line="36" selection-end-column="175" />
+            <state relative-caret-position="483">
+              <caret line="66" column="134" selection-start-line="66" selection-start-column="107" selection-end-line="66" selection-end-column="134" />
             </state>
           </provider>
         </entry>
@@ -171,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/class/edit.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/class/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/ClassController.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/Permission.java" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/js/common.js" />
@@ -221,6 +213,8 @@
         <option value="$PROJECT_DIR$/service/src/main/java/cn/edu/gues/service/UserService.java" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeaderTeacher.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java" />
       </list>
     </option>
@@ -776,7 +770,7 @@
       <workItem from="1558872124367" duration="285000" />
       <workItem from="1558872448244" duration="95000" />
       <workItem from="1558872563560" duration="17297000" />
-      <workItem from="1558915927591" duration="48269000" />
+      <workItem from="1558915927591" duration="51353000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -1058,7 +1052,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559056378639</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="完成了班主任的下级审核">
+      <created>1559059032485</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1559059032485</updated>
+    </task>
+    <task id="LOCAL-00042" summary="完成了班主任的下级审核">
+      <created>1559059056601</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1559059056601</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1094,7 +1102,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297962000" />
+    <option name="totallyTimeSpent" value="301046000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1109,7 +1117,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.23870574" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.23870574" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1123,7 +1131,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.20918368" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969475" visible="true" weight="0.27755103" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4969475" visible="true" weight="0.27755103" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" sideWeight="0.4981685" weight="0.2622449" />
@@ -1212,7 +1220,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成了家庭成员功能" />
     <MESSAGE value="完成了家庭成员功能，修改了基本信息的删除方式" />
     <MESSAGE value="完成了登录功能&#10;完成了附件页面&#10;修改了家庭经济等页面" />
     <MESSAGE value="完成了保持在线功能" />
@@ -1237,16 +1244,14 @@
     <MESSAGE value="实现了aside的分离&#10;以及aside分为5种不同的aside" />
     <MESSAGE value="分开了下级账号审核" />
     <MESSAGE value="完成了banZhuRenNextLevelList" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了banZhuRenNextLevelList" />
+    <MESSAGE value="完成了班主任的下级审核" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了班主任的下级审核" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexStu.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/StudentBaseInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1633,22 +1638,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="36" column="175" selection-start-line="36" selection-start-column="151" selection-end-line="36" selection-end-column="175" />
+        <state relative-caret-position="243">
+          <caret line="23" column="89" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143" />
+        <state relative-caret-position="798">
+          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="66" column="134" selection-start-line="66" selection-start-column="107" selection-end-line="66" selection-end-column="134" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
+        <state relative-caret-position="466">
+          <caret line="122" column="52" lean-forward="true" selection-start-line="122" selection-start-column="52" selection-end-line="122" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
