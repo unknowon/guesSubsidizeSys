@@ -39,6 +39,9 @@ public class FuDaoYuanNextLevelController {
     @Autowired
     private CollegeClassService collegeClassService;
 
+    @Autowired
+    private CollegeService collegeService;
+
     @RequestMapping("/fuDaoYuanNextLevelList.do")
     public ModelAndView list(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView("fuDaoYuanNextLevel/list");
@@ -74,6 +77,7 @@ public class FuDaoYuanNextLevelController {
         adminUserRole.setAdminUserId(adminUser.getId());
         adminUserRole.setRoleId(2L);
         adminUserRoleService.insert(adminUserRole);
+
 
         ClassAdminUser classAdminUser = new ClassAdminUser();
         classAdminUser.setAdminUserId(adminUser.getId());

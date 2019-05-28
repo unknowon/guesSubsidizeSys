@@ -84,4 +84,52 @@ public class TableController {
         }
         return modelAndView;
     }
+
+    @RequestMapping("/tsurveyForm.do")
+    public ModelAndView surveyForm(Long uid, HttpServletRequest request){
+
+        User user = userService.selectOne(uid);
+        ModelAndView modelAndView = new ModelAndView("tables/surveyForm");
+
+        if(user != null){
+            modelAndView.addObject("user", user);
+            Long userId = user.getId();
+
+
+            Member member = new Member();
+            member.setUserId(userId);
+            List<Member> memberList = memberService.selectList(member);
+            modelAndView.addObject("memberList", memberList);
+
+            Map<String, String> map = subsidizeInfoService.selectMapByUserId(userId);
+            modelAndView.addObject("subInfo", map);
+        }
+        return modelAndView;
+    }
+
+    @RequestMapping("/taffirmsForm.do")
+    public ModelAndView affirmsForm(Long uid, HttpServletRequest request){
+        User user = userService.selectOne(uid);
+        ModelAndView modelAndView = new ModelAndView("tables/affirmsForm");
+
+        if(user != null){
+            modelAndView.addObject("user", user);
+            Long userId = user.getId();
+
+            Map<String, String> map = subsidizeInfoService.selectMapByUserId(userId);
+            modelAndView.addObject("subInfo", map);
+
+            Member member = new Member();
+            member.setUserId(userId);
+            List<Member> memberList = memberService.selectList(member);
+            modelAndView.addObject("memberList", memberList);
+
+            SubsidizeInfo subsidizeInfo = new SubsidizeInfo();
+            subsidizeInfo.setUserId(userId);
+            subsidizeInfo.setKey("nationality");
+            subsidizeInfo = subsidizeInfoService.selectOne(subsidizeInfo);
+            modelAndView.addObject("otherInfo", subsidizeInfo);
+        }
+        return modelAndView;
+    }
 }

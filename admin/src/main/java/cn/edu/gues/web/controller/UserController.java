@@ -531,7 +531,7 @@ public class UserController {
      */
     private int queryCheckStatus(Long id){
         SubsidizeInfo subsidizeInfo = new SubsidizeInfo();
-        subsidizeInfo.setKey("beforeResidency");
+        subsidizeInfo.setKey("inputStatement");
         subsidizeInfo.setUserId(id);
         subsidizeInfo = subsidizeInfoService.selectOne(subsidizeInfo);
 

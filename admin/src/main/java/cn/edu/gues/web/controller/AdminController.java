@@ -80,20 +80,6 @@ public class AdminController {
         return new ModelAndView("teacher/teaCheck", "pageInfo", pageInfo);
     }
 
-    /**
-     * 教师对下一级权限者的管理
-     * @return
-     */
-    @RequestMapping(value = "/nextLevelcontrol.do", method = RequestMethod.GET)
-    public ModelAndView nextLevelcontrol(){
-        return new ModelAndView("teacher/nextLevelcontrol");
-    }
-
-    @RequestMapping(value = "/nextLeveladd.do", method = RequestMethod.POST)
-    public ModelAndView nextLeveladd(){
-        return new ModelAndView("teacher/nextLeveladd");
-    }
-
 
 
     /**
