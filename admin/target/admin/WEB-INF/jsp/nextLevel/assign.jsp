@@ -26,7 +26,9 @@
 
                     <div class="formControls col-5">
                         <select id="roleId" name="roleId" datatype="*">
-                            <option value="${roleName}" />
+                            <c:forEach items="${clzList}" var="clz">
+                                <option value="${clz.id }">${clz.name}</option>
+                            </c:forEach>
                         </select>
                     </div>
 

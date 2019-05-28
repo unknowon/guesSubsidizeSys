@@ -7,20 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/assign.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/NextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/NextLevelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/disposeCheck/state.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/disposeCheck/state.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/nextLevel/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/nextLevel/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/NextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/NextLevelController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -100,12 +87,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="jsp" value="43" />
+          <entry key="jsp" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSP" value="43" />
+          <entry key="JSP" value="85" />
         </counts>
       </usages-collector>
     </session>
@@ -121,13 +108,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="122" column="82" selection-start-line="122" selection-start-column="82" selection-end-line="122" selection-end-column="82" />
+            <state relative-caret-position="247">
+              <caret line="117" column="53" lean-forward="true" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -151,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/assign.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="399">
+              <caret line="35" column="22" lean-forward="true" selection-start-line="33" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -267,8 +254,8 @@
         <option value="$PROJECT_DIR$/mapper/src/main/java/cn/edu/gues/mapper/AdminUserMapper.java" />
         <option value="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/AdminUserMapper.xml" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/NextLevelController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/assign.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp" />
       </list>
     </option>
   </component>
@@ -877,7 +864,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273583000" />
+    <option name="totallyTimeSpent" value="275089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -892,7 +879,7 @@
     <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.25" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -906,7 +893,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.20992908" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969475" visible="true" weight="0.2851064" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4969475" visible="true" weight="0.2851064" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" sideWeight="0.4981685" weight="0.2622449" />
@@ -1338,16 +1325,9 @@
         <state relative-caret-position="-244" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="122" column="82" selection-start-line="122" selection-start-column="82" selection-end-line="122" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-342" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/edit.jsp">
@@ -1357,15 +1337,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/assign.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="399">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="33" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="117" column="53" lean-forward="true" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
