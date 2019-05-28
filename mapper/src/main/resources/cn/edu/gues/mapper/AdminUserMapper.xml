@@ -44,18 +44,25 @@
         <if test="phone!=null"> and u.phone=#{phone}</if>
     </select>
 
-    <select id="selectAllNextLevel" resultType="AdminUserAndRole">
+    <select id="selectAllNextLevel" resultType="NextLevelTeacher">
         select
-            adu.id adminUserId,
-            adu.`name` adminUserName,
-            r.id roleId,
-            r.`name` roleName,
-            adu.workId workId,
-            adu.phone phone
-        from t_adminusers adu
-                 left join t_adminuserroles adur on adu.id=adur.adminUserId
-                 left join t_roles r on r.id=adur.roleId
-                 left join t_classadminusers cad on adu.id=cad.adminUserId
+        adu.id adminUserId,
+        adu.`name` adminUserName,
+        r.id roleId,
+        r.`name` roleName,
+        adu.workId workId,
+        adu.phone phone,
+        cls.id firstClassId,
+        cls.`name` firstClassName,
+        col.id collegeId,
+        col.`name` collegeName
+        FROM t_adminusers adu
+        LEFT JOIN t_adminuserroles adur ON adu.id=adur.adminUserId
+        LEFT JOIN t_roles r ON r.id=adur.roleId
+        LEFT JOIN t_classadminusers cad ON adu.id=cad.adminUserId
+        left join t_classes cls on cls.id=cad.classId
+        left join t_collegeclasses colcls on colcls.classId=cls.id
+        left join t_colleges col on col.id=colcls.collegeId
         <where>
             <if test="nextRole!=null"> and r.id = #{nextRole.id}</if>
             <if test="classList!=null">
