@@ -10,4 +10,8 @@ public interface AdminUserMapper extends IMapper<AdminUser> {
     List<AdminUserAndRole> selectAllAndRole(AdminUserAndRole adminUserAndRole);
 
     List<NextLevelTeacher> selectAllNextLevel(@Param("role")Role role, @Param("nextRole") Role nextRole, @Param("classList") List<Class> classList);
+
+    List<NextLevelTeacher> selectAllNextLevelByRole(Long shujiRoleId);
+
+    List<NextLevelTeacher> selectAllNextLevelByRoleAndCollegeId(@Param("roleId") Long fuDaoYuanRoleId,@Param("collegeId") Long collegeId);
 }
