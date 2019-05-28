@@ -106,6 +106,7 @@
                   <th>工号</th>
                   <th>电话</th>
                   <th>角色</th>
+                  <th>指派的班级(或学院)</th>
                   <th>操作</th>
                 </tr>
                 </thead>
@@ -118,6 +119,7 @@
                   <td>${nextLevel.workId}</td>
                   <td>${nextLevel.phone}</td>
                   <td>${nextLevel.roleName}</td>
+                  <td>${nextLevel.XX ? nextLevel.XX : "未指派"}</td>
                   <td>
                     <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
                     <a title="指派" href="javascript:;" onclick="admin_edit('指派班级或学院','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-hand-o-right"></i></a>
