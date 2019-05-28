@@ -15,7 +15,7 @@
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelEdit.do" class="form form-horizontal" id="form-add">
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/ShuJiNextLevel/shuJiNextLevelEdit.do" class="form form-horizontal" id="form-add">
         <input type="hidden" name="id" value="${nextLevel.id }"  />
 
         <div class="col-md-6 col-xs-12">
@@ -39,10 +39,10 @@
             </div>
             <div class="box-body">
                 <div class="form-group">
-                    <select id="roleId" name="classId" datatype="*">
-                        <option value="${clz.id }">${clz.Name}</option>
-                        <c:forEach items="${classList}" var="clz">
-                            <option value="${clz.id }">${clz.Name}</option>
+                    <select id="roleId" name="collegeId" datatype="*">
+                        <option value="${college.id }">${college.Name}</option>
+                        <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.id }">${college.Name}</option>
                         </c:forEach>
                     </select>
                 </div>
@@ -73,7 +73,7 @@
 
             var data = $("#form-add").serializeArray();
             $.ajax({
-                url:"<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelEdit.do",type:"post",
+                url:"<%=ctxPath%>/ShuJiNextLevel/shuJiNextLevelEdit.do",type:"post",
                 data:data,
                 success:function(result){
                     if(result.status=="success")
