@@ -15,7 +15,7 @@
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelList.do" class="form form-horizontal" id="form-add">
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelAdd.do" class="form form-horizontal" id="form-add">
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
@@ -33,11 +33,23 @@
                     TODO：像是单选、复选框、下拉列表这种
                     在里面加<c:if>标签，也要加name 和 value
                     --%>
-                    <input type="radio" name="gender" class="flat-red" <c:if test="${student.gender}"> checked</c:if> value="true">
+                    <input type="radio" name="gender" class="flat-red" checked value="true">
                     男
-                    <input type="radio" name="gender" class="flat-red" <c:if test="${!student.gender}"> checked</c:if> value="false">
+                    <input type="radio" name="gender" class="flat-red" value="false">
                     女
                 </div>
+                </div>
+                <div class="form-group">
+                    <label for="idCardNum"><span class="c-red">*</span>身份证：</label>
+                    <input type="text" class="form-control" value="" id="idCardNum" name="idCardNum" placeholder="输入学生身份证号">
+                </div>
+                <div class="form-group">
+                    <label for="studentNum"><span class="c-red">*</span>学号：</label>
+                    <input type="text" class="form-control" value="" id="studentNum" name="studentNum" placeholder="输入学生学号">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><span class="c-red">*</span>电话：</label>
+                    <input type="text" class="form-control" value="" id="phone" name="phone" placeholder="输入学生电话号码">
                 </div>
             </div>
 
@@ -52,6 +64,8 @@
 
     </form>
 </article>
+
+
 
 </body>
 </html>

@@ -52,18 +52,18 @@
                 </thead>
                 <tbody>
 
-                <c:forEach items="${studentlList}" var="student">
+                <c:forEach items="${studentList}" var="student">
                 <tr>
                   <td>${student.name}</td>
-                  <td>${student.gender}</td>
+                  <td><c:if test="${student.gender}">男</c:if><c:if test="${!student.gender}">女</c:if></td>
                   <td>${student.idCardNum}</td>
                   <td>${student.studentNum}</td>
                   <td>${student.phone}</td>
                   <%--<td><c:choose><c:when test="${student.roleName eq '班主任'}">${nextLevel.firstClassName}</c:when><c:otherwise>${nextLevel.collegeName}</c:otherwise></c:choose></td>--%>
                   <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelEdit.do?id=${student.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelEdit.do?id=${student.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
 
-                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelDelete.do','id=${student.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelDelete.do','id=${student.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
                 </c:forEach>

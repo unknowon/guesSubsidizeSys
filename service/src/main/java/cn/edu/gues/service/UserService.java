@@ -15,12 +15,16 @@ import java.lang.reflect.Method;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @Service
 public class UserService extends BaseService<User> {
 
     @Autowired
     private UserMapper mapper;
+
+    @Autowired
+    private ClassUserService classUserService;
 
     public User login(String account, String password) {
         User user = new User();
@@ -61,5 +65,39 @@ public class UserService extends BaseService<User> {
         PageHelper.startPage(pageNum, pageSize);
         List<StudentBaseInfo> list = mapper.selectAllBaseInfo(params);
         return new PageInfo<StudentBaseInfo>(list);
+    }
+
+    public List<User> selectListByClassId(Long clzId) {
+        return mapper.selectListByClassId(clzId);
+    }
+
+    public User newStudent(String name, Boolean gender, String idCardNum, String studentNum, String phone) {
+        User user = new User();
+        user.setStudentNum(studentNum);
+        User tmpUser = selectOne(user);
+        if(tmpUser != null){
+            return null;
+        }
+        String passwordSalt = UUID.randomUUID().toString();
+        user.setPasswordSalt(passwordSalt);
+        user.setPassword(CommonUtils.calculateMD5("gues520" + passwordSalt));
+        insert(user);
+
+        user = selectOne(user);
+
+        user.setName(name);
+        user.setGender(gender);
+        user.setIdCardNum(idCardNum);
+        user.setPhone(phone);
+
+        update(user);
+
+        user = selectOne(user);
+        return user;
+    }
+
+    public void deleteAndDelClasses(Long id) {
+        classUserService.deleteBySecondId(id);
+        delete(id);
     }
 }

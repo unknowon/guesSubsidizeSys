@@ -72,4 +72,11 @@
             <if test="param!=null"> and (u.name like #{param} or u.idCardNum like #{param} or u.studentNum like #{param} or c.name like #{param} or clg.name like #{param} )</if>
         </where>
     </select>
+
+    <select id="selectListByClassId" parameterType="long" resultType="User">
+        select * from t_users u
+          left join t_classusers cu on u.id=cu.userId
+          left join t_classes c on c.id=cu.classId
+        where c.id=#{clzId}
+    </select>
 </mapper>

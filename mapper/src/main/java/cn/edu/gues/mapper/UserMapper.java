@@ -11,4 +11,6 @@ public interface UserMapper extends IMapper<User> {
     List<TeaCheckUserPojo> search(Map<String, Object> params);
 
     List<StudentBaseInfo> selectAllBaseInfo(Map<String, Object> params);
+
+    List<User> selectListByClassId(Long clzId);
 }

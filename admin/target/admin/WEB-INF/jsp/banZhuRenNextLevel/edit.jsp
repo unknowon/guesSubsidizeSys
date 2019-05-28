@@ -15,14 +15,39 @@
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/College/collegeEdit.do" class="form form-horizontal" id="form-add">
-        <input type="hidden" name="id" value="${college.id }"  />
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelEdit.do" class="form form-horizontal" id="form-add">
+        <input type="hidden" name="id" value="${student.id }"  />
+        <input type="hidden" name="studentNum" value="${student.studentNum }"  />
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="name"><span class="c-red">*</span>学院名：</label>
-                    <input type="text" class="form-control" value="${college.name}" id="name" name="name" placeholder="输入学院名称">
+                    <label for="name"><span class="c-red">*</span>姓名：</label>
+                    <input type="text" class="form-control" value="${student.name }" id="name" name="name" placeholder="输入学生姓名">
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="form-group">
+                    <label><span class="c-red">*</span>性别：</label>
+                    <div>
+
+                        <input type="radio" name="gender" class="flat-red" <c:if test="${student.gender}"> checked</c:if> value="true">
+                        男
+                        <input type="radio" name="gender" class="flat-red" <c:if test="${!student.gender}"> checked</c:if> value="false">
+                        女
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="idCardNum"><span class="c-red">*</span>身份证：</label>
+                    <input type="text" class="form-control" value="${student.idCardNum}" id="idCardNum" name="idCardNum" placeholder="输入学生身份证号">
+                </div>
+                <div class="form-group">
+                    <label for="studentNum"><span class="c-red">*</span>学号：</label>
+                    <input type="text" class="form-control" value="${student.studentNum}" id="studentNum" name="studentNum" placeholder="输入学生学号" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><span class="c-red">*</span>电话：</label>
+                    <input type="text" class="form-control" value="${student.phone}" id="phone" name="phone" placeholder="输入学生电话号码">
                 </div>
             </div>
 
