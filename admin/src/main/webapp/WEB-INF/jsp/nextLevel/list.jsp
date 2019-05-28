@@ -120,6 +120,7 @@
                   <td>${nextLevel.roleName}</td>
                   <td>
                     <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+                    <a title="指派" href="javascript:;" onclick="admin_edit('指派班级或学院','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-hand-o-right"></i></a>
                     <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/NextLevel/nextLevelDelete.do','id=${nextLevel.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
