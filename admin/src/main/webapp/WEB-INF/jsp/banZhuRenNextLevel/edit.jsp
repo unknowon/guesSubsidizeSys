@@ -17,6 +17,7 @@
 <article class="page-container">
     <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelEdit.do" class="form form-horizontal" id="form-add">
         <input type="hidden" name="id" value="${student.id }"  />
+        <input type="hidden" name="studentNum" value="${student.studentNum }"  />
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
@@ -42,7 +43,7 @@
                 </div>
                 <div class="form-group">
                     <label for="studentNum"><span class="c-red">*</span>学号：</label>
-                    <input type="text" class="form-control" value="${student.studentNum}" id="studentNum" name="studentNum" placeholder="输入学生学号">
+                    <input type="text" class="form-control" value="${student.studentNum}" id="studentNum" name="studentNum" placeholder="输入学生学号" disabled>
                 </div>
                 <div class="form-group">
                     <label for="phone"><span class="c-red">*</span>电话：</label>

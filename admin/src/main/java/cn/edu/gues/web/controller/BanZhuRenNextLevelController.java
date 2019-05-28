@@ -74,5 +74,31 @@ public class BanZhuRenNextLevelController {
         return AjaxResult.successInstance("添加成功");
     }
 
+    @RequestMapping(value = "/banZhuRenNextLevelEdit.do", method = RequestMethod.GET)
+    public ModelAndView edit(Long id){
+        User user = userService.selectOne(id);
+        return new ModelAndView("banZhuRenNextLevel/edit","student", user);
+    }
+
+    @RequestMapping(value = "/banZhuRenNextLevelEdit.do", method = RequestMethod.POST)
+    public @ResponseBody AjaxResult editSubmit(Long id, String name, Boolean gender, String idCardNum, String studentNum, String phone){
+        User user = new User();
+        user.setId(id);
+        user = userService.selectOne(id);
+        user.setName(name);
+        user.setPhone(phone);
+        user.setGender(gender);
+        user.setIdCardNum(idCardNum);
+        user.setStudentNum(studentNum);
+        userService.update(user);
+        return AjaxResult.successInstance("修改成功");
+    }
+
+    @RequestMapping("/banZhuRenNextLevelDelete.do")
+    public @ResponseBody AjaxResult delete(Long id){
+        userService.deleteAndDelClasses(id);
+        return AjaxResult.successInstance("删除成功");
+    }
+
 
 }

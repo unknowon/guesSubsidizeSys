@@ -23,6 +23,9 @@ public class UserService extends BaseService<User> {
     @Autowired
     private UserMapper mapper;
 
+    @Autowired
+    private ClassUserService classUserService;
+
     public User login(String account, String password) {
         User user = new User();
         user.setStudentNum(account);
@@ -91,5 +94,10 @@ public class UserService extends BaseService<User> {
 
         user = selectOne(user);
         return user;
+    }
+
+    public void deleteAndDelClasses(Long id) {
+        classUserService.deleteBySecondId(id);
+        delete(id);
     }
 }

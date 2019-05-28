@@ -535,6 +535,9 @@ public class UserController {
         subsidizeInfo.setUserId(id);
         subsidizeInfo = subsidizeInfoService.selectOne(subsidizeInfo);
 
+        if(subsidizeInfo == null){
+            return 0;
+        }
         return subsidizeInfo.getCheckStatus()+1;
     }
 
