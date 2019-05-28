@@ -2,7 +2,9 @@ package cn.edu.gues.web.controller;
 
 import cn.edu.gues.pojo.AdminUser;
 import cn.edu.gues.pojo.Class;
+import cn.edu.gues.pojo.Role;
 import cn.edu.gues.pojo.User;
+import cn.edu.gues.service.AdminUserRoleService;
 import cn.edu.gues.service.AdminUserService;
 import cn.edu.gues.service.ClassAdminUserService;
 import cn.edu.gues.service.UserService;
@@ -39,6 +41,9 @@ public class OtherController {
     @Autowired
     private ClassAdminUserService classAdminUserService;
 
+    @Autowired
+    private AdminUserRoleService adminUserRoleService;
+
 
     @RequestMapping("/")
     public ModelAndView indexStu(HttpServletRequest request){
@@ -71,8 +76,11 @@ public class OtherController {
         AdminUser adminUser = adminUserService.login(account, password);
         if(adminUser != null){
             request.getSession().setAttribute("adminUser", adminUser);
-            List<Class> classList = classAdminUserService.selectFirstListBySecondId(adminUser.getId());
-            request.getSession().setAttribute("classList", classList);
+            /*List<Class> classList = classAdminUserService.selectFirstListBySecondId(adminUser.getId());
+            request.getSession().setAttribute("classList", classList);*/
+            Role role = adminUserRoleService.selectSecondListByFirstId(adminUser.getId()).get(0);
+            request.getSession().setAttribute("role", role);
+
         }
         User user = userService.login(account, password);
         if(user != null){
