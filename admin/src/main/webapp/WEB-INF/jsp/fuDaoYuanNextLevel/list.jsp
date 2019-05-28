@@ -34,7 +34,7 @@
             <div class="box-header">
               <!--<h3 class="box-title">用户权限管理</h3>-->
               <div class="col-xs-2">
-                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加用户','<%=ctxPath%>/NextLevel/nextLevelAdd.do','800','500')">添加用户</button>
+                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加用户','<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelAdd.do','800','500')">添加用户</button>
               </div>
             </div>
             <!-- /.box-header -->
@@ -62,11 +62,11 @@
                   <td>${nextLevel.roleName}</td>
                   <td><c:choose><c:when test="${nextLevel.roleName eq '班主任'}">${nextLevel.firstClassName}</c:when><c:otherwise>${nextLevel.collegeName}</c:otherwise></c:choose></td>
                   <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
 
-                      <a title="指派" href="javascript:;" onclick="admin_edit('指派班级或学院','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-hand-o-right"></i></a>
+                      <a title="指派" href="javascript:;" onclick="admin_edit('指派班级或学院','<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-hand-o-right"></i></a>
 
-                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/NextLevel/nextLevelDelete.do','id=${nextLevel.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelDelete.do','id=${nextLevel.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
                 </c:forEach>
