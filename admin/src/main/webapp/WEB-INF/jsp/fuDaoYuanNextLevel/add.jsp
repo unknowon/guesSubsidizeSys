@@ -11,45 +11,38 @@
 <head>
     <%@include file="../header.jsp"%>
 
-    <title>增加学生</title>
+    <title>增加用户</title>
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelList.do" class="form form-horizontal" id="form-add">
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelAdd.do" class="form form-horizontal" id="form-add">
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="name"><span class="c-red">*</span>姓名：</label>
-                    <input type="text" class="form-control" value="" id="name" name="name" placeholder="输入学生姓名">
+                    <label for="adminUserName"><span class="c-red">*</span>用户名：</label>
+                    <input type="text" class="form-control" value="" id="adminUserName" name="adminUserName" placeholder="输入用户名">
                 </div>
             </div>
             <div class="box-body">
                 <div class="form-group">
-                    <label><span class="c-red">*</span>性别：</label>
-                    <div>
-
-                    <%--
-                    TODO：像是单选、复选框、下拉列表这种
-                    在里面加<c:if>标签，也要加name 和 value
-                    --%>
-                    <input type="radio" name="gender" class="flat-red" checked value="true">
-                    男
-                    <input type="radio" name="gender" class="flat-red" value="false">
-                    女
+                    <label for="workId"><span class="c-red">*</span>工号：</label>
+                    <input type="text" class="form-control" value="" id="workId" name="workId" placeholder="输入工号">
                 </div>
-                </div>
-                <div class="form-group">
-                    <label for="idCardNum"><span class="c-red">*</span>身份证：</label>
-                    <input type="text" class="form-control" value="" id="idCardNum" name="idCardNum" placeholder="输入学生身份证号">
-                </div>
-                <div class="form-group">
-                    <label for="studentNum"><span class="c-red">*</span>学号：</label>
-                    <input type="text" class="form-control" value="" id="studentNum" name="studentNum" placeholder="输入学生学号">
-                </div>
+            </div>
+            <div class="box-body">
                 <div class="form-group">
                     <label for="phone"><span class="c-red">*</span>电话：</label>
-                    <input type="text" class="form-control" value="" id="phone" name="phone" placeholder="输入学生电话号码">
+                    <input type="text" class="form-control" value="" id="phone" name="phone" placeholder="输入电话">
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="form-group">
+                    <select id="roleId" name="classId" datatype="*">
+                        <c:forEach items="${classList}" var="clz">
+                            <option value="${clz.id }">${clz.Name}</option>
+                        </c:forEach>
+                    </select>
                 </div>
             </div>
 
@@ -65,5 +58,35 @@
     </form>
 </article>
 
+<script type="text/javascript">
+    $(function(){
+
+        //必须放到页面初始化的时候，不能放到按钮点击里面
+        var validForm = $("#form-add").Validform({tiptype:2});//初始化校验器
+        $("#btnSave").click(function(){
+            if(validForm.check(false)==false)//表单校验不通过
+            {
+                return;
+            }
+
+            var data = $("#form-add").serializeArray();
+            $.ajax({
+                url:"<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelAdd.do",type:"post",
+                data:data,
+                success:function(result){
+                    if(result.status=="success")
+                    {
+                        parent.location.reload();//刷新父窗口
+                    }
+                    else
+                    {
+                        alert("保存失败"+result.msg);
+                    }
+                },
+                error:function(){alert("保存网络请求失败");}
+            });
+        });
+    });
+</script>
 </body>
 </html>

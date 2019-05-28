@@ -11,38 +11,36 @@
 <head>
     <%@include file="../header.jsp"%>
 
-    <title>修改用户</title>
+    <title>增加用户</title>
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelEdit.do" class="form form-horizontal" id="form-add">
-        <input type="hidden" name="id" value="${nextLevel.id }"  />
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/ShuJiNextLevel/shuJiNextNextLevelAdd.do" class="form form-horizontal" id="form-add">
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
                     <label for="adminUserName"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="${nextLevel.adminUserName}" id="adminUserName" name="adminUserName" placeholder="输入用户名">
+                    <input type="text" class="form-control" value="" id="adminUserName" name="adminUserName" placeholder="输入用户名">
                 </div>
             </div>
             <div class="box-body">
                 <div class="form-group">
                     <label for="workId"><span class="c-red">*</span>工号：</label>
-                    <input type="text" class="form-control" value="${nextLevel.workId}" id="workId" name="workId" placeholder="输入工号">
+                    <input type="text" class="form-control" value="" id="workId" name="workId" placeholder="输入工号">
                 </div>
             </div>
             <div class="box-body">
                 <div class="form-group">
                     <label for="phone"><span class="c-red">*</span>电话：</label>
-                    <input type="text" class="form-control" value="${nextLevel.phone}" id="phone" name="phone" placeholder="输入电话">
+                    <input type="text" class="form-control" value="" id="phone" name="phone" placeholder="输入电话">
                 </div>
             </div>
             <div class="box-body">
                 <div class="form-group">
-                    <select id="roleId" name="classId" datatype="*">
-                        <option value="${clz.id }">${clz.Name}</option>
-                        <c:forEach items="${classList}" var="clz">
-                            <option value="${clz.id }">${clz.Name}</option>
+                    <select id="roleId" name="collegeId" datatype="*">
+                        <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.id }">${college.Name}</option>
                         </c:forEach>
                     </select>
                 </div>
@@ -73,7 +71,7 @@
 
             var data = $("#form-add").serializeArray();
             $.ajax({
-                url:"<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelEdit.do",type:"post",
+                url:"<%=ctxPath%>/ShuJiNextLevel/shuJiNextLevelAdd.do",type:"post",
                 data:data,
                 success:function(result){
                     if(result.status=="success")
