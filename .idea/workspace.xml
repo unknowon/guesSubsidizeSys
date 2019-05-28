@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="" />
+    <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -75,7 +77,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="7" />
-          <entry key="jsp" value="35" />
+          <entry key="jsp" value="36" />
           <entry key="md" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -83,20 +85,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="7" />
-          <entry key="JSP" value="35" />
+          <entry key="JSP" value="36" />
           <entry key="Markdown" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="jsp" value="642" />
+          <entry key="jsp" value="643" />
           <entry key="md" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSP" value="642" />
+          <entry key="JSP" value="643" />
           <entry key="Markdown" value="15" />
         </counts>
       </usages-collector>
@@ -176,7 +178,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/superNextLevel/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -185,11 +187,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/edit.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="75" column="69" selection-start-line="75" selection-start-column="69" selection-end-line="75" selection-end-column="69" />
+            <state relative-caret-position="204">
+              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -286,7 +288,6 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/banZhuRenNextLevel/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/list.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/edit.jsp" />
@@ -296,6 +297,7 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/superNextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/superNextLevel/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/superNextLevel/edit.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp" />
       </list>
     </option>
   </component>
@@ -446,6 +448,27 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guesSubsidizeSys" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guesSubsidizeSys" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="fuDaoYuanNextLevel" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -459,7 +482,7 @@
     <property name="SearchEverywhereHistoryKey" value="jdk&#9;PSI&#9;JAVA://sun.misc.Version#jdk_micro_version" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559059129567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559059192789" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -803,7 +826,7 @@
       <workItem from="1558872448244" duration="95000" />
       <workItem from="1558872563560" duration="17297000" />
       <workItem from="1558915927591" duration="19362000" />
-      <workItem from="1559046743010" duration="8952000" />
+      <workItem from="1559046743010" duration="9164000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -1033,7 +1056,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289711000" />
+    <option name="totallyTimeSpent" value="289923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1047,7 +1070,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.24262735" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.24262735" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1067,7 +1090,7 @@
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" sideWeight="0.4981685" weight="0.2622449" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Spring" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.26666668" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26666668" />
       <window_info anchor="bottom" id="Docker" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50305253" side_tool="true" weight="0.2857143" />
       <window_info anchor="bottom" id="Statistic" order="14" />
@@ -1424,13 +1447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -1512,6 +1528,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
