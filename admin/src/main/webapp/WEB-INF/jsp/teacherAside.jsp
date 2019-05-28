@@ -18,7 +18,7 @@
         <%
             String path = request.getServletPath();
             request.getSession().setAttribute("path", path);
-            System.out.println(path);
+            /*System.out.println(path);*/
         %>
         <c:choose>
             <c:when test="${sessionScope.role.name == '超级管理员'}">
