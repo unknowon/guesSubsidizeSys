@@ -128,6 +128,7 @@ public class FuDaoYuanNextLevelController {
         adminUserRoleService.deleteByFirstId(id);
         classAdminUserService.deleteBySecondId(id);
         adminUserService.delete(id);
+
         return AjaxResult.successInstance("删除成功");
     }
 
