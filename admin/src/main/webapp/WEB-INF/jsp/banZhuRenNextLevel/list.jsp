@@ -60,7 +60,7 @@
                   <td>${nextLevel.workId}</td>
                   <td>${nextLevel.phone}</td>
                   <td>${nextLevel.roleName}</td>
-                  <td><c:choose><c:when test="${nextLevel.roleName eq '班主任'}">${nextLevel.firstClassName}</c:when><c:otherwise>${nextLevel.collegeName}</c:otherwise></c:choose></td>
+
                   <td>
                     <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
                     <c:if test="${nextLevel.roleName eq '辅导员'}">

@@ -62,4 +62,8 @@ public class UserService extends BaseService<User> {
         List<StudentBaseInfo> list = mapper.selectAllBaseInfo(params);
         return new PageInfo<StudentBaseInfo>(list);
     }
+
+    public List<User> selectListByClassId(Long clzId) {
+        return mapper.selectListByClassId(clzId);
+    }
 }

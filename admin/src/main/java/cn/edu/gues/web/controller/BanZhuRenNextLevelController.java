@@ -1,9 +1,7 @@
 package cn.edu.gues.web.controller;
 
-import cn.edu.gues.pojo.AdminUser;
+import cn.edu.gues.pojo.*;
 import cn.edu.gues.pojo.Class;
-import cn.edu.gues.pojo.College;
-import cn.edu.gues.pojo.NextLevelTeacher;
 import cn.edu.gues.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,14 +35,15 @@ public class BanZhuRenNextLevelController {
 
 
 
-    @RequestMapping("/fuDaoYuanNextLevelList.do")
+    @RequestMapping("/banZhuRenNextLevelList.do")
     public ModelAndView shujilist(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView("fuDaoYuanNextLevel/list");
 
-        Long banZhuRenRoleId = 2L;
         AdminUser adminUser = (AdminUser) request.getSession().getAttribute("adminUser");
         Class clz = classAdminUserService.selectFirstListBySecondId(adminUser.getId()).get(0);
 
+        List<User> studentList = userService.selectListByClassId(clz.getId());
+        modelAndView.addObject("studentList", studentList);
 
         return modelAndView;
     }
