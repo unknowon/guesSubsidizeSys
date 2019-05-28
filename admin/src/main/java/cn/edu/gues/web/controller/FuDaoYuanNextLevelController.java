@@ -121,8 +121,10 @@ public class FuDaoYuanNextLevelController {
 
     @RequestMapping("/fuDaoYuanNextLevelDelete.do")
     public @ResponseBody AjaxResult delete(Long id){
+        adminUserRoleService.deleteByFirstId(id);
         classAdminUserService.deleteBySecondId(id);
         adminUserService.delete(id);
+
         return AjaxResult.successInstance("删除成功");
     }
 
