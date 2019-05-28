@@ -40,7 +40,7 @@
                 <div class="form-group">
                     <select id="roleId" name="classId" datatype="*">
                         <c:forEach items="${classList}" var="clz">
-                            <option value="${clz.id }">${clz.Name}</option>
+                            <option value="${clz.id }">${clz.name}</option>
                         </c:forEach>
                     </select>
                 </div>
