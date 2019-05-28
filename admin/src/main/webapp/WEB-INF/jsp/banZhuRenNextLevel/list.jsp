@@ -17,12 +17,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        下级账号管理
-        <small>对当前用户权限内下级账号的管理</small>
+        学生账号管理
+        <small>对所导入学生的管理</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
-        <li class="active">下级账号管理</li>
+        <li class="active">学生账号管理</li>
       </ol>
     </section>
 
@@ -34,7 +34,7 @@
             <div class="box-header">
               <!--<h3 class="box-title">用户权限管理</h3>-->
               <div class="col-xs-2">
-                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加用户','<%=ctxPath%>/NextLevel/nextLevelAdd.do','800','500')">添加用户</button>
+                <button type="button" class="btn btn-block btn-primary" href="javascript:;" onclick="admin_add('添加学生','<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelAdd.do','800','500')">添加学生</button>
               </div>
             </div>
             <!-- /.box-header -->
@@ -42,31 +42,28 @@
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                  <th>ID</th>
-                  <th>用户名</th>
-                  <th>工号</th>
+                  <th>姓名</th>
+                  <th>性别</th>
+                  <th>身份证</th>
+                  <th>学号</th>
                   <th>电话</th>
-                  <th>角色</th>
-                  <th>指派的班级(或学院)</th>
                   <th>操作</th>
                 </tr>
                 </thead>
                 <tbody>
 
-                <c:forEach items="${nextLevelList}" var="nextLevel">
+                <c:forEach items="${studentlList}" var="student">
                 <tr>
-                  <td>${nextLevel.adminUserId}</td>
-                  <td>${nextLevel.adminUserName}</td>
-                  <td>${nextLevel.workId}</td>
-                  <td>${nextLevel.phone}</td>
-                  <td>${nextLevel.roleName}</td>
-                  <td><c:choose><c:when test="${nextLevel.roleName eq '班主任'}">${nextLevel.firstClassName}</c:when><c:otherwise>${nextLevel.collegeName}</c:otherwise></c:choose></td>
+                  <td>${student.name}</td>
+                  <td>${student.gender}</td>
+                  <td>${student.idCardNum}</td>
+                  <td>${student.studentNum}</td>
+                  <td>${student.phone}</td>
+                  <%--<td><c:choose><c:when test="${student.roleName eq '班主任'}">${nextLevel.firstClassName}</c:when><c:otherwise>${nextLevel.collegeName}</c:otherwise></c:choose></td>--%>
                   <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
-                    <c:if test="${nextLevel.roleName eq '辅导员'}">
-                      <a title="指派" href="javascript:;" onclick="admin_edit('指派班级或学院','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-hand-o-right"></i></a>
-                    </c:if>
-                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/NextLevel/nextLevelDelete.do','id=${nextLevel.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelEdit.do?id=${student.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+
+                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelDelete.do','id=${student.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
                 </c:forEach>
