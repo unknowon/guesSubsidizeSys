@@ -39,6 +39,9 @@ public class FuDaoYuanNextLevelController {
     @Autowired
     private CollegeClassService collegeClassService;
 
+    @Autowired
+    private CollegeService collegeService;
+
     @RequestMapping("/fuDaoYuanNextLevelList.do")
     public ModelAndView list(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView("fuDaoYuanNextLevel/list");
@@ -74,6 +77,7 @@ public class FuDaoYuanNextLevelController {
         adminUserRole.setAdminUserId(adminUser.getId());
         adminUserRole.setRoleId(2L);
         adminUserRoleService.insert(adminUserRole);
+
 
         ClassAdminUser classAdminUser = new ClassAdminUser();
         classAdminUser.setAdminUserId(adminUser.getId());
@@ -121,6 +125,7 @@ public class FuDaoYuanNextLevelController {
 
     @RequestMapping("/fuDaoYuanNextLevelDelete.do")
     public @ResponseBody AjaxResult delete(Long id){
+        adminUserRoleService.deleteByFirstId(id);
         classAdminUserService.deleteBySecondId(id);
         adminUserService.delete(id);
         return AjaxResult.successInstance("删除成功");

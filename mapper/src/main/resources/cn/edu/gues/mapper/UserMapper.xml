@@ -39,7 +39,7 @@
     </select>
 
     <select id="search" parameterType="map" resultType="teaCheckUserPojo">
-        select u.`name` name, u.studentNum studentNum,co.`name` collegeName, c.`name` className,sub.checkStatus from t_users u
+        select u.id id, u.`name` name, u.studentNum studentNum,co.`name` collegeName, c.`name` className,sub.checkStatus from t_users u
          left join t_classusers cu on cu.userId=u.id
          left join t_classes c on c.id=cu.classId
          left join t_collegeclasses cc on c.id=cc.classId

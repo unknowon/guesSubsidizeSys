@@ -103,6 +103,7 @@
                                     <td>${user.collegeName}</td>
                                     <td>${user.className}</td>
                                     <td>
+
                                         <c:choose>
                                         <c:when test="${user.checkStatus == 1}">班主任审核中</c:when>
                                         <c:when test="${user.checkStatus == 2}">辅导员审核中</c:when>
@@ -113,7 +114,22 @@
                                         <c:when test="${user.checkStatus == 7}">一般困难</c:when>
                                         <c:when test="${user.checkStatus == 8}">困难</c:when>
                                         <c:when test="${user.checkStatus == 9}">特殊困难</c:when>
+
+                                        <c:when test="${user.checkStatus == 10}">班主任审核通过</c:when>
+                                        <c:when test="${user.checkStatus == 11}">班主任审核不通过</c:when>
+                                        <c:when test="${user.checkStatus == 12}">班主任退回重填</c:when>
+                                        <c:when test="${user.checkStatus == 13}">辅导员审核通过</c:when>
+                                        <c:when test="${user.checkStatus == 14}">辅导员审核不通过</c:when>
+                                        <c:when test="${user.checkStatus == 15}">辅导员退回重填</c:when>
+                                        <c:when test="${user.checkStatus == 16}">学院审核通过</c:when>
+                                        <c:when test="${user.checkStatus == 17}">学院审核不通过</c:when>
+                                        <c:when test="${user.checkStatus == 18}">学院退回重填</c:when>
+                                        <c:when test="${user.checkStatus == 19}">学校审核通过</c:when>
+                                        <c:when test="${user.checkStatus == 20}">学校审核不通过</c:when>
+                                        <c:when test="${user.checkStatus == 21}">学校退回重填</c:when>
+
                                     </c:choose>
+
                                     </td>
                                     <td>
                                         <Button
