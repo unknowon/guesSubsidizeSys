@@ -44,5 +44,29 @@
         <if test="phone!=null"> and u.phone=#{phone}</if>
     </select>
 
+    <select id="selectAllNextLevel" resultType="AdminUserAndRole">
+        select
+            adu.id adminUserId,
+            adu.`name` adminUserName,
+            r.id roleId,
+            r.`name` roleName,
+            adu.workId workId,
+            adu.phone phone
+        from t_adminusers adu
+                 left join t_adminuserroles adur on adu.id=adur.adminUserId
+                 left join t_roles r on r.id=adur.roleId
+                 left join t_classadminusers cad on adu.id=cad.adminUserId
+        where r.id = #{nextRole.id}
+        <if test="classList!=null">
+            and cad.classId in
+            <foreach collection="classList" item="item" index="index" open="(" close=")" separator=",">
+                #{item.id}
+            </foreach>
+        </if>
+
+
+
+    </select>
+
 
 </mapper>

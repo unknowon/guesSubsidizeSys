@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <textarea class="textarea"  name="description" id="description" placeholder="备注信息（可不填）"
-                          style="width: 100%; height: 400px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">${subsidizeInfo.key}</textarea>
+                          style="width: 100%; height: 400px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">${subsidizeInfo.value}</textarea>
             </div>
 
             <!-- /.box-body -->

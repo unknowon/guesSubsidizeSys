@@ -113,14 +113,14 @@
 
                 <c:forEach items="${nextLevelList}" var="nextLevel">
                 <tr>
-                  <td>${nextLevel.id}</td>
-                  <td>${nextLevel.name}</td>
+                  <td>${nextLevel.adminUserId}</td>
+                  <td>${nextLevel.adminUserName}</td>
                   <td>${nextLevel.workId}</td>
                   <td>${nextLevel.phone}</td>
                   <td>${nextLevel.roleName}</td>
                   <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.id}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
-                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/NextLevel/nextLevelDelete.do','id=${nextLevel.id}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
+                    <a title="编辑" href="javascript:;" onclick="admin_edit('修改','<%=ctxPath%>/NextLevel/nextLevelEdit.do?id=${nextLevel.adminUserId}','600','400')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-edit"></i></a>
+                    <a title="删除" href="javascript:;" onclick="ajaxDelete('<%=ctxPath%>/NextLevel/nextLevelDelete.do','id=${nextLevel.adminUserId}')" class="ml-5" style="text-decoration:none"><i class="fa fa-fw fa-trash"></i></a>
                   </td>
                 </tr>
                 </c:forEach>
