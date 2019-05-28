@@ -8,7 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/XueXiaoNextLevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/XueXiaoNextLevelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/XueXiaoNextLevelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/XueXiaoNextLevelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/XueXiaoNextLevelController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -78,7 +78,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="23" />
-          <entry key="jsp" value="55" />
+          <entry key="jsp" value="57" />
           <entry key="md" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -86,21 +86,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="23" />
-          <entry key="JSP" value="55" />
+          <entry key="JSP" value="57" />
           <entry key="Markdown" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="286" />
+          <entry key="java" value="298" />
           <entry key="jsp" value="646" />
           <entry key="md" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="286" />
+          <entry key="JAVA" value="298" />
           <entry key="JSP" value="646" />
           <entry key="Markdown" value="15" />
         </counts>
@@ -138,10 +138,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-860">
+                <state relative-caret-position="-575">
                   <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -159,7 +159,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/ShuJiNextLevelController.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-304">
@@ -178,8 +178,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/XueXiaoNextLevelController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="66">
-                  <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+                <state relative-caret-position="200">
+                  <caret line="117" column="53" lean-forward="true" selection-start-line="108" selection-start-column="8" selection-end-line="117" selection-end-column="53" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -297,8 +297,6 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/edit.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/add.jsp" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/edit.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/shuJiNextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/superNextLevel/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/superNextLevel/add.jsp" />
@@ -308,6 +306,8 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/shuJiNextLevel/edit.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/ShuJiNextLevelController.java" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/edit.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/XueXiaoNextLevelController.java" />
       </list>
     </option>
@@ -539,7 +539,7 @@
     <property name="SearchEverywhereHistoryKey" value="jdk&#9;PSI&#9;JAVA://sun.misc.Version#jdk_micro_version" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559071622560" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559072569058" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -883,7 +883,7 @@
       <workItem from="1558872448244" duration="95000" />
       <workItem from="1558872563560" duration="17297000" />
       <workItem from="1558915927591" duration="19362000" />
-      <workItem from="1559046743010" duration="20654000" />
+      <workItem from="1559046743010" duration="21577000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -1113,7 +1113,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301413000" />
+    <option name="totallyTimeSpent" value="302336000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1128,7 +1128,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.18766756" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.18766756" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1433,13 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="75" column="69" selection-start-line="75" selection-start-column="69" selection-end-line="75" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/banZhuRenNextLevel/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1565,16 +1558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-860">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/ShuJiNextLevelController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-304">
@@ -1585,13 +1568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-817">
@@ -1599,10 +1575,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/schoolNextLevel/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/FuDaoYuanNextLevelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/XueXiaoNextLevelController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        <state relative-caret-position="200">
+          <caret line="117" column="53" lean-forward="true" selection-start-line="108" selection-start-column="8" selection-end-line="117" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

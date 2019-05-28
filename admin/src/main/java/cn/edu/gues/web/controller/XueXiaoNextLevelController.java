@@ -111,11 +111,12 @@ public class XueXiaoNextLevelController {
         adminUser.setName(name);
         adminUserService.update(adminUser);
 
+        Class class1 = collegeClassService.selectSecondListByFirstId(classId).get(0);
         ClassAdminUser classAdminUser = new ClassAdminUser();
+        classAdminUser.setClassId(class1.getId());
         classAdminUser.setAdminUserId(id);
-        classAdminUser = classAdminUserService.selectOne(classAdminUser);
-        classAdminUser.setClassId(classId);
         classAdminUserService.update(classAdminUser);
+
 
         return AjaxResult.successInstance("修改成功");
     }
