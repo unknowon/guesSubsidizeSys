@@ -305,7 +305,7 @@
                         <c:if test="${sessionScope.path eq '/WEB-INF/jsp/shuJiNextLevel/list.jsp'}">active</c:if>
                         <c:if test="${sessionScope.path eq '/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp'}">active</c:if>
                         <c:if test="${sessionScope.path eq '/WEB-INF/jsp/banZhuRenNextLevel/list.jsp'}">active</c:if>">
-                        <a href="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRennextLevelList.do">
+                        <a href="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelList.do">
                             <i class="fa fa-dashboard"></i> <span>学生账号管理</span>
                         </a>
                     </li>

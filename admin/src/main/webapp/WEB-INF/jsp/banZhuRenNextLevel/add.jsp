@@ -15,7 +15,7 @@
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelList.do" class="form form-horizontal" id="form-add">
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRenNextLevelAdd.do" class="form form-horizontal" id="form-add">
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
@@ -64,6 +64,8 @@
 
     </form>
 </article>
+
+
 
 </body>
 </html>
