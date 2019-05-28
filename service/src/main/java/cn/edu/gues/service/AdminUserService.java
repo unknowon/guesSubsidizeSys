@@ -1,15 +1,14 @@
 package cn.edu.gues.service;
 
 import cn.edu.gues.mapper.AdminUserMapper;
-import cn.edu.gues.pojo.AdminUser;
-import cn.edu.gues.pojo.AdminUserAndRole;
+import cn.edu.gues.pojo.*;
 import cn.edu.gues.pojo.Class;
-import cn.edu.gues.pojo.Role;
 import cn.edu.gues.util.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class AdminUserService extends BaseService<AdminUser> {
@@ -35,7 +34,26 @@ public class AdminUserService extends BaseService<AdminUser> {
         return mapper.selectAllAndRole(adminUserAndRole);
     }
 
-    public List<AdminUserAndRole> selectAllNextLevel(Role role, Role nextRole, List<Class> classList) {
+    public List<NextLevelTeacher> selectAllNextLevel(Role role, Role nextRole, List<Class> classList) {
         return mapper.selectAllNextLevel(role, nextRole, classList);
+    }
+
+    public AdminUser newAdminUser(String name, String workId, String phone){
+        AdminUser adminUser = new AdminUser();
+        adminUser.setWorkId(workId);
+        adminUser.setPhone(phone);
+        adminUser.setName(name);
+
+        AdminUser tmpAdminUser = selectOne(adminUser);
+        if(tmpAdminUser != null){
+            return null;
+        }
+        String passwordSalt = UUID.randomUUID().toString();
+        System.out.println(passwordSalt);
+        adminUser.setPasswordSalt(passwordSalt);
+        adminUser.setPassword(CommonUtils.calculateMD5("gues520" + passwordSalt));
+        insert(adminUser);
+
+        return selectOne(adminUser);
     }
 }
