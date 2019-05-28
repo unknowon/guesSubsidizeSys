@@ -56,4 +56,12 @@ public class AdminUserService extends BaseService<AdminUser> {
 
         return selectOne(adminUser);
     }
+
+    public List<NextLevelTeacher> selectAllNextLevelByRole(Long shujiRoleId) {
+        return mapper.selectAllNextLevelByRole(shujiRoleId);
+    }
+
+    public List<NextLevelTeacher> selectAllNextLevelByRoleAndCollegeId(Long fuDaoYuanRoleId, Long collegeId) {
+        return mapper.selectAllNextLevelByRoleAndCollegeId(fuDaoYuanRoleId, collegeId);
+    }
 }

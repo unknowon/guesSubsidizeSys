@@ -37,7 +37,12 @@
                         </a>
                     </li>
 
-                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>">
+                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/superNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/schoolNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/shuJiNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/banZhuRenNextLevel/list.jsp'}">active</c:if>">
                         <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
                             <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
                         </a>
@@ -97,9 +102,16 @@
                         </a>
                     </li>
 
-                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>">
-                        <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
-                            <i class="fa fa-dashboard"></i> <span>下级账号管理</span>
+                    <li class="
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/superNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/schoolNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/shuJiNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/banZhuRenNextLevel/list.jsp'}">active</c:if>
+                        ">
+                        <a href="<%=ctxPath%>/SchoolNextLevel/schoolNextLevelList.do">
+                            <i class="fa fa-dashboard"></i> <span>学院书记账号管理</span>
                         </a>
                     </li>
 
@@ -157,8 +169,13 @@
                         </a>
                     </li>
 
-                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>">
-                        <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
+                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/superNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/schoolNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/shuJiNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/banZhuRenNextLevel/list.jsp'}">active</c:if>">
+                        <a href="<%=ctxPath%>/ShuJiNextLevel/shuJiNextLevelList.do">
                             <i class="fa fa-dashboard"></i> <span>辅导员账号管理</span>
                         </a>
                     </li>
@@ -217,8 +234,13 @@
                         </a>
                     </li>
 
-                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>">
-                        <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
+                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/superNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/schoolNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/shuJiNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/banZhuRenNextLevel/list.jsp'}">active</c:if>">
+                        <a href="<%=ctxPath%>/FuDaoYuanNextLevel/fuDaoYuanNextLevelList.do">
                             <i class="fa fa-dashboard"></i> <span>班主任账号管理</span>
                         </a>
                     </li>
@@ -277,8 +299,13 @@
                         </a>
                     </li>
 
-                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>">
-                        <a href="<%=ctxPath%>/NextLevel/nextLevelList.do">
+                    <li class="<c:if test="${sessionScope.path eq '/WEB-INF/jsp/nextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/superNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/schoolNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/shuJiNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/fuDaoYuanNextLevel/list.jsp'}">active</c:if>
+                        <c:if test="${sessionScope.path eq '/WEB-INF/jsp/banZhuRenNextLevel/list.jsp'}">active</c:if>">
+                        <a href="<%=ctxPath%>/BanZhuRenNextLevel/banZhuRennextLevelList.do">
                             <i class="fa fa-dashboard"></i> <span>学生账号管理</span>
                         </a>
                     </li>

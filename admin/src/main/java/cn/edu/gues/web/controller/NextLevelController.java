@@ -56,6 +56,18 @@ public class NextLevelController {
         return modelAndView;
     }
 
+    @RequestMapping("/adminNextLevelList.do")
+    public ModelAndView shujilist(HttpServletRequest request){
+        ModelAndView modelAndView = new ModelAndView("nextLevel/list");
+
+        Long shujiRoleId = 6L;
+
+        List<NextLevelTeacher> adminUserAndRoleList = adminUserService.selectAllNextLevelByRole(shujiRoleId);
+        modelAndView.addObject("nextLevelList", adminUserAndRoleList);
+
+        return modelAndView;
+    }
+
     @RequestMapping(value = "/nextLevelAdd.do", method = RequestMethod.GET)
     public ModelAndView add(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView("nextLevel/add");

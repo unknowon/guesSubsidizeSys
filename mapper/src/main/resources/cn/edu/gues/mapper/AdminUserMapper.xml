@@ -77,5 +77,49 @@
 
     </select>
 
+    <select id="selectAllNextLevelByRole" parameterType="long" resultType="NextLevelTeacher">
+        select
+        adu.id adminUserId,
+        adu.`name` adminUserName,
+        r.id roleId,
+        r.`name` roleName,
+        adu.workId workId,
+        adu.phone phone,
+        cls.id firstClassId,
+        cls.`name` firstClassName,
+        col.id collegeId,
+        col.`name` collegeName
+        FROM t_adminusers adu
+        LEFT JOIN t_adminuserroles adur ON adu.id=adur.adminUserId
+        LEFT JOIN t_roles r ON r.id=adur.roleId
+        LEFT JOIN t_classadminusers cad ON adu.id=cad.adminUserId
+        left join t_classes cls on cls.id=cad.classId
+        left join t_collegeclasses colcls on colcls.classId=cls.id
+        left join t_colleges col on col.id=colcls.collegeId
+        where r.id=#{shujiRoleId}
+    </select>
+
+    <select id="selectAllNextLevelByRoleAndCollegeId" resultType="NextLevelTeacher">
+        select
+            adu.id adminUserId,
+            adu.`name` adminUserName,
+            r.id roleId,
+            r.`name` roleName,
+            adu.workId workId,
+            adu.phone phone,
+            cls.id firstClassId,
+            cls.`name` firstClassName,
+            col.id collegeId,
+            col.`name` collegeName
+        FROM t_adminusers adu
+                 LEFT JOIN t_adminuserroles adur ON adu.id=adur.adminUserId
+                 LEFT JOIN t_roles r ON r.id=adur.roleId
+                 LEFT JOIN t_classadminusers cad ON adu.id=cad.adminUserId
+                 left join t_classes cls on cls.id=cad.classId
+                 left join t_collegeclasses colcls on colcls.classId=cls.id
+                 left join t_colleges col on col.id=colcls.collegeId
+        where r.id=#{roleId} and col.id=#{collegeId}
+    </select>
+
 
 </mapper>
