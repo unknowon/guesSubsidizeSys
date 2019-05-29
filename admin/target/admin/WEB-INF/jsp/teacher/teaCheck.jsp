@@ -103,32 +103,31 @@
                                     <td>${user.collegeName}</td>
                                     <td>${user.className}</td>
                                     <td>
-
                                         <c:choose>
-                                        <c:when test="${user.checkStatus == 1}">班主任审核中</c:when>
-                                        <c:when test="${user.checkStatus == 2}">辅导员审核中</c:when>
-                                        <c:when test="${user.checkStatus == 3}">学院书记审核中</c:when>
-                                        <c:when test="${user.checkStatus == 4}">学校审核中</c:when>
-                                        <c:when test="${user.checkStatus == 5}">审核不通过</c:when>
-                                        <c:when test="${user.checkStatus == 6}">不困难</c:when>
-                                        <c:when test="${user.checkStatus == 7}">一般困难</c:when>
-                                        <c:when test="${user.checkStatus == 8}">困难</c:when>
-                                        <c:when test="${user.checkStatus == 9}">特殊困难</c:when>
+                                            <c:when test="${user.checkStatus == 0}">班主任审核中</c:when>
+                                            <c:when test="${user.checkStatus == 1}">辅导员审核中</c:when>
+                                            <c:when test="${user.checkStatus == 2}">学院书记审核中</c:when>
+                                            <c:when test="${user.checkStatus == 3}">学校审核中</c:when>
+                                            <c:when test="${user.checkStatus == 4}">审核不通过</c:when>
+                                            <c:when test="${user.checkStatus == 5}">不困难</c:when>
+                                            <c:when test="${user.checkStatus == 6}">一般困难</c:when>
+                                            <c:when test="${user.checkStatus == 7}">困难</c:when>
+                                            <c:when test="${user.checkStatus == 8}">特殊困难</c:when>
 
-                                        <c:when test="${user.checkStatus == 10}">班主任审核通过</c:when>
-                                        <c:when test="${user.checkStatus == 11}">班主任审核不通过</c:when>
-                                        <c:when test="${user.checkStatus == 12}">班主任退回重填</c:when>
-                                        <c:when test="${user.checkStatus == 13}">辅导员审核通过</c:when>
-                                        <c:when test="${user.checkStatus == 14}">辅导员审核不通过</c:when>
-                                        <c:when test="${user.checkStatus == 15}">辅导员退回重填</c:when>
-                                        <c:when test="${user.checkStatus == 16}">学院审核通过</c:when>
-                                        <c:when test="${user.checkStatus == 17}">学院审核不通过</c:when>
-                                        <c:when test="${user.checkStatus == 18}">学院退回重填</c:when>
-                                        <c:when test="${user.checkStatus == 19}">学校审核通过</c:when>
-                                        <c:when test="${user.checkStatus == 20}">学校审核不通过</c:when>
-                                        <c:when test="${user.checkStatus == 21}">学校退回重填</c:when>
+                                            <c:when test="${user.checkStatus == 9}">班主任审核通过</c:when>
+                                            <c:when test="${user.checkStatus == 10}">班主任审核不通过</c:when>
+                                            <c:when test="${user.checkStatus == 11}">班主任退回重填</c:when>
+                                            <c:when test="${user.checkStatus == 12}">辅导员审核通过</c:when>
+                                            <c:when test="${user.checkStatus == 13}">辅导员审核不通过</c:when>
+                                            <c:when test="${user.checkStatus == 14}">辅导员退回重填</c:when>
+                                            <c:when test="${user.checkStatus == 15}">学院审核通过</c:when>
+                                            <c:when test="${user.checkStatus == 16}">学院审核不通过</c:when>
+                                            <c:when test="${user.checkStatus == 17}">学院退回重填</c:when>
+                                            <c:when test="${user.checkStatus == 18}">学校审核通过</c:when>
+                                            <c:when test="${user.checkStatus == 19}">学校审核不通过</c:when>
+                                            <c:when test="${user.checkStatus == 20}">学校退回重填</c:when>
 
-                                    </c:choose>
+                                        </c:choose>
 
                                     </td>
                                     <td>

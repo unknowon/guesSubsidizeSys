@@ -42,7 +42,7 @@
                     <a href="<%=ctxPath%>/Table/tsurveyForm.do?uid=${userId}" target="_blank"><input type="button" class="btn btn-primary col-sm-offset-6" value="调查表" id="survey" onclick="openButton('affirms')"/></a>
                     <a href="<%=ctxPath%>/Table/taffirmsForm.do?uid=${userId}" target="_blank"><input type="button" class="btn btn-primary col-sm-offset-1" disabled value="认定表" id="affirms" onclick="openButton('check')"/></a>
                     <%--<a href="<%=ctxPath%>/User/stuCommunication.do"><input type="button" class="btn btn-default col-xs-offset-4" value="上一步"/></a>--%>
-                    <a href="<%=ctxPath%>/DisposeCheck/check.do?uid=${userId}"><input type="button" class="btn btn-danger col-sm-offset-1" disabled value="审核处理" id="check"/></a>
+                    <a href="<%=ctxPath%>/DisposeCheck/check.do?userId=${userId}"><input type="button" class="btn btn-danger col-sm-offset-1" disabled value="审核处理" id="check"/></a>
                 </div>
             </div>
         </div>

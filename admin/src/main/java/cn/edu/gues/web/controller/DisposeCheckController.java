@@ -80,17 +80,18 @@ public class DisposeCheckController {
         SubsidizeInfo subsidizeInfo = new SubsidizeInfo();
         subsidizeInfo.setUserId(userId);
         subsidizeInfo.setKey("inputStatement");
+
         subsidizeInfo = subsidizeInfoService.selectOne(subsidizeInfo);
 
         Long roleId = role.getId();
 
         if(checkStatus == 1){
             if(roleId == 2L){
-                subsidizeInfo.setCheckStatus(1);
+                subsidizeInfo.setCheckStatus(9);
             } else if(roleId == 5L){
-                subsidizeInfo.setCheckStatus(2);
+                subsidizeInfo.setCheckStatus(12);
             } else if(roleId == 6L){
-                subsidizeInfo.setCheckStatus(3);
+                subsidizeInfo.setCheckStatus(15);
             } else if(roleId == 7L){
                 if(economyStatus == 1){
                     subsidizeInfo.setCheckStatus(6);

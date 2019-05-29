@@ -44,7 +44,7 @@
          left join t_classes c on c.id=cu.classId
          left join t_collegeclasses cc on c.id=cc.classId
          left join t_colleges co on co.id=cc.collegeId
-         left join t_subsidizesinfo sub on sub.userId=u.id and sub.`key`='nationality'
+         left join t_subsidizesinfo sub on sub.userId=u.id and sub.`key`='inputStatement'
         left join t_classadminusers cladm on cladm.classId=c.id
         left join t_adminusers admu on admu.id=cladm.adminUserId
         <where>

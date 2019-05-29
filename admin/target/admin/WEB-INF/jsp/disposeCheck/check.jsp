@@ -20,7 +20,7 @@
 <article class="page-container">
     <form class="form form-horizontal" id="form-add">
         <input type="hidden" name="id" value="${adminUser.id }" />
-        <input type="hidden" name="userId" value="${userId }" />
+        <input type="hidden" name="userId" value="${userId}" />
 
 
 

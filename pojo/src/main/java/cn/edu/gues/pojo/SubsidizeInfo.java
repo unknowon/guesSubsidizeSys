@@ -11,7 +11,7 @@ public class SubsidizeInfo implements Serializable {
     private String value;
     private Boolean isDeleted;
     private Date createDateTime;
-    private int checkStatus;
+    private Integer checkStatus;
 
     @Override
     public boolean equals(Object o) {
@@ -81,11 +81,11 @@ public class SubsidizeInfo implements Serializable {
         this.createDateTime = createDateTime;
     }
 
-    public int getCheckStatus() {
+    public Integer getCheckStatus() {
         return checkStatus;
     }
 
-    public void setCheckStatus(int checkStatus) {
+    public void setCheckStatus(Integer checkStatus) {
         this.checkStatus = checkStatus;
     }
 }

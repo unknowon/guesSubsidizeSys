@@ -50,48 +50,40 @@
                             <ul class="menu">
                                 <li><!-- Task item -->
                                     <a href="#">
-
-                                        <div class="progress xs">
-                                            <div class="progress-bar progress-bar-aqua" style="width:<c:choose><c:when test="${checkStatus == 1}">25</c:when><c:when test="${checkStatus == 2}">50</c:when><c:when test="${checkStatus == 3}">75</c:when><c:when test="${checkStatus >= 4}">100</c:when></c:choose>%" role="progressbar"
-                                                 aria-valuenow="
-                                                <c:choose>
-                                                    <c:when test="${checkStatus <= 4}"> ${checkStatus} </c:when>
-                                                    <c:when test="${checkStatus > 4}"> 4 </c:when>
-                                                </c:choose>
-                                                " aria-valuemin="0" aria-valuemax="4">
-                                                <span class="sr-only"><c:choose><c:when test="${checkStatus == 1}">25</c:when><c:when test="${checkStatus == 2}">50</c:when><c:when test="${checkStatus == 3}">75</c:when><c:when test="${checkStatus >= 4}">100</c:when></c:choose>% Complete</span>
-                                            </div>
-                                        </div>
                                         &nbsp;
                                         <h3>
 
                                                 <c:choose>
-                                                    <c:when test="${checkStatus == 1}">班主任审核中</c:when>
-                                                    <c:when test="${checkStatus == 2}">辅导员审核中</c:when>
-                                                    <c:when test="${checkStatus == 3}">学院书记审核中</c:when>
-                                                    <c:when test="${checkStatus == 4}">学校审核中</c:when>
-                                                    <c:when test="${checkStatus == 5}">审核不通过</c:when>
-                                                    <c:when test="${checkStatus == 6}">不困难</c:when>
-                                                    <c:when test="${checkStatus == 7}">一般困难</c:when>
-                                                    <c:when test="${checkStatus == 8}">困难</c:when>
-                                                    <c:when test="${checkStatus == 9}">特殊困难</c:when>
+                                                    <c:when test="${checkStatus == 0}">班主任审核中</c:when>
+                                                    <c:when test="${checkStatus == 1}">辅导员审核中</c:when>
+                                                    <c:when test="${checkStatus == 2}">学院书记审核中</c:when>
+                                                    <c:when test="${checkStatus == 3}">学校审核中</c:when>
+                                                    <c:when test="${checkStatus == 4}">审核不通过</c:when>
+                                                    <c:when test="${checkStatus == 5}">不困难</c:when>
+                                                    <c:when test="${checkStatus == 6}">一般困难</c:when>
+                                                    <c:when test="${checkStatus == 7}">困难</c:when>
+                                                    <c:when test="${checkStatus == 8}">特殊困难</c:when>
 
-                                                    <c:when test="${checkStatus == 10}">班主任审核通过</c:when>
-                                                    <c:when test="${checkStatus == 11}">班主任审核不通过</c:when>
-                                                    <c:when test="${checkStatus == 12}">班主任退回重填</c:when>
-                                                    <c:when test="${checkStatus == 13}">辅导员审核通过</c:when>
-                                                    <c:when test="${checkStatus == 14}">辅导员审核不通过</c:when>
-                                                    <c:when test="${checkStatus == 15}">辅导员退回重填</c:when>
-                                                    <c:when test="${checkStatus == 16}">学院审核通过</c:when>
-                                                    <c:when test="${checkStatus == 17}">学院审核不通过</c:when>
-                                                    <c:when test="${checkStatus == 18}">学院退回重填</c:when>
-                                                    <c:when test="${checkStatus == 19}">学校审核通过</c:when>
-                                                    <c:when test="${checkStatus == 20}">学校审核不通过</c:when>
-                                                    <c:when test="${checkStatus == 21}">学校退回重填</c:when>
+                                                    <c:when test="${checkStatus == 9}">班主任审核通过</c:when>
+                                                    <c:when test="${checkStatus == 10}">班主任审核不通过</c:when>
+                                                    <c:when test="${checkStatus == 11}">班主任退回重填</c:when>
+                                                    <c:when test="${checkStatus == 12}">辅导员审核通过</c:when>
+                                                    <c:when test="${checkStatus == 13}">辅导员审核不通过</c:when>
+                                                    <c:when test="${checkStatus == 14}">辅导员退回重填</c:when>
+                                                    <c:when test="${checkStatus == 15}">学院审核通过</c:when>
+                                                    <c:when test="${checkStatus == 16}">学院审核不通过</c:when>
+                                                    <c:when test="${checkStatus == 17}">学院退回重填</c:when>
+                                                    <c:when test="${checkStatus == 18}">学校审核通过</c:when>
+                                                    <c:when test="${checkStatus == 19}">学校审核不通过</c:when>
+                                                    <c:when test="${checkStatus == 20}">学校退回重填</c:when>
 
                                                 </c:choose>
 
                                         </h3>
+                                        <br/>
+                                        <h5>
+                                            <c:if test="${not empty checkDescription}">备注信息: ${checkDescription}</c:if>
+                                        </h5>
                                     </a>
                                 </li>
                                 <!-- end task item -->

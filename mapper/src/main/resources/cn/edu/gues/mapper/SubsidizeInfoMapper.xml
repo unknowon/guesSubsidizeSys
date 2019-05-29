@@ -3,14 +3,14 @@
 <mapper namespace="cn.edu.gues.mapper.SubsidizeInfoMapper">
 
     <insert id="insert" parameterType="SubsidizeInfo">
-        insert into t_subsidizesinfo(userId, `key`, value, createDateTime) values(#{userId}, #{key}, #{value}, now())
+        insert into t_subsidizesinfo (userId, `key`, value, createDateTime) values(#{userId}, #{key}, #{value}, now())
     </insert>
 
     <update id="update" parameterType="SubsidizeInfo">
-        update t_subsidizesinfo set
+        update t_subsidizesinfo sub set
             userId=#{userId},
-            key=#{key},
-            value=#{value},
+            sub.key=#{key},
+            sub.value=#{value},
             isDeleted=#{isDeleted},
             checkStatus=#{checkStatus}
         where id=#{id}

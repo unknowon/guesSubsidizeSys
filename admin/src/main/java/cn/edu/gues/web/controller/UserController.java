@@ -71,6 +71,7 @@ public class UserController {
             modelAndView.addObject("houseStatus", subsidizeInfoService.selectValueByKeyAndUserId("houseStatus", userId));
             modelAndView.addObject("specialty", subsidizeInfoService.selectValueByKeyAndUserId("specialty", userId));
             modelAndView.addObject("checkStatus", queryCheckStatus(userId));
+            modelAndView.addObject("checkDescription", subsidizeInfoService.selectValueByKeyAndUserId("checkDescription", userId));
         }
 
         return modelAndView;
@@ -538,7 +539,7 @@ public class UserController {
         if(subsidizeInfo == null){
             return 0;
         }
-        return subsidizeInfo.getCheckStatus()+1;
+        return subsidizeInfo.getCheckStatus();
     }
 
 
