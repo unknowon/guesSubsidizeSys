@@ -22,7 +22,7 @@
             <div class="box-body">
                 <div class="form-group">
                     <label for="adminUserName"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="${nextLevel.adminUserName}" id="adminUserName" name="adminUserName" placeholder="输入用户名">
+                    <input type="text" class="form-control" value="${nextLevel.name}" id="name" name="name" placeholder="输入用户名">
                 </div>
             </div>
             <div class="box-body">
@@ -37,16 +37,7 @@
                     <input type="text" class="form-control" value="${nextLevel.phone}" id="phone" name="phone" placeholder="输入电话">
                 </div>
             </div>
-            <div class="box-body">
-                <div class="form-group">
-                    <select id="roleId" name="collegeId" datatype="*">
-                        <option value="${college.id }">${college.Name}</option>
-                        <c:forEach items="${collegeList}" var="college">
-                            <option value="${college.id }">${college.Name}</option>
-                        </c:forEach>
-                    </select>
-                </div>
-            </div>
+
 
             <!-- /.box-body -->
 
@@ -60,36 +51,7 @@
     </form>
 </article>
 
-<script type="text/javascript">
-    $(function(){
 
-        //必须放到页面初始化的时候，不能放到按钮点击里面
-        var validForm = $("#form-add").Validform({tiptype:2});//初始化校验器
-        $("#btnSave").click(function(){
-            if(validForm.check(false)==false)//表单校验不通过
-            {
-                return;
-            }
-
-            var data = $("#form-add").serializeArray();
-            $.ajax({
-                url:"<%=ctxPath%>/ShuJiNextLevel/shuJiNextLevelEdit.do",type:"post",
-                data:data,
-                success:function(result){
-                    if(result.status=="success")
-                    {
-                        parent.location.reload();//刷新父窗口
-                    }
-                    else
-                    {
-                        alert("保存失败"+result.msg);
-                    }
-                },
-                error:function(){alert("保存网络请求失败");}
-            });
-        });
-    });
-</script>
 
 </body>
 </html>

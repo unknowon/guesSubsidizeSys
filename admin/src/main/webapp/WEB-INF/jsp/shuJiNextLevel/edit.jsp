@@ -22,7 +22,7 @@
             <div class="box-body">
                 <div class="form-group">
                     <label for="adminUserName"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="${nextLevel.adminUserName}" id="adminUserName" name="adminUserName" placeholder="输入用户名">
+                    <input type="text" class="form-control" value="${nextLevel.name}" id="name" name="name" placeholder="输入用户名">
                 </div>
             </div>
             <div class="box-body">

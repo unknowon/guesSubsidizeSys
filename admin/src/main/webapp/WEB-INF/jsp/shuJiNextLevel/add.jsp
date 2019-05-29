@@ -15,13 +15,13 @@
 </head>
 <body>
 <article class="page-container">
-    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/ShuJiNextLevel/shuJiNextNextLevelAdd.do" class="form form-horizontal" id="form-add">
+    <form onsubmit="ajaxSubmitForm(this, true)" action="<%=ctxPath%>/ShuJiNextLevel/shuJiNextLevelAdd.do" class="form form-horizontal" id="form-add">
 
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="adminUserName"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="" id="adminUserName" name="adminUserName" placeholder="输入用户名">
+                    <label for="name"><span class="c-red">*</span>用户名：</label>
+                    <input type="text" class="form-control" value="" id="name" name="name" placeholder="输入用户名">
                 </div>
             </div>
             <div class="box-body">

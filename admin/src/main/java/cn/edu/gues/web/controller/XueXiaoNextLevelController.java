@@ -69,7 +69,7 @@ public class XueXiaoNextLevelController {
 
     @RequestMapping(value = "/schoolNextLevelAdd.do", method = RequestMethod.POST)
     public @ResponseBody
-    AjaxResult addSubmit(String name, String workId, String phone, Long classId){
+    AjaxResult addSubmit(String name, String workId, String phone, Long collegeId){
 
         AdminUser adminUser = adminUserService.newAdminUser(name, workId, phone);
 
@@ -78,7 +78,7 @@ public class XueXiaoNextLevelController {
         adminUserRole.setRoleId(6L);
         adminUserRoleService.insert(adminUserRole);
 
-        Class class1 = collegeClassService.selectSecondListByFirstId(classId).get(0);
+        Class class1 = collegeClassService.selectSecondListByFirstId(collegeId).get(0);
         ClassAdminUser classAdminUser = new ClassAdminUser();
         classAdminUser.setClassId(class1.getId());
         classAdminUser.setAdminUserId(adminUser.getId());
@@ -105,16 +105,18 @@ public class XueXiaoNextLevelController {
     }
 
     @RequestMapping(value = "/schoolNextLevelEdit.do", method = RequestMethod.POST)
-    public @ResponseBody AjaxResult editSubmit(Long id, String name, String workId, String phone, Long classId){
+    public @ResponseBody AjaxResult editSubmit(Long id, String name, String workId, String phone, Long collegeId){
         AdminUser adminUser = adminUserService.selectOne(id);
         adminUser.setPhone(phone);
         adminUser.setName(name);
         adminUserService.update(adminUser);
 
+        Class clz = collegeClassService.selectSecondListByFirstId(collegeId).get(0);
+
         ClassAdminUser classAdminUser = new ClassAdminUser();
         classAdminUser.setAdminUserId(id);
         classAdminUser = classAdminUserService.selectOne(classAdminUser);
-        classAdminUser.setClassId(classId);
+        classAdminUser.setClassId(clz.getId());
         classAdminUserService.update(classAdminUser);
 
         return AjaxResult.successInstance("修改成功");

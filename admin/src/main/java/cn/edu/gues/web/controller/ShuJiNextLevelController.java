@@ -69,6 +69,7 @@ public class ShuJiNextLevelController {
     public @ResponseBody AjaxResult addSubmit(String name, String workId, String phone, HttpServletRequest request){
         AdminUser adminUserSession = (AdminUser) request.getSession().getAttribute("adminUser"); // 查出权限，获取相关信息
         List<Class> classList = classAdminUserService.selectFirstListBySecondId(adminUserSession.getId());
+
         AdminUser adminUser = adminUserService.newAdminUser(name, workId, phone);
 
         AdminUserRole adminUserRole = new AdminUserRole();

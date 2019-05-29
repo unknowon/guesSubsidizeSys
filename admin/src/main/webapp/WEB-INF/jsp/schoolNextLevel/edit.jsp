@@ -21,8 +21,8 @@
         <div class="col-md-6 col-xs-12">
             <div class="box-body">
                 <div class="form-group">
-                    <label for="adminUserName"><span class="c-red">*</span>用户名：</label>
-                    <input type="text" class="form-control" value="${nextLevel.adminUserName}" id="adminUserName" name="adminUserName" placeholder="输入用户名">
+                    <label for="name"><span class="c-red">*</span>用户名：</label>
+                    <input type="text" class="form-control" value="${nextLevel.name}" id="name" name="name" placeholder="输入用户名">
                 </div>
             </div>
             <div class="box-body">
@@ -40,9 +40,9 @@
             <div class="box-body">
                 <div class="form-group">
                     <select id="roleId" name="collegeId" datatype="*">
-                        <option value="${college.id }">${college.Name}</option>
+                        <option value="${college.id }">${college.name}</option>
                         <c:forEach items="${collegeList}" var="college">
-                            <option value="${college.id }">${college.Name}</option>
+                            <option value="${college.id }">${college.name}</option>
                         </c:forEach>
                     </select>
                 </div>
