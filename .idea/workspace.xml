@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/DisposeCheckController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="-597">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
@@ -113,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="765">
@@ -852,7 +852,7 @@
       <workItem from="1558872563560" duration="17297000" />
       <workItem from="1558915927591" duration="60753000" />
       <workItem from="1559090864114" duration="5335000" />
-      <workItem from="1559119244658" duration="1017000" />
+      <workItem from="1559119244658" duration="1277000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -1226,7 +1226,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316798000" />
+    <option name="totallyTimeSpent" value="317058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1241,7 +1241,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.24481075" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.25091577" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1255,7 +1255,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.20918368" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.496337" visible="true" weight="0.27755103" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.496337" weight="0.27755103" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" sideWeight="0.497558" weight="0.2622449" />
@@ -1708,13 +1708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/DisposeCheckController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -1764,6 +1757,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="48" lean-forward="true" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/DisposeCheckController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-597">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
