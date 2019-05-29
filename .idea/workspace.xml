@@ -7,27 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca11fb41-655b-458f-b0ad-0b4a3af50afd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/DisposeCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/DisposeCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/check.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/teacher/teaCheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/DisposeCheckController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/DisposeCheckController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/classes/cn/edu/gues/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/contextHeader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/contextHeader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/teacher/teaCheck.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/jsp/teacher/teaCheck.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/mapper-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/admin/WEB-INF/lib/pojo-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/DisposeCheckController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/DisposeCheckController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/admin/target/classes/cn/edu/gues/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/SubsidizeInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/SubsidizeInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/resources/cn/edu/gues/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/target/classes/cn/edu/gues/mapper/SubsidizeInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/target/classes/cn/edu/gues/mapper/SubsidizeInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/target/classes/cn/edu/gues/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/target/classes/cn/edu/gues/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/SubsidizeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/cn/edu/gues/pojo/SubsidizeInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/target/classes/cn/edu/gues/pojo/SubsidizeInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/cn/edu/gues/pojo/SubsidizeInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/parent/target/" />
@@ -126,11 +106,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+            <state relative-caret-position="317">
+              <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="100" column="25" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -235,7 +224,6 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/nextLevel/add.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/java/cn/edu/gues/web/controller/OtherController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/adminUserRole/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/class/list.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/college/list.jsp" />
@@ -278,6 +266,7 @@
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/check.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/disposeCheck/state.jsp" />
         <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp" />
+        <option value="$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp" />
       </list>
     </option>
   </component>
@@ -864,7 +853,7 @@
       <workItem from="1558872448244" duration="95000" />
       <workItem from="1558872563560" duration="17297000" />
       <workItem from="1558915927591" duration="60753000" />
-      <workItem from="1559090864114" duration="4958000" />
+      <workItem from="1559090864114" duration="5198000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1556804123915</created>
@@ -1181,7 +1170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559093096039</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="完成审核功能">
+      <created>1559098133045</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1559098133045</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1217,7 +1213,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315404000" />
+    <option name="totallyTimeSpent" value="315644000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1232,7 +1228,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.24175824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591836" visible="true" weight="0.24175824" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1246,7 +1242,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4993895" weight="0.20918368" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4969475" visible="true" weight="0.27755103" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4969475" visible="true" weight="0.27755103" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="8" sideWeight="0.497558" weight="0.2622449" />
@@ -1254,7 +1250,7 @@
       <window_info anchor="bottom" id="Spring" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32765958" />
       <window_info anchor="bottom" id="Docker" order="12" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.502442" side_tool="true" weight="0.2622449" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50305253" side_tool="true" weight="0.27755103" />
       <window_info anchor="bottom" id="Statistic" order="14" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
@@ -1335,7 +1331,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改了contexHeader页面" />
     <MESSAGE value="解决了顶栏Bug&#10;新增修改密码功能&#10;新增退出登录功能&#10;优化了修改以后的数据刷新" />
     <MESSAGE value="新增了文件上传功能&#10;新增了附件删除功能" />
     <MESSAGE value="完成了审核状态查询" />
@@ -1360,7 +1355,8 @@
     <MESSAGE value="完成了辅导员的下级账号管理" />
     <MESSAGE value="正在做审核" />
     <MESSAGE value="学院书记和学校的下级账号管理完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="学院书记和学校的下级账号管理完成" />
+    <MESSAGE value="完成审核功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成审核功能" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1392,13 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1753,8 +1742,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/contextHeader.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        <state relative-caret-position="317">
+          <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/webapp/WEB-INF/jsp/indexTeacher.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="25" />
         </state>
       </provider>
     </entry>
